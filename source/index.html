@@ -16,10 +16,10 @@
           </a>
           <ul class="header__list submenu">
             <li class="submenu__item">
-              <a class="submenu__link submenu__link--active" href="">Каталог товаров</a>
+              <a class="submenu__link submenu__link--active" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="submenu__item">
-              <a class="submenu__link" href="">Вязание на заказ</a>
+              <a class="submenu__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="submenu__item item-search">
               <p class="item-search__form">
@@ -28,7 +28,7 @@
               </p>
             </li>
             <li class="submenu__item">
-              <a class="header__link" href="">Корзина: пока пуста</a>
+              <a class="header__link" href="cart.html">Корзина: пока пуста</a>
             </li>
           </ul>
         </li>
@@ -40,11 +40,13 @@
     <section class="promo">
       <div class="promo__inner">
         <h2 class="promo__title">Милые штуки ручной работы для дома</h2>
-        <div class="promo__item">
-          <h2 class="promo__caption">Предметы интерьера</h2>
-        </div>
-        <div class="promo__item">
-          <h2 class="promo__caption">Детские игрушки</h2>
+        <div class="promo__list">
+          <div class="promo__item">
+            <h2 class="promo__caption">Предметы интерьера</h2>
+          </div>
+          <div class="promo__item">
+            <h2 class="promo__caption">Детские игрушки</h2>
+          </div>
         </div>
       </div>
     </section>
@@ -69,7 +71,7 @@
           <img class="product__img" src="http://placehold.it/260x315" alt="товар недели «Вязаные корзинки»" width="260"
             height="315">
           <p class="product__price">Цена: 990 руб.</p>
-          <button class="product__button" type="button">Заказать</button>
+          <button class="product__button btn" type="button">Заказать</button>
         </div>
       </div>
     </section>
@@ -78,22 +80,22 @@
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
           <li class="about__item">
-            Экологически чистые материалы
+            <p class="about__caption">Экологически чистые материалы</p>
           </li>
           <li class="about__item">
-            Скандинавский стиль по российской цене
+            <p class="about__caption">Скандинавский стиль по российской цене</p>
           </li>
           <li class="about__item">
-            Увеличивает лайки на фотографиях
+            <p class="about__caption">Увеличивает лайки на фотографиях</p>
           </li>
           <li class="about__item">
-            Связано вручную с любовью и умилением
+            <p class="about__caption">Связано вручную с любовью и умилением</p>
           </li>
           <li class="about__item">
-            Поддержка отечественного производителя
+            <p class="about__caption">Поддержка отечественного производителя</p>
           </li>
           <li class="about__item">
-            Поставляется в подарочной упаковке
+            <p class="about__caption">Поставляется в подарочной упаковке</p>
           </li>
         </ul>
       </div>
@@ -101,13 +103,13 @@
     <section class="feedback">
       <div class="feedback__inner">
         <h2 class="feedback__title">Отзывы</h2>
-        <p class="feedback__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-          как у
-          популярных
+        <p class="feedback__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
           инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-          стильными, а также набирают больше лайков!</p>
+          стильными, а также набирают больше лайков!
+        </p>
         <p class="feedback__autor">Анастасия Красильникова@misssssiskras</p>
-        <a class="feedback__btn" href="#">Написать</a>
+        <a class="feedback__btn btn" href="#">Написать</a>
         <ul class="feedback__list">
           <li class="feedback__item">
             <button class="feedback__button" type="button"></button>
@@ -123,24 +125,29 @@
         <h2 class="contacts__title">Контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
-            e-mail:
+            <p class="contacts__text">
+              e-mail:
+            </p>
           </li>
           <li class="contacts__item">
-            info@mimimishkashop.ru
+            <p class="contacts__text">
+              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </p>
           </li>
         </ul>
         <ul class="contacts__list">
           <li class="contacts__item">
-            адрес:
+            <p class="contacts__text">адрес:</p>
           </li>
           <li class="contacts__item">
-            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+            <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
           </li>
         </ul>
         <a class="contacts__link contacts__link--map" href="#">
-          <img class="contacts__map" src="http://placehold.it/320x457" alt="Найти нас на карте" width="320" height="457">
+          <img class="contacts__map" src="http://placehold.it/320x457" alt="Найти нас на карте" width="320"
+            height="457">
         </a>
-        <a class="contacts__link contacts__link--write" href="#">Напишите нам</a>
+        <a class="contacts__link contacts__link--write btn" href="#">Напишите нам</a>
       </div>
     </section>
   </main>
