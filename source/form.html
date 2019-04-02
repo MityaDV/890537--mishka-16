@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Мишка</title>
+  <title></title>
 </head>
 
 <body>
@@ -12,7 +12,7 @@
       <ul class="header__list">
         <li class="header__logo">
           <a class="header__link">
-            <img src="" alt="Логотип магазина Мишка" width="86" height="35">
+            <img src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86" height="35">
           </a>
           <ul class="header__list submenu">
             <li class="submenu__item">
@@ -36,10 +36,24 @@
     </nav>
   </header>
   <main>
+    <h1 class="visually-hidden">Заказать товар в магазине «Мишка»</h1>
     <section class="order">
       <div class="order__inner">
-        
+        <h2>Вязание на заказ</h2>
+        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       </div>
+      <form class="form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="form__field field">
+          <legend class="field__legend">Тип</legend>
+
+          <input class="field__input visually-hidden" type="radio" name="filter-accessory" id="filter-property" value="interior" checked>
+          <label class="field__label" for="filter-property">Аксессуар для интерьера</label>
+
+          <input class="field__input visually-hidden" type="radio" name="filter-accessory" id="filter-toy" value="toy">
+          <label class="field__label" for="filter-toy">Детская игрушка</label>
+
+        </fieldset>
+      </form>
     </section>
   </main>
   <footer class="footer">
