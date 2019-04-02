@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: styleguide «Мишка»</title>
 </head>
+
 <body>
 
   <!-- поля radio для формы -->
@@ -12,7 +14,8 @@
 
     <legend class="field__legend">Тип</legend>
 
-    <input class="field__input visually-hidden" type="radio" name="filter-accessory" id="filter-property" value="interior" checked>
+    <input class="field__input visually-hidden" type="radio" name="filter-accessory" id="filter-property"
+      value="interior" checked>
     <label class="field__label" for="filter-property">Аксессуар для интерьера</label>
 
     <input class="field__input visually-hidden" type="radio" name="filter-accessory" id="filter-toy" value="toy">
@@ -26,7 +29,8 @@
 
     <legend class="field__legend">Цвет</legend>
 
-    <input class="field__input visually-hidden" type="checkbox" name="filter-color" id="filter-white" value="white" checked>
+    <input class="field__input visually-hidden" type="checkbox" name="filter-color" id="filter-white" value="white"
+      checked>
     <label class="field__label" for="filter-white">Белый</label>
 
     <input class="field__input visually-hidden" type="checkbox" name="filter-color" id="filter-gray" value="gray">
@@ -42,12 +46,43 @@
     <input class="field__input" type="text" name="username" id="user-name" placeholder="Введите ваше имя*" required>
 
     <label class="field__label" for="user-surname">Фамилия:</label>
-    <input class="field__input" type="text" name="usersurname" id="user-surname" placeholder="Укажите фамилию*" required>
+    <input class="field__input" type="text" name="usersurname" id="user-surname" placeholder="Укажите фамилию*"
+      required>
 
     <label class="field__label" for="name-user">Отчество:</label>
     <input class="field__input" type="text" name="username" id="name-user" placeholder="Отчество, если желаете">
 
   </fieldset>
 
+  <fieldset class="form__field field">
+
+    <legend class="field__legend">Tел</legend>
+
+    <label class="field__label" for="user-phone"></label>
+    <input class="field__input" type="tel" name="userphone" id="user-phone"
+      pattern="[+]{1}7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+
+  </fieldset>
+
+  <fieldset class="form__field field">
+
+    <legend class="field__legend">E-mail</legend>
+
+    <label class="field__label" for="user-email"></label>
+    <input class="field__input" type="email" name="useremail" id="user-email" placeholder="Ваш Email*" required>
+
+  </fieldset>
+
+  <fieldset class="form__field field">
+
+    <legend class="field__legend">Доп</legend>
+
+    <label class="field__label" for="user-wishes"></label>
+    <textarea class="field__textarea" name="userwishes" id="user-wishes"
+      placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+  </fieldset>
+
 </body>
+
 </html>
