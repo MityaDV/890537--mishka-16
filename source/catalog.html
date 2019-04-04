@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Форма заказа магазина «Мишка»</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__navigation">
+      <ul class="header__list">
+        <li class="header__logo">
+          <a class="header__link" href="index.html">
+            <img src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86" height="35">
+          </a>
+          <ul class="header__list submenu">
+            <li class="submenu__item">
+              <a class="submenu__link submenu__link--active" href="">Каталог товаров</a>
+            </li>
+            <li class="submenu__item">
+              <a class="submenu__link" href="">Вязание на заказ</a>
+            </li>
+            <li class="submenu__item item-search">
+              <p class="item-search__form">
+                <label class="item-search__label" for="form-search"></label>
+                <input class="item-search__input" id="form-search" type="text" placeholder="Поиск по сайту">
+              </p>
+            </li>
+            <li class="submenu__item">
+              <a class="header__link" href="">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="catalog">
+      <div class="catalog__inner">
+        <h2 class="catalog__title">Каталог товаров</h2>
+        <article class="catalog__item card">
+          <a class="card__link" href="catalog/bunny.html">
+            <img class="card__img" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик.">
+            <h3 class="card__title">Зайчик-попрыгайчик</h3>
+          </a>
+          <p class="card__caption">Рост 30 см, вес 200 г</p>
+          <p class="card__price">1 200 руб.</p>
+          <button class="card__button" type="button">
+            <svg width="25" height="25"></svg>
+          </button>
+        </article>
+        <article class="catalog__item card">
+          <a class="card__link" href="catalog/basket.html">
+            <img class="card__img" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья.">
+            <h3 class="card__title">Корзинка для белья</h3>
+          </a>
+          <p class="card__caption">Диаметр 15 см, высота 10 см</p>
+          <p class="card__price">690 руб.</p>
+          <button class="card__button" type="button">
+            <svg width="25" height="25"></svg>
+          </button>
+        </article>
+        <article class="catalog__item card">
+          <a class="card__link" href="catalog/big-basket.html">
+            <img class="card__img" src="http://placehold.it/260x195" width="260" height="195"
+              alt="Большая корзинка для игрушек.">
+            <h3 class="card__title">Большая корзинка для игрушек</h3>
+          </a>
+          <p class="card__caption">Диаметр 30 см, высота 30 см</p>
+          <p class="card__price">1 500 руб.</p>
+          <button class="card__button" type="button">
+            <svg width="25" height="25"></svg>
+          </button>
+        </article>
+        <section class="production">
+          <h2 class="production__title">Процесс производства</h2>
+          <video class="production__video" poster="http://placehold.it/260x150" width="260" height="150"></video>
+          <button class="product__button product__button--play"></button>
+          <p class="production__caption">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+          <button class="product__button btn" type="button">Сделать заказ</button>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__social">
+        <ul class="footer__list">
+          <li class="footer__item social">
+            <a class="social__link" href="#" alt="магазин Мишка в Инстаграмме">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="footer__item social">
+            <a class="social__link" href="#" alt="магазин Мишка на Фейсбуке">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="footer__item social">
+            <a class="social__link" href="#" alt="магазин Мишка в Твиттере">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__text">Разработано</p>
+        <a class="footer__link footer__link--academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
