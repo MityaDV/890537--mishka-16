@@ -1,2 +1,10 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
+
+.header__link {
+  color: $dark;
+}
+
+.submenu__link {
+  color: $dark;
+}

@@ -1,2 +1,21 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
+
+.promo {
+  background:  url(../img/hero-mobile@1x.jpg) no-repeat 0 0;
+}
+
+.promo__title {
+  color: $very-dark-brown;
+}
+
+.promo__item {
+  background: $seafoam-blue;
+  &--shade {
+    background: $greeny-blue;
+  }
+}
+
+.promo__caption {
+  color: $color-main;
+}

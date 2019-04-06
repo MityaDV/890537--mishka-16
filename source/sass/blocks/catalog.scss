@@ -1,2 +1,14 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
+
+.catalog__title {
+  background: $color-footer;
+}
+
+.card__caption {
+  color: $greyish-brown;
+}
+
+.card__title {
+  color: $dark;
+}

@@ -1,2 +1,23 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
+
+.offers__flag {
+  color: $seafoam-blue;
+  text-transform: uppercase;
+}
+
+.offers__text {
+  color: $greyish-brown;
+}
+
+.offers__list {
+  color: $greyish-brown;
+}
+
+.product__price {
+  color: $greyish-brown;
+}
+
+.product__button {
+  color: $greyish-brown;
+}
