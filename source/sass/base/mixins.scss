@@ -1,0 +1,17 @@
+@mixin inner() {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@mixin fixed_inner() {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@mixin list() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

@@ -1,0 +1,15 @@
+@import "../base/mixins.scss";
+@import "../base/vars.scss";
+
+.card__caption {
+  color: $greyish-brown;
+}
+
+.card__title {
+  color: $dark;
+  line-height: 1.41;
+}
+
+.card__price {
+  line-height: 1.6;
+}

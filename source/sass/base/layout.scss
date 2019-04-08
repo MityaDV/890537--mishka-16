@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-size: $font-size-base;
+  font-size: $font_size_base;
 }
 
 *,
@@ -12,18 +12,16 @@ html {
 body {
   min-width: 320px;
   margin: 0;
-  font-weight: $font-weight-bold;
-  font-size: 1.7rem;
-  line-height: $line-height;
-
-  letter-spacing: normal;
-  font-stretch: normal;
-  font-family: $font-family;
   color: $dark;
 
-  background-color: $color-main;
+  background-color: $white;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

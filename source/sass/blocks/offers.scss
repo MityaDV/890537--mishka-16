@@ -1,23 +1,39 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.offers__inner {
+  @include inner();
+}
+
+.offers__title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
 .offers__flag {
-  color: $seafoam-blue;
+  color: $seafoam_blue;
   text-transform: uppercase;
+  font-size: 1.7rem;
+  line-height: 1.18;
+  text-align: left;
 }
 
 .offers__text {
-  color: $greyish-brown;
+  color: $greyish_brown;
+  font-weight: $font_weight_normal;
+  line-height: 1.6;
 }
 
 .offers__list {
-  color: $greyish-brown;
+  color: $greyish_brown;
+
+  @include list();
+
+  font-weight: $font_weight_normal;
+  font-size: 1.5rem;
 }
 
-.product__price {
-  color: $greyish-brown;
-}
-
-.product__button {
-  color: $greyish-brown;
+.offers__item {
+  line-height: 1.33;
 }

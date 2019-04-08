@@ -1,24 +1,25 @@
 // Цвета
 
-$color-main: #ffffff;
-$color-footer: #f1f1f1;
+$white: #ffffff;
+$seashell: #f1f1f1;
 
 $dark: #000000;
-$very-dark-brown: #010000;
-$greyish-brown: #444444;
+$very_dark_brown: #010000;
+$greyish_brown: #444444;
 
-$blue-green: #149080;
-$greeny-blue: #56c3b2;
-$seafoam-blue: #63d1bb;
+$blue_green: #149080;
+$greeny_blue: #56c3b2;
+$seafoam_blue: #63d1bb;
 
 // Шрифты
 
-$font-size-base: 10px;
-$font-size-h1: 3.6rem;
-$font-size-h2: 2.7rem;
-$font-size-h3: 1.7rem;
-$font-size-p: 1.5rem;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
-$font-family: "Open Sans", "Tahoma", sans-serif;
-$line-height: 1.37;
+$font_size_base: 10px;
+$font_size_h1: 3.6rem;
+$font_size_h2: 2.7rem;
+$font_size_h3: 1.7rem;
+$font_size_p: 1.5rem;
+$font_weight_normal: 400;
+$font_weight_bold: 700;
+$font_family_base: "Open Sans";
+$font_family_extra: "Tahoma", sans-serif;
+$line_height: 1.37;
