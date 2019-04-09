@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  font-size: $font_size_base;
 }
 
 *,
@@ -12,13 +11,8 @@ html {
 body {
   min-width: 320px;
   margin: 0;
-  color: $dark;
 
   background-color: $white;
-}
-
-a {
-  text-decoration: none;
 }
 
 img {
