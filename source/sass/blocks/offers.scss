@@ -6,7 +6,7 @@
 }
 
 .offers__title {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   line-height: 1.2;
   text-align: left;
 }
@@ -14,7 +14,7 @@
 .offers__flag {
   color: $seafoam_blue;
   text-transform: uppercase;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   line-height: 1.18;
   text-align: left;
 }
@@ -30,10 +30,7 @@
 
   @include list();
 
-  font-weight: $font_weight_normal;
-  font-size: 1.5rem;
-}
-
-.offers__item {
   line-height: 1.33;
+  font-weight: $font_weight_normal;
+  font-size: $font_size_p;
 }
