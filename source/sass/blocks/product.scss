@@ -1,0 +1,20 @@
+@import "../base/mixins.scss";
+@import "../base/vars.scss";
+
+.product__price {
+  color: $greyish_brown;
+  text-align: center;
+  font-size: 1.9rem;
+  line-height: 1.41;
+}
+
+.product__button {
+  color: $greyish_brown;
+  font-size: 1.9rem;
+  line-height: 1.18;
+  padding: 20px 84px;
+  text-transform: uppercase;
+  font-weight: $font_weight_bold;
+  background: $white;
+  border: solid 2px $greyish-brown;
+}

@@ -1,0 +1,17 @@
+@import "../base/mixins.scss";
+@import "../base/vars.scss";
+
+.footer__inner {
+  @include inner();
+  background: $seashell;
+}
+
+.footer__list {
+  @include list();
+}
+
+.footer__text {
+  font-size: 1.9rem;
+  line-height: 0.95;
+  text-align: left;
+}

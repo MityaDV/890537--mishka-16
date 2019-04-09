@@ -1,0 +1,24 @@
+@import "vars";
+
+body {
+  font-weight: $font_weight_bold;
+  font-size: 2rem;
+  line-height: $line_height;
+  font-family: $font_family_base, $font_family_extra;
+}
+
+h1 {
+  font-size: $font_size_h1;
+}
+
+h2 {
+  font-size: $font_size_h2;
+}
+
+h3 {
+  font-size: $font_size_h3;
+}
+
+p {
+  font-size: $font_size_p;
+}

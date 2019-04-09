@@ -4,15 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" as="font">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
     <nav class="header__navigation">
       <ul class="header__list">
-        <li class="header__logo">
-          <a class="header__link">
-            <img src="http://placehold.it/86x35" alt="Логотип магазина Мишка" width="86" height="35">
+        <li class="header__logo logo">
+          <a class="logo__link">
+            <img src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
           </a>
           <ul class="header__list submenu">
             <li class="submenu__item">
@@ -28,7 +30,7 @@
               </p>
             </li>
             <li class="submenu__item">
-              <a class="header__link" href="cart.html">Корзина: пока пуста</a>
+              <a class="submenu__link" href="cart.html">Корзина: пока пуста</a>
             </li>
           </ul>
         </li>
@@ -43,12 +45,12 @@
         <div class="promo__list">
           <a class="promo__link" href="catalog/interior.html">
             <div class="promo__item">
-              <h2 class="promo__caption">Предметы интерьера</h2>
+              <h3 class="promo__caption">Предметы интерьера</h3>
             </div>
           </a>
           <a class="promo__link" href="catalog/toy.html">
-            <div class="promo__item">
-              <h2 class="promo__caption">Детские игрушки</h2>
+            <div class="promo__item promo__item--shade">
+              <h3 class="promo__caption">Детские игрушки</h3>
             </div>
           </a>
         </div>
@@ -57,6 +59,7 @@
     <section class="offers">
       <div class="offers__inner">
         <h2 class="offers__title">Вязаные корзинки</h2>
+        <p class="offers__flag">Товар недели</p>
         <p class="offers__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
         <ul class="offers__list">
@@ -72,7 +75,7 @@
           <li class="offers__item">15 см</li>
         </ul>
         <div class="offers__card product">
-          <img class="product__img" src="http://placehold.it/260x315" alt="товар недели «Вязаные корзинки»" width="260"
+          <img class="product__img" src="img/triple-set-mobile@1x.jpg" alt="товар недели «Вязаные корзинки»" width="260"
             height="315">
           <p class="product__price">Цена: 990 руб.</p>
           <button class="product__button btn" type="button">Заказать</button>
