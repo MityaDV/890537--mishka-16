@@ -16,7 +16,7 @@
   list-style: none;
 }
 
-@mixin btn {
+@mixin btn() {
   display: block;
   width: 100%;
   min-height: 52px;
