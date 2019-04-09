@@ -1,2 +1,26 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
+
+.social__icon {
+  display: inline-block;
+
+  background: url("../img/sprites_social.png") no-repeat;
+
+  &--insta {
+    width: 22px;
+    height: 21px;
+    background-position: -45px -10px;
+  }
+
+  &--fb {
+    width: 15px;
+    height: 28px;
+    background-position: -10px -10px;
+  }
+
+  &--tw {
+    width: 23px;
+    height: 20px;
+    background-position: -87px -10px;
+  }
+}

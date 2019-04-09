@@ -1,2 +1,34 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
+
+.contacts__inner {
+  @include inner();
+}
+
+.contacts__title {
+  font-size: 2rem;
+  line-height: 1.67;
+}
+
+.contacts__list {
+  @include list();
+
+  line-height: 2;
+  font-weight: $font_weight_normal;
+  color: $greyish_brown;
+}
+
+.contacts__link {
+  &--email {
+    color: $greyish-brown;
+  }
+
+  &--write {
+    @include btn();
+  }
+}
+
+.contacts__map {
+  margin: 0 0 0 -30px;
+  border: none;
+}

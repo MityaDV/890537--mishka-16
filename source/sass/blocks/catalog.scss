@@ -1,13 +1,19 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.catalog {
+  margin: 30px;
+}
+
 .catalog__inner {
   @include inner();
 }
 
 .catalog__title {
-  background: $seashell;
+  width: 320px;
+  margin: auto auto 30px auto;
+  padding: 76px 10px;
   line-height: 1.11;
   text-align: center;
-  padding: 76px 10px;
+  background: $seashell;
 }
