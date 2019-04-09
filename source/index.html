@@ -78,7 +78,7 @@
           <img class="product__img" src="img/triple-set-mobile@1x.jpg" alt="товар недели «Вязаные корзинки»" width="260"
             height="315">
           <p class="product__price">Цена: 990 руб.</p>
-          <button class="product__button btn" type="button">Заказать</button>
+          <button class="product__button" type="button">Заказать</button>
         </div>
       </div>
     </section>
@@ -115,8 +115,11 @@
           инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
           стильными, а также набирают больше лайков!
         </p>
-        <p class="feedback__autor">Анастасия Красильникова@misssssiskras</p>
-        <a class="feedback__btn btn" href="feedback.html">Написать</a>
+        <p class="feedback__autor">
+          <strong class="feedback__autor feedback__autor--name">Анастасия Красильникова</strong>
+          @misssssiskras
+        </p>
+        <a class="feedback__btn" href="feedback.html">Написать</a>
         <ul class="feedback__list">
           <li class="feedback__item">
             <button class="feedback__button" type="button"></button>
@@ -136,7 +139,8 @@
           </li>
           <li class="contacts__item">
             <p class="contacts__text">
-              <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              <a class="contacts__link contacts__link--email"
+                href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             </p>
           </li>
         </ul>
@@ -148,11 +152,10 @@
             <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
           </li>
         </ul>
-        <a class="contacts__link contacts__link--map" href="#">
-          <img class="contacts__map" src="http://placehold.it/320x457" alt="Найти нас на карте" width="320"
-            height="457">
-        </a>
-        <a class="contacts__link contacts__link--write btn" href="writeus.html">Напишите нам</a>
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6207923584657!2d30.322296380205458!3d59.938434327140655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1554821566810!5m2!1sru!2sua"
+          width="320" height="457" allowfullscreen></iframe>
+        <a class="contacts__link contacts__link--write" href="writeus.html">Напишите нам</a>
       </div>
     </section>
   </main>
@@ -162,25 +165,31 @@
         <ul class="footer__list">
           <li class="footer__item social">
             <a class="social__link" href="#" alt="магазин Мишка в Инстаграмме">
-              <span class="visually-hidden">Инстаграм</span>
+              <span class="social__icon social__icon--insta"></span>
             </a>
           </li>
           <li class="footer__item social">
             <a class="social__link" href="#" alt="магазин Мишка на Фейсбуке">
-              <span class="visually-hidden">Фейсбук</span>
+              <span class="social__icon social__icon--fb"></span>
             </a>
           </li>
           <li class="footer__item social">
             <a class="social__link" href="#" alt="магазин Мишка в Твиттере">
-              <span class="visually-hidden">Твиттер</span>
+              <span class="social__icon social__icon--tw"></span>
             </a>
           </li>
         </ul>
       </div>
       <div class="footer__copyright">
         <p class="footer__text">Разработано</p>
-        <a class="footer__link footer__link--academy" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">HTML Academy</span>
+        <a class="footer__link footer__link--academy" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Профессиональный онлайн-курс HTML и CSS, уровень 2">
+          <span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="27" height="34">
+              <path fill="#63d1bb"
+                d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+            </svg>
+          </span>
         </a>
       </div>
     </div>
