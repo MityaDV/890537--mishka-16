@@ -7,19 +7,6 @@
   padding: 0 0 0 90px;
 }
 
-.production__button {
-  @include btn();
-  width: 192px;
-  margin: 0 auto;
-
-  &--play {
-    width: 101px;
-    height: 77px;
-    border: none;
-    background: url("../img/icon-play.svg") no-repeat 0 0;
-  }
-}
-
 .production__caption {
   padding: 0 43px 0 34px;
   font-size: 1.4rem;

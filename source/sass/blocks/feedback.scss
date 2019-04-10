@@ -29,10 +29,6 @@
   }
 }
 
-.feedback__btn {
-  @include btn();
-}
-
 .feedback__list {
   @include list();
 }

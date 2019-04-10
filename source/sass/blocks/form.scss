@@ -15,9 +15,3 @@
   font-weight: $font_weight_normal;
   color: $greyish-brown;
 }
-
-.form__button {
-  @include btn();
-
-  font-size: 1.9rem;
-}

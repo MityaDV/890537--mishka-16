@@ -22,10 +22,6 @@
   &--email {
     color: $greyish-brown;
   }
-
-  &--write {
-    @include btn();
-  }
 }
 
 .contacts__map {
