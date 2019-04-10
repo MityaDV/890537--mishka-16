@@ -5,7 +5,7 @@
 }
 
 @mixin fixed_inner() {
-  width: 100%;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -20,11 +20,11 @@
   display: block;
   width: 100%;
   min-height: 52px;
-  padding: 20px 0;
+  padding: 14px 0;
 
   text-align: center;
-  font-size: 2rem;
-  line-height: 0.4;
+  font-size: 1.9rem;
+  line-height: 0.94;
   font-weight: $font_weight_bold;
   text-transform: uppercase;
   color: $greyish_brown;

@@ -5,23 +5,23 @@
   @include btn();
 
   &--buy {
-    font-size: 1.9rem;
+    line-height: 1.18;
+  }
+
+  &--write {
+    font-size: 2rem;
+    line-height: 1.11;
   }
 
   &--play {
     width: 101px;
     height: 77px;
     border: none;
-    background: url("../img/icon-play.svg") no-repeat 0 0;
+    background: transparent url("../img/icon-play.svg") no-repeat 0 0;
   }
 
   &--order {
     margin: 0 auto;
     width: 192px;
-    font-size: 1.9rem;
-  }
-
-  &--form {
-    font-size: 1.9rem;
   }
 }

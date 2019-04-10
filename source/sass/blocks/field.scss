@@ -29,15 +29,15 @@
   box-shadow: inset 0 -2px 0 0 $dark;
 
   &[type="text"]::placeholder {
-    color: $greyish-brown-30;
+    color: $greyish_brown_30;
   }
 
   &[type="tel"]::placeholder {
-    color: $greyish-brown-30;
+    color: $greyish_brown_30;
   }
 
   &[type="email"]::placeholder {
-    color: $greyish-brown-30;
+    color: $greyish_brown_30;
   }
 }
 
@@ -55,6 +55,6 @@
   resize: none;
 
   &::placeholder {
-    color: $greyish-brown-30;
+    color: $greyish_brown_30;
   }
 }
