@@ -2,7 +2,8 @@
 @import "../base/vars.scss";
 
 .header__navigation {
-  @include fixed_inner();
+  @include inner();
+  min-width: 320px;
 }
 
 .header__list {

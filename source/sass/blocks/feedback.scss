@@ -2,6 +2,8 @@
 @import "../base/vars.scss";
 
 .feedback__inner {
+  padding: $padding_base;
+
   @include inner();
 }
 

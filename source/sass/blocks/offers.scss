@@ -2,6 +2,8 @@
 @import "../base/vars.scss";
 
 .offers__inner {
+  padding: $padding_base;
+
   @include inner();
 }
 

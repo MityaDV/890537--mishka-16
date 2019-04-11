@@ -2,6 +2,8 @@
 @import "../base/vars.scss";
 
 .order__inner {
+  padding: $padding_base;
+
   @include inner();
 }
 
