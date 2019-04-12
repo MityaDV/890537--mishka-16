@@ -2,27 +2,27 @@
 @import "../base/vars.scss";
 
 .field__legend {
-  font-size: 1.9rem;
+  padding: 0 0 10px 0;
+  font-size: $font_size_h3_mobile;
   line-height: 0.94;
   color: $seafoam_blue;
   text-transform: uppercase;
-  padding: 0 0 10px 0;
 }
 
 .field__label {
   padding: 10px 0 10px 0;
-  font-size: 1.9rem;
+  font-size: $font_size_h3_mobile;
   line-height: 1.06;
 }
 
 .field__input {
   width: 100%;
   margin: 0;
-  padding: 18px 0 17px 0;
+  padding: 18px 0;
 
   font-family: $font_family_base, $font_family_extra;
   font-weight: $font_weight_normal;
-  font-size: 1.9rem;
+  font-size: $font_size_h3_mobile;
   line-height: 1.06;
 
   border: none;
@@ -48,7 +48,7 @@
 
   font-family: $font_family_base, $font_family_extra;
   font-weight: $font_weight_normal;
-  font-size: 1.9rem;
+  font-size: $font_size_h3_mobile;
   line-height: 1.06;
 
   border: solid 2px $greyish_brown;

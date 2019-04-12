@@ -12,20 +12,9 @@
 
 .footer__list {
   @include list();
-
-  display: flex;
-  justify-content: space-around;
-  padding: 25px 0 0 0;
 }
 
 .footer__text {
-  font-size: 1.9rem;
   line-height: 0.95;
   text-align: left;
-}
-
-.footer__copyright {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }

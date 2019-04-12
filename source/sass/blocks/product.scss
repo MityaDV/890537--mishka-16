@@ -2,8 +2,7 @@
 @import "../base/vars.scss";
 
 .product__price {
-  color: $greyish_brown;
-  text-align: center;
-  font-size: 1.9rem;
   line-height: 1.41;
+  text-align: center;
+  color: $greyish_brown;
 }

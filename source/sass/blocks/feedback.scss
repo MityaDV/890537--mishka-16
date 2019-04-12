@@ -2,24 +2,19 @@
 @import "../base/vars.scss";
 
 .feedback__inner {
-  padding: $padding_base;
-
   @include inner();
 }
 
 .feedback__title {
-  font-size: 2.8rem;
   line-height: 1.2;
 }
 
 .feedback__text {
-  font-size: 1.7rem;
   line-height: 2;
   font-weight: $font_weight_normal;
 }
 
 .feedback__autor {
-  font-size: 1.9rem;
   line-height: 1.76;
   font-weight: $font_weight_normal;
   color: $greyish_brown;
@@ -33,4 +28,19 @@
 
 .feedback__list {
   @include list();
+  padding: 0 0 38px 0;
+}
+
+.feedback__prew {
+  min-width: 130px;
+  min-height: 52px;
+  border: 1px solid $light_gray;
+  background: $white url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
+}
+
+.feedback__next {
+  min-width: 130px;
+  min-height: 52px;
+  border: 1px solid $light_gray;
+  background: $white url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
 }

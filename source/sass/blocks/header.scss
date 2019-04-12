@@ -1,11 +1,6 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.header__navigation {
-  @include inner();
-  min-width: 320px;
-}
-
 .header__list {
   @include list();
 }

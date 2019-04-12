@@ -1,31 +1,35 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.contacts {
+  padding: 40px 0;
+}
+
 .contacts__inner {
   @include inner();
 }
 
 .contacts__title {
-  padding: $padding_base;
-  font-size: 2rem;
   line-height: 1.67;
 }
 
 .contacts__list {
   @include list();
 
-  padding: $padding_base;
   line-height: 2;
   font-weight: $font_weight_normal;
   color: $greyish_brown;
 }
 
 .contacts__link {
+  display: block;
+
   &--email {
     color: $greyish-brown;
   }
 }
 
 .contacts__map {
+  margin: 0 0 39px 0;
   border: none;
 }

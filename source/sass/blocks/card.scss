@@ -2,17 +2,26 @@
 @import "../base/vars.scss";
 
 .card__title {
-  color: $dark;
+  padding: 0 0 0 30px;
   line-height: 1.41;
-  font-size: 1.9rem;
+  color: $dark;
 }
 
 .card__caption {
-  color: $greyish-brown;
-  font-size: 1.4rem;
+  padding: 0 0 0 30px;
   font-weight: $font_weight_normal;
+  color: $greyish-brown;
 }
 
 .card__price {
+  padding: 0 0 0 30px;
   line-height: 1.6;
+}
+
+.card__button {
+  width: 20px;
+  height: 19px;
+  border: none;
+  opacity: 0.2;
+  background: $white url("../../img/icon-cart.svg") no-repeat 50% 50%;
 }
