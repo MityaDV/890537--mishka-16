@@ -9,12 +9,13 @@
 .promo__title {
   margin: 0;
   padding: 70px 39px 120px;
-  line-height: 1.11;
   text-align: center;
   color: $very_dark_brown;
 }
 
 .promo__item {
+  padding: 30px 70px 30px 30px;
+  display: flex;
   background: $seafoam_blue;
 
   &--shade {
@@ -23,9 +24,8 @@
 }
 
 .promo__caption {
+  flex-basis: 110px;
   margin: 0;
-  padding: 30px 30px;
-  line-height: 1.26;
   text-align: left;
   color: $white;
 }

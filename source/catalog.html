@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Форма заказа магазина «Мишка»</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Каталог магазина Мишка</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" as="font">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -15,14 +15,14 @@
       <ul class="header__list">
         <li class="header__logo logo">
           <a class="logo__link" href="index.html">
-            <img src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+            <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
           </a>
           <ul class="header__list submenu">
             <li class="submenu__item">
-              <a class="submenu__link submenu__link--active" href="">Каталог товаров</a>
+              <a class="submenu__link submenu__link--active">Каталог товаров</a>
             </li>
             <li class="submenu__item">
-              <a class="submenu__link" href="">Вязание на заказ</a>
+              <a class="submenu__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="submenu__item search">
               <p class="search__form">
@@ -31,7 +31,7 @@
               </p>
             </li>
             <li class="submenu__item">
-              <a class="submenu__link" href="">Корзина: пока пуста</a>
+              <a class="submenu__link" href="cart.html">Корзина: пока пуста</a>
             </li>
           </ul>
         </li>
@@ -49,10 +49,12 @@
             <h3 class="card__title">Зайчик-попрыгайчик</h3>
           </a>
           <p class="card__caption">Рост 30 см, вес 200 г</p>
-          <p class="card__price">1 200 руб.</p>
-          <button class="card__button" type="button">
-            <svg width="25" height="25"></svg>
-          </button>
+          <div class="card__wrapper">
+            <p class="card__price">1 200 руб.</p>
+            <button class="card__button" type="button">
+              <svg width="25" height="25"></svg>
+            </button>
+          </div>
         </article>
         <article class="catalog__item card">
           <a class="card__link" href="catalog/basket.html">
@@ -61,10 +63,12 @@
             <h3 class="card__title">Корзинка для белья</h3>
           </a>
           <p class="card__caption">Диаметр 15 см, высота 10 см</p>
-          <p class="card__price">690 руб.</p>
-          <button class="card__button" type="button">
-            <svg width="25" height="25"></svg>
-          </button>
+          <div class="card__wrapper">
+            <p class="card__price">690 руб.</p>
+            <button class="card__button" type="button">
+              <svg width="25" height="25"></svg>
+            </button>
+          </div>
         </article>
         <article class="catalog__item card">
           <a class="card__link" href="catalog/big-basket.html">
@@ -73,15 +77,19 @@
             <h3 class="card__title">Большая корзинка для игрушек</h3>
           </a>
           <p class="card__caption">Диаметр 30 см, высота 30 см</p>
-          <p class="card__price">1 500 руб.</p>
-          <button class="card__button" type="button">
-            <svg width="25" height="25"></svg>
-          </button>
+          <div class="card__wrapper">
+            <p class="card__price">1 500 руб.</p>
+            <button class="card__button" type="button">
+              <svg width="25" height="25"></svg>
+            </button>
+          </div>
         </article>
         <section class="catalog__item production">
           <h3 class="production__title">Процесс производства</h3>
-          <video class="production__video" poster="img/video-mobile@1x.jpg" width="260" height="150"></video>
-          <button class="production__button btn btn--play"></button>
+          <div class="production__wrapper">
+            <video class="production__video" poster="img/video-mobile@1x.jpg" autoplay="false"></video>
+            <button class="production__button btn btn--play"></button>
+          </div>
           <p class="production__caption">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
             как появляются наши товары.</p>
           <a class="production__button btn btn--order" href="cart.html">Сделать заказ</a>

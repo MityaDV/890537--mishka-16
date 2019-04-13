@@ -1,13 +1,23 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.footer {
-  padding: 30px 0 0 0;
-}
-
 .footer__inner {
   @include inner();
   background: $seashell;
+}
+
+.footer__social {
+  padding: 25px 60px;
+}
+
+.footer__copyright {
+  padding: 25px 40px;
+}
+
+.footer__list,
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__list {
@@ -15,6 +25,6 @@
 }
 
 .footer__text {
-  line-height: 0.95;
+  margin: 0;
   text-align: left;
 }

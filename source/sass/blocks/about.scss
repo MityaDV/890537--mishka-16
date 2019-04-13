@@ -1,13 +1,16 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.about {
+  padding: 0 0 30px 0;
+}
+
 .about__inner {
   @include inner();
 }
 
 .about__title {
   font-weight: $font_weight_bold;
-  line-height: 1.2;
 }
 
 .about__list {
@@ -15,6 +18,7 @@
 }
 
 .about__caption {
+  margin: 0;
+  padding: 80px 0 0;
   font-weight: $font_weight_bold;
-  line-height: 1.18;
 }

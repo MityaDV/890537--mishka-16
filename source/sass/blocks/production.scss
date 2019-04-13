@@ -2,11 +2,19 @@
 @import "../base/vars.scss";
 
 .production__title {
-  line-height: 1.41;
+  padding: 0 0 0 90px;
+}
+
+.production__wrapper {
+  position: relative;
+}
+
+.production__video {
+  width: 100%;
 }
 
 .production__caption {
-  padding: 0 0 0 30px;
-  line-height: 1.85;
+  margin: 0;
+  padding: 30px 30px;
   font-weight: $font_weight_normal;
 }

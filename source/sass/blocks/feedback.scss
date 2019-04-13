@@ -1,26 +1,25 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.feedback {
+  margin: 0 0 40px;
+}
+
 .feedback__inner {
   @include inner();
 }
 
-.feedback__title {
-  line-height: 1.2;
-}
-
 .feedback__text {
-  line-height: 2;
   font-weight: $font_weight_normal;
 }
 
 .feedback__autor {
-  line-height: 1.76;
+  margin: 0 0 30px 0;
+  padding: 40px 0 0;
   font-weight: $font_weight_normal;
   color: $greyish_brown;
 
   &--name {
-    line-height: 1.41;
     font-weight: $font_weight_bold;
     color: $dark;
   }
@@ -29,6 +28,7 @@
 .feedback__list {
   @include list();
   padding: 0 0 38px 0;
+  display: flex;
 }
 
 .feedback__prew {

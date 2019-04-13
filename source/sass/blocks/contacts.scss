@@ -9,16 +9,23 @@
   @include inner();
 }
 
-.contacts__title {
-  line-height: 1.67;
-}
-
 .contacts__list {
   @include list();
+  display: flex;
+  padding: 0 0 40px 0;
 
-  line-height: 2;
   font-weight: $font_weight_normal;
   color: $greyish_brown;
+}
+
+.contacts__item {
+  &:first-child {
+    padding: 0 17px 0 0;
+  }
+}
+
+.contacts__text {
+  margin: 0;
 }
 
 .contacts__link {

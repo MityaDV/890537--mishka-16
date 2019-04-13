@@ -1,6 +1,10 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.order {
+  padding: 0 0 55px;
+}
+
 .order__inner {
   @include inner();
 }
@@ -9,12 +13,12 @@
   min-height: 177px;
   margin: 0;
   padding: 76px 0 0 0;
-  line-height: 1.11;
   text-align: center;
   background: $seashell;
 }
 
 .order__text {
-  line-height: 1.85;
+  margin: 0;
+  padding: 30px 0;
   font-weight: $font_weight_normal;
 }

@@ -1,6 +1,10 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.catalog {
+  padding: 0 0 60px;
+}
+
 .catalog__inner {
   @include inner();
 }
@@ -9,11 +13,12 @@
   min-height: 177px;
   margin: 0;
   padding: 76px 0 0 0;
-  line-height: 1.11;
   text-align: center;
   background: $seashell;
 }
 
 .catalog__item {
-  padding: 30px 0 0 0;
+  padding: 0 0 30px;
+  margin: 30px 0 0;
+  border: 1px solid $seashell;
 }

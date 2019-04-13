@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" as="font">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -63,18 +63,18 @@
         <p class="offers__flag">Товар недели</p>
         <p class="offers__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
-        <ul class="offers__list">
-          <li class="offers__item">Цвет:</li>
-          <li class="offers__item">«Тиффани»/серый</li>
-        </ul>
-        <ul class="offers__list">
-          <li class="offers__item">Диаметр:</li>
-          <li class="offers__item">25 см</li>
-        </ul>
-        <ul class="offers__list">
-          <li class="offers__item">Высота:</li>
-          <li class="offers__item">15 см</li>
-        </ul>
+        <div class="offers__table">
+          <ul class="offers__list">
+            <li class="offers__item">Цвет:</li>
+            <li class="offers__item">Диаметр:</li>
+            <li class="offers__item">Высота:</li>
+          </ul>
+          <ul class="offers__list">
+            <li class="offers__item">«Тиффани»/серый</li>
+            <li class="offers__item">25 см</li>
+            <li class="offers__item">15 см</li>
+          </ul>
+        </div>
         <div class="offers__card product">
           <img class="product__img" src="img/triple-set-mobile@1x.jpg" alt="товар недели «Вязаные корзинки»" width="260"
             height="315">
@@ -150,7 +150,7 @@
             <p class="contacts__text">адрес:</p>
           </li>
           <li class="contacts__item">
-            <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+            <p class="contacts__text">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
           </li>
         </ul>
         <a class="contacts__link" href="#">
