@@ -1,2 +1,46 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
+
+.feedback {
+  margin: 0 0 40px;
+}
+
+.feedback__inner {
+  @include inner();
+}
+
+.feedback__text {
+  font-weight: $font_weight_normal;
+}
+
+.feedback__autor {
+  margin: 0 0 30px 0;
+  padding: 40px 0 0;
+  font-weight: $font_weight_normal;
+  color: $greyish_brown;
+
+  &--name {
+    font-weight: $font_weight_bold;
+    color: $dark;
+  }
+}
+
+.feedback__list {
+  @include list();
+  padding: 0 0 38px 0;
+  display: flex;
+}
+
+.feedback__prew {
+  min-width: 130px;
+  min-height: 52px;
+  border: 1px solid $light_gray;
+  background: $white url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
+}
+
+.feedback__next {
+  min-width: 130px;
+  min-height: 52px;
+  border: 1px solid $light_gray;
+  background: $white url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
+}

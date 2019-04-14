@@ -2,10 +2,12 @@
 
 $white: #ffffff;
 $seashell: #f1f1f1;
+$light_gray: #ececec;
 
 $dark: #000000;
 $very_dark_brown: #010000;
 $greyish_brown: #444444;
+$greyish_brown_30: rgba(68, 68, 68, 0.3);
 
 $blue_green: #149080;
 $greeny_blue: #56c3b2;
@@ -13,13 +15,46 @@ $seafoam_blue: #63d1bb;
 
 // Шрифты
 
-$font_size_base: 9px;
-$font_size_h1: 3.5rem;
-$font_size_h2: 3rem;
-$font_size_h3: 2rem;
-$font_size_p: 1.7rem;
+$font_size_base: 10px;
+
+$font_size_h1_mobile: 30px;
+$font_size_h2_mobile: 25px;
+$font_size_h3_mobile: 17px;
+$font_size_p_mobile: 16px;
+
+$font_size_h1_tablet: 45px;
+$font_size_h2_tablet: 43px;
+$font_size_h3_tablet: 20px;
+$font_size_p_tablet: 18px;
+
+$font_size_h1_desktop: 55px;
+$font_size_h2_desktop: 53px;
+$font_size_h3_desktop: 20px;
+$font_size_p_desktop: 18px;
+
+$line_height_h1_mobile: 1.3;
+$line_height_h2_mobile: 1.2;
+$line_height_h3_mobile: 1.23;
+$line_height_p_mobile: 1.7;
+
+$line_height_h1_tablet: 1.3;
+$line_height_h2_tablet: 1.2;
+$line_height_h3_tablet: 1.25;
+$line_height_p_tablet: 1.37;
+
+$line_height_h1_desktop: 1.3;
+$line_height_h2_desktop: 1.1;
+$line_height_h3_desktop: 1.25;
+$line_height_p_desktop: 1.37;
+
 $font_weight_normal: 400;
 $font_weight_bold: 700;
 $font_family_base: "Open Sans";
 $font_family_extra: "Tahoma", sans-serif;
 $line_height: 1.37;
+
+//  Отступы
+
+$padding_small: 0 30px;
+$padding_medium: 0 50px;
+$padding_large: 0 50px;

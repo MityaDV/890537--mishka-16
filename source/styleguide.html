@@ -73,7 +73,7 @@
 
   <article class="catalog__item card">
     <a class="card__link" href="catalog/bunny.html">
-      <img class="card__img" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик.">
+      <img class="card__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик.">
       <h3 class="card__title">Зайчик-попрыгайчик</h3>
     </a>
     <p class="card__caption">Рост 30 см, вес 200 г</p>
@@ -87,12 +87,45 @@
 
   <section class="production">
     <h2 class="production__title">Процесс производства</h2>
-    <video class="production__video" poster="http://placehold.it/260x150" width="260" height="150"></video>
-    <button class="product__button product__button--play"></button>
-    <p class="production__caption">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-      появляются наши товары.</p>
-    <button class="product__button btn" type="button">Сделать заказ</button>
+    <video class="production__video" poster="img/video-mobile@1x.jpg" width="260" height="150"></video>
+    <button class="production__button btn btn--play"></button>
+    <p class="production__caption">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+      как появляются наши товары.</p>
+    <a class="production__button btn" href="cart.html">Сделать заказ</a>
   </section>
+
+  <!-- кнопки -->
+
+  <button class="product__button btn" type="button">Заказать</button>
+
+  <style>
+  .btn {
+    display: block;
+    width: 292px;
+    min-height: 52px;
+    padding: 0;
+    text-align: center;
+    font-family: "Tahoma", sans-serif;
+    font-size: 17px;
+    line-height: 1.18;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444444;
+
+    border: solid 2px #444444;
+    background: white;
+  }
+
+  .btn:hover {
+    background: #444444;
+    color: white;
+  }
+
+  .btn:active {
+    background: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  </style>
 
 </body>
 

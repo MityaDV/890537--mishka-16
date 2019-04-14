@@ -1,18 +1,36 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.card__img {
+  width: 100%;
+}
+
 .card__title {
+  text-align: left;
+  padding: 0 0 0 30px;
   color: $dark;
-  line-height: 1.41;
-  font-size: 1.9rem;
 }
 
 .card__caption {
-  color: $greyish-brown;
-  font-size: 1.4rem;
+  padding: 0 0 0 30px;
   font-weight: $font_weight_normal;
+  color: $greyish-brown;
+}
+
+.card__wrapper {
+  padding: 0 30px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card__price {
-  line-height: 1.6;
+  margin: 0;
+}
+
+.card__button {
+  width: 20px;
+  height: 19px;
+  border: none;
+  opacity: 0.2;
+  background: $white url("../../img/icon-cart.svg") no-repeat 50% 50%;
 }

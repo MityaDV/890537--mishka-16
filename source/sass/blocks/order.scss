@@ -1,2 +1,24 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
+
+.order {
+  padding: 0 0 55px;
+}
+
+.order__inner {
+  @include inner();
+}
+
+.order__title {
+  min-height: 177px;
+  margin: 0;
+  padding: 76px 0 0 0;
+  text-align: center;
+  background: $seashell;
+}
+
+.order__text {
+  margin: 0;
+  padding: 30px 0;
+  font-weight: $font_weight_normal;
+}

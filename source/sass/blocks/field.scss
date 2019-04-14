@@ -1,0 +1,60 @@
+@import "../base/mixins.scss";
+@import "../base/vars.scss";
+
+.field__legend {
+  padding: 0 0 10px 0;
+  font-size: $font_size_h3_mobile;
+  line-height: 0.94;
+  color: $seafoam_blue;
+  text-transform: uppercase;
+}
+
+.field__label {
+  padding: 10px 0 10px 0;
+  font-size: $font_size_h3_mobile;
+  line-height: 1.06;
+}
+
+.field__input {
+  width: 100%;
+  margin: 0;
+  padding: 18px 0;
+
+  font-family: $font_family_base, $font_family_extra;
+  font-weight: $font_weight_normal;
+  font-size: $font_size_h3_mobile;
+  line-height: 1.06;
+
+  border: none;
+  box-shadow: inset 0 -2px 0 0 $dark;
+
+  &[type="text"]::placeholder {
+    color: $greyish_brown_30;
+  }
+
+  &[type="tel"]::placeholder {
+    color: $greyish_brown_30;
+  }
+
+  &[type="email"]::placeholder {
+    color: $greyish_brown_30;
+  }
+}
+
+.field__textarea {
+  width: 100%;
+  min-height: 142px;
+  padding: 18px 70px 0 17px;
+
+  font-family: $font_family_base, $font_family_extra;
+  font-weight: $font_weight_normal;
+  font-size: $font_size_h3_mobile;
+  line-height: 1.06;
+
+  border: solid 2px $greyish_brown;
+  resize: none;
+
+  &::placeholder {
+    color: $greyish_brown_30;
+  }
+}

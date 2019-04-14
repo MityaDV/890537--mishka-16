@@ -6,12 +6,25 @@
   background: $seashell;
 }
 
+.footer__social {
+  padding: 25px 60px;
+}
+
+.footer__copyright {
+  padding: 25px 40px;
+}
+
+.footer__list,
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer__list {
   @include list();
 }
 
 .footer__text {
-  font-size: 1.9rem;
-  line-height: 0.95;
+  margin: 0;
   text-align: left;
 }

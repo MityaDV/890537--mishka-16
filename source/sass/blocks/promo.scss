@@ -2,25 +2,20 @@
 @import "../base/vars.scss";
 
 .promo {
-  background: url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
-  min-height: 373px;
-  padding: 93px 0 0 0;
+  margin: 0 0 34px 0;
+  background: $light_gray url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
 }
 
 .promo__title {
-  color: $very_dark_brown;
-  text-align: center;
-  line-height: 1.11;
   margin: 0;
-  padding: 0 0 60px 0;
-  font-size: 2.9rem;
-}
-
-.promo__list {
-  padding: 60px 0 0 0;
+  padding: 70px 39px 120px;
+  text-align: center;
+  color: $very_dark_brown;
 }
 
 .promo__item {
+  padding: 30px 70px 30px 30px;
+  display: flex;
   background: $seafoam_blue;
 
   &--shade {
@@ -29,14 +24,8 @@
 }
 
 .promo__caption {
-  color: $white;
-  line-height: 1.26;
-  font-size: 2.1rem;
+  flex-basis: 110px;
   margin: 0;
   text-align: left;
-  padding: 30px 0 30px 29px;
-}
-
-.promo__inner {
-  @include inner();
+  color: $white;
 }

@@ -1,31 +1,31 @@
 @import "vars";
 
-html {
-  font-size: $font_size_base;
-}
-
 body {
   font-weight: $font_weight_bold;
-  font-size: 2rem;
+  font-size: $font_size_base;
   line-height: $line_height;
   font-family: $font_family_base, $font_family_extra;
   color: $dark;
 }
 
 h1 {
-  font-size: $font_size_h1;
+  font-size: $font_size_h1_mobile;
+  line-height: $line_height_h1_mobile;
 }
 
 h2 {
-  font-size: $font_size_h2;
+  font-size: $font_size_h2_mobile;
+  line-height: $line_height_h2_mobile;
 }
 
 h3 {
-  font-size: $font_size_h3;
+  font-size: $font_size_h3_mobile;
+  line-height: $line_height_h3_mobile;
 }
 
 p {
-  font-size: $font_size_p;
+  font-size: $font_size_p_mobile;
+  line-height: $line_height_p_mobile;
 }
 
 a {

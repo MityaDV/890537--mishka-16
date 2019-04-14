@@ -1,20 +1,10 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.header__navigation {
-  @include inner();
-}
-
 .header__list {
   @include list();
-
-  padding: 22px 0;
 }
 
 .header__logo {
   text-align: center;
-}
-
-.logo__link {
-  display: block;
 }

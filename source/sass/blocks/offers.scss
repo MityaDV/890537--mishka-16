@@ -1,36 +1,45 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.offers {
+  padding: 0 0 30px 0;
+}
+
 .offers__inner {
   @include inner();
 }
 
 .offers__title {
-  font-size: 2.8rem;
-  line-height: 1.2;
+  margin: 0;
   text-align: left;
 }
 
 .offers__flag {
-  color: $seafoam_blue;
+  margin: 0;
   text-transform: uppercase;
-  font-size: 1.9rem;
-  line-height: 1.18;
   text-align: left;
+  color: $seafoam_blue;
 }
 
 .offers__text {
-  color: $greyish_brown;
   font-weight: $font_weight_normal;
-  line-height: 1.6;
+  color: $greyish_brown;
+}
+
+.offers__table {
+  display: flex;
+  padding: 0 0 30px 0;
 }
 
 .offers__list {
-  color: $greyish_brown;
-
   @include list();
 
-  line-height: 1.33;
+  &:first-child {
+    padding: 0 30px 0 0;
+  }
+
+  font-size: $font_size_p_mobile;
+  line-height: $line_height_p_mobile;
   font-weight: $font_weight_normal;
-  font-size: $font_size_p;
+  color: $greyish_brown;
 }

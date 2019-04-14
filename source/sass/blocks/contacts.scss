@@ -1,2 +1,42 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
+
+.contacts {
+  padding: 40px 0;
+}
+
+.contacts__inner {
+  @include inner();
+}
+
+.contacts__list {
+  @include list();
+  display: flex;
+  padding: 0 0 40px 0;
+
+  font-weight: $font_weight_normal;
+  color: $greyish_brown;
+}
+
+.contacts__item {
+  &:first-child {
+    padding: 0 17px 0 0;
+  }
+}
+
+.contacts__text {
+  margin: 0;
+}
+
+.contacts__link {
+  display: block;
+
+  &--email {
+    color: $greyish-brown;
+  }
+}
+
+.contacts__map {
+  margin: 0 0 39px 0;
+  border: none;
+}

@@ -1,12 +1,12 @@
 @mixin inner() {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: $padding_small;
 }
 
 @mixin fixed_inner() {
   width: 100%;
-  margin: 0 auto;
+  padding: $padding_small;
 }
 
 @mixin list() {
@@ -14,4 +14,21 @@
   padding: 0;
 
   list-style: none;
+}
+
+@mixin btn() {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  padding: 14px 0;
+
+  text-align: center;
+  font-size: $font_size_h3_mobile;
+  line-height: $line_height_h3_mobile;
+  font-weight: $font_weight_bold;
+  text-transform: uppercase;
+  color: $greyish_brown;
+
+  border: solid 2px $greyish-brown;
+  background: $white;
 }

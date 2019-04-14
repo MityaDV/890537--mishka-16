@@ -1,0 +1,17 @@
+@import "../base/mixins.scss";
+@import "../base/vars.scss";
+
+.search__form {
+  margin: 0;
+}
+
+.search__input {
+  border: none;
+
+  &[type="text"]::placeholder {
+    color: $dark;
+    font-size: $font_size_h3_mobile;
+    line-height: $line_height_h3_mobile;
+    font-weight: $font_weight_bold;
+  }
+}

@@ -1,2 +1,20 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
+
+.production__title {
+  padding: 0 0 0 90px;
+}
+
+.production__wrapper {
+  position: relative;
+}
+
+.production__video {
+  width: 100%;
+}
+
+.production__caption {
+  margin: 0;
+  padding: 30px 30px;
+  font-weight: $font_weight_normal;
+}
