@@ -6,7 +6,7 @@
 }
 
 .about__inner {
-  @include inner();
+  @include inner;
 }
 
 .about__title {
@@ -14,7 +14,7 @@
 }
 
 .about__list {
-  @include list();
+  @include list;
 }
 
 .about__caption {

@@ -6,11 +6,12 @@
 }
 
 .contacts__inner {
-  @include inner();
+  @include inner;
 }
 
 .contacts__list {
-  @include list();
+  @include list;
+
   display: flex;
   padding: 0 0 40px 0;
 

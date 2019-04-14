@@ -6,7 +6,7 @@
 }
 
 .feedback__inner {
-  @include inner();
+  @include inner;
 }
 
 .feedback__text {
@@ -26,7 +26,7 @@
 }
 
 .feedback__list {
-  @include list();
+  @include list;
   padding: 0 0 38px 0;
   display: flex;
 }

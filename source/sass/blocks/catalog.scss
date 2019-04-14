@@ -6,7 +6,7 @@
 }
 
 .catalog__inner {
-  @include inner();
+  @include inner;
 }
 
 .catalog__title {

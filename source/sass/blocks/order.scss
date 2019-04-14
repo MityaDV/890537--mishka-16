@@ -6,7 +6,7 @@
 }
 
 .order__inner {
-  @include inner();
+  @include inner;
 }
 
 .order__title {

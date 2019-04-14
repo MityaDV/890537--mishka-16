@@ -2,7 +2,8 @@
 @import "../base/vars.scss";
 
 .footer__inner {
-  @include inner();
+  @include inner;
+
   background: $seashell;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .footer__list {
-  @include list();
+  @include list;
 }
 
 .footer__text {

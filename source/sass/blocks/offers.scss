@@ -6,7 +6,7 @@
 }
 
 .offers__inner {
-  @include inner();
+  @include inner;
 }
 
 .offers__title {
@@ -32,7 +32,7 @@
 }
 
 .offers__list {
-  @include list();
+  @include list;
 
   &:first-child {
     padding: 0 30px 0 0;
