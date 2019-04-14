@@ -2,10 +2,20 @@
 @import "../base/vars.scss";
 
 .logo {
-  box-shadow: 0 1px 0 0 $light_gray, inset 0 1px 0 0 $light_gray;
+  padding: 22px 0;
+  text-align: center;
+  flex: 1 0 auto;
 }
 
 .logo__link {
-  padding: 22px 0;
   display: block;
+
+  @media (min-width: $width_tablet) {
+    & .logo__img {
+      opacity: 0;
+    }
+    width: 112px;
+    height: 46px;
+    background: $white url("../img/logo-tablet.svg") no-repeat 50% 0;
+  }
 }

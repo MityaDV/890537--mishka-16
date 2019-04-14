@@ -1,16 +1,52 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.header__navigation {
+  @media (min-width: $width_tablet) {
+    padding: $padding_medium;
+  }
+}
+
 .header__list {
-  @include list();
+  @include list;
 
   @media (min-width: $width_tablet) {
-    .header__list {
-      display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    height: 88px;
+  }
+}
+
+.header__item {
+  min-height: 79px;
+  padding: 30px 30px 30px;
+  text-align: left;
+  line-height: $line_height_h3_mobile;
+  font-size: $font_size_h3_mobile;
+  box-shadow: 0 1px 0 0 $light_gray, inset 0 1px 0 0 $light_gray;
+
+  @media (min-width: $width_tablet) {
+    min-height: 88px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    &:nth-child(2) {
+      order: 3;
+    }
+
+    &:nth-child(3) {
+      order: 4;
+    }
+
+    &:nth-child(5) .header__link {
+      padding: 0 0 0 50px;
     }
   }
 }
 
-.header__logo {
-  text-align: center;
+.header__link {
+  padding: 0 0 0 40px;
+  display: block;
+  color: $dark;
 }

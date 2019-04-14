@@ -4,6 +4,21 @@
 .promo {
   margin: 0 0 34px 0;
   background: $light_gray url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+
+  @media (min-width: $width_tablet) {
+    min-height: 746px;
+    padding: $padding_medium;
+    background: $light_gray url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
+  }
+}
+
+.promo__inner {
+  @media (min-width: $width_tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 746px;
+  }
 }
 
 .promo__title {
@@ -11,6 +26,19 @@
   padding: 70px 39px 120px;
   text-align: center;
   color: $very_dark_brown;
+}
+
+.promo__list {
+  @media (min-width: $width_tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.promo__link {
+  @media (min-width: $width_tablet) {
+    flex-basis: 50%;
+  }
 }
 
 .promo__item {
