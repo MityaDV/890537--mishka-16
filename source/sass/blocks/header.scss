@@ -1,9 +1,14 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
-@import "../base/normalize.scss";
 
 .header__list {
   @include list();
+
+  @media (min-width: $width_tablet) {
+    .header__list {
+      display: flex;
+    }
+  }
 }
 
 .header__logo {
