@@ -26,6 +26,10 @@
   padding: 70px 39px 120px;
   text-align: center;
   color: $very_dark_brown;
+
+  @media (min-width: $width_tablet) {
+    padding: 161px 85px 0;
+  }
 }
 
 .promo__list {

@@ -11,21 +11,41 @@ body {
 h1 {
   font-size: $font_size_h1_mobile;
   line-height: $line_height_h1_mobile;
+
+  @media (min-width: $width_tablet) {
+    font-size: $font_size_h1_tablet;
+    line-height: $line_height_h1_tablet;
+  }
 }
 
 h2 {
   font-size: $font_size_h2_mobile;
   line-height: $line_height_h2_mobile;
+
+  @media (min-width: $width_tablet) {
+    font-size: $font_size_h2_tablet;
+    line-height: $line_height_h2_tablet;
+  }
 }
 
 h3 {
   font-size: $font_size_h3_mobile;
   line-height: $line_height_h3_mobile;
+
+  @media (min-width: $width_tablet) {
+    font-size: $font_size_h3_tablet;
+    line-height: $line_height_h3_tablet;
+  }
 }
 
 p {
   font-size: $font_size_p_mobile;
   line-height: $line_height_p_mobile;
+
+  @media (min-width: $width_tablet) {
+    font-size: $font_size_p_tablet;
+    line-height: $line_height_p_tablet;
+  }
 }
 
 a {

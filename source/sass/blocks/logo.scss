@@ -2,20 +2,27 @@
 @import "../base/vars.scss";
 
 .logo {
-  padding: 22px 0;
-  text-align: center;
-  flex: 1 0 auto;
+  min-height: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $width_tablet) {
+    justify-content: flex-start;
+    margin-right: auto;
+  }
 }
 
 .logo__link {
   display: block;
 
   @media (min-width: $width_tablet) {
-    & .logo__img {
-      opacity: 0;
-    }
     width: 112px;
     height: 46px;
     background: $white url("../img/logo-tablet.svg") no-repeat 50% 0;
+
+    & .logo__img {
+      opacity: 0;
+    }
   }
 }
