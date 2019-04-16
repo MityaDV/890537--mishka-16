@@ -19,7 +19,7 @@
   @media (min-width: $width_tablet) {
     width: 112px;
     height: 46px;
-    background: $white url("../img/logo-tablet.svg") no-repeat 50% 0;
+    background: $color_white url("../img/logo-tablet.svg") no-repeat 50% 0;
 
     & .logo__img {
       opacity: 0;

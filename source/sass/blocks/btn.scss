@@ -10,14 +10,14 @@
   }
 
   &--play {
+    height: 77px;
+    width: 101px;
     position: absolute;
     margin: auto;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    width: 101px;
-    height: 77px;
     border: none;
     background: transparent url("../img/icon-play.svg") no-repeat 0 0;
   }

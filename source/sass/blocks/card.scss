@@ -8,13 +8,13 @@
 .card__title {
   text-align: left;
   padding: 0 0 0 30px;
-  color: $dark;
+  color: $color_black;
 }
 
 .card__caption {
   padding: 0 0 0 30px;
   font-weight: $font_weight_normal;
-  color: $greyish-brown;
+  color: $color_greyish_brown;
 }
 
 .card__wrapper {
@@ -32,5 +32,5 @@
   height: 19px;
   border: none;
   opacity: 0.2;
-  background: $white url("../../img/icon-cart.svg") no-repeat 50% 50%;
+  background: $color_white url("../../img/icon-cart.svg") no-repeat 50% 50%;
 }

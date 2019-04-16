@@ -35,7 +35,7 @@
   text-align: left;
   line-height: $line_height_h3_mobile;
   font-size: $font_size_h3_mobile;
-  box-shadow: 0 1px 0 0 $light_gray, inset 0 1px 0 0 $light_gray;
+  box-shadow: 0 1px 0 0 $color_gray_lighten, inset 0 1px 0 0 $color_gray_lighten;
 
   &--supplies,
   &--sale,
@@ -64,7 +64,7 @@
 .header__link {
   padding: 0 0 0 40px;
   display: block;
-  color: $dark;
+  color: $color_black;
 
   @media (min-width: $width_tablet) {
     padding: 0;
