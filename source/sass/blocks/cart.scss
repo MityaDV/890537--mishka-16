@@ -1,0 +1,6 @@
+@import "../base/mixins.scss";
+@import "../base/vars.scss";
+
+.cart {
+  background: $color_white url("../img/icon-cart.svg") no-repeat 50% 50%;
+}
