@@ -1,27 +1,70 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.offers {
-  padding: 0 0 30px 0;
-}
-
 .offers__inner {
   @include inner;
+
+  margin: 0 0 30px;
+  position: relative;
+
+  @media (min-width: $width_tablet) {
+    padding: $padding_medium;
+    position: relative;
+  }
+
+  @media (min-width: $width_tablet) {
+    &::after {
+      content: "Товар недели";
+      position: absolute;
+      top: 10px;
+      right: 80px;
+      width: 70px;
+      font-size: $font_size_p_tablet;
+      line-height: 1;
+      text-transform: uppercase;
+      text-align: center;
+      color: $color_seafoam_blue;
+    }
+  }
 }
 
 .offers__title {
   margin: 0;
-  text-align: left;
+  padding: 0 0 40px;
+  position: relative;
+
+  &::after {
+    content: "Товар недели";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 135px;
+    font-size: $font_size_p_mobile;
+    text-transform: uppercase;
+    color: $color_seafoam_blue;
+  }
+
+  @media (min-width: $width_tablet) {
+    padding: 0 0 50px;
+  }
+
+  @media (min-width: $width_tablet) {
+    &::after {
+      content: "";
+    }
+  }
 }
 
-.offers__flag {
-  margin: 0;
-  text-transform: uppercase;
-  text-align: left;
-  color: $color_seafoam_blue;
+.offers__wrapper {
+  @media (min-width: $width_tablet) {
+    width: 50%;
+    padding: 0 40px 0 0;
+  }
 }
 
 .offers__text {
+  margin: 0;
+  padding: 0 0 25px;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 }
@@ -34,12 +77,37 @@
 .offers__list {
   @include list;
 
-  &:first-child {
-    padding: 0 30px 0 0;
-  }
-
   font-size: $font_size_p_mobile;
   line-height: $line_height_p_mobile;
   font-weight: $font_weight_normal;
+  color: $color_greyish_brown;
+
+  &:first-child {
+    padding: 0 30px 0 0;
+  }
+}
+
+.offers__card {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $width_tablet) {
+    position: absolute;
+    top: 110px;
+    right: 50px;
+    width: 333px;
+    height: 404px;
+    background: url("../../img/triple-set-tablet@1x.jpg") no-repeat 0 0;
+  }
+}
+
+.offers__img {
+  @media (min-width: $width_tablet) {
+    opacity: 0;
+  }
+}
+
+.offers__price {
+  text-align: center;
   color: $color_greyish_brown;
 }
