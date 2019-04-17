@@ -26,8 +26,16 @@
       left: 0;
       width: 100%;
       min-height: 88px;
-      background: $color_bg_header repeat-x 0 0;
+      background: $color_bg_header;
       z-index: -1;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &--bg {
+      &::before {
+        background: $color_gray_lightest;
+      }
     }
   }
 }

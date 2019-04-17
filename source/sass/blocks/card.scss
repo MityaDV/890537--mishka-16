@@ -1,24 +1,62 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.card__wrapper-img {
+  @media (min-width: $width_tablet) {
+    flex-basis: 50%;
+  }
+
+  @media (min-width: $width_tablet) {
+    &--hare {
+      background: url("../img/photo-hare-tablet@1x.jpg") no-repeat 50% 0;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &--bowl {
+      background: url("../img/photo-bowl-tablet@1x.jpg") no-repeat 50% 0;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &--toys {
+      background: url("../img/photo-toys-tablet@1x.jpg") no-repeat 50% 0;
+    }
+  }
+}
+
 .card__img {
   width: 100%;
+
+  @media (min-width: $width_tablet) {
+    opacity: 0;
+  }
+}
+
+.card__wrapper-feature {
+  padding: 25px;
+
+  @media (min-width: $width_tablet) {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card__title {
-  text-align: left;
-  padding: 0 0 0 30px;
+  margin: 0;
   color: $color_black;
 }
 
 .card__caption {
-  padding: 0 0 0 30px;
+  margin: 0;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 }
 
-.card__wrapper {
-  padding: 0 30px 0;
+.card__wrapper-price {
+  padding: 30px 0 0;
+  margin: auto 0 0;
   display: flex;
   justify-content: space-between;
 }
