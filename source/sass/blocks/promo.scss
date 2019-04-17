@@ -27,7 +27,7 @@
   color: $color_dark_brown;
 
   @media (min-width: $width_tablet) {
-    padding: 80px 85px 180px;
+    padding: 80px 85px 220px;
   }
 }
 
@@ -35,7 +35,7 @@
   @media (min-width: $width_tablet) {
     display: flex;
     justify-content: space-between;
-    padding: 180px 0 0;
+    padding: 220px 0 0;
   }
 }
 
