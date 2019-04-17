@@ -2,22 +2,21 @@
 @import "../base/vars.scss";
 
 .promo {
-  margin: 0 0 34px 0;
   background: $color_gray_lighten url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
 
   @media (min-width: $width_tablet) {
-    min-height: 746px;
     padding: $padding_medium;
     background: $color_gray_lighten url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
   }
 }
 
 .promo__inner {
+  margin: 0 0 34px 0;
+
   @media (min-width: $width_tablet) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 746px;
   }
 }
 
@@ -28,7 +27,7 @@
   color: $color_dark_brown;
 
   @media (min-width: $width_tablet) {
-    padding: 161px 85px 0;
+    padding: 80px 85px 180px;
   }
 }
 
@@ -36,6 +35,7 @@
   @media (min-width: $width_tablet) {
     display: flex;
     justify-content: space-between;
+    padding: 180px 0 0;
   }
 }
 

@@ -20,9 +20,11 @@
     width: 112px;
     height: 46px;
     background: $color_white url("../img/logo-tablet.svg") no-repeat 50% 0;
+  }
+}
 
-    & .logo__img {
-      opacity: 0;
-    }
+.logo__img {
+  @media (min-width: $width_tablet) {
+    opacity: 0;
   }
 }
