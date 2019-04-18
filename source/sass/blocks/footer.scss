@@ -5,6 +5,28 @@
   @include inner;
 
   background: $color_gray_lightest;
+
+  @media (min-width: $width_tablet) {
+    padding: $padding_medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: $width_tablet) {
+    display: block;
+  }
+}
+
+.footer__list {
+  @include list;
+
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer__social {
@@ -13,19 +35,10 @@
 
 .footer__copyright {
   padding: 25px 40px;
-}
-
-.footer__list,
-.footer__copyright {
   display: flex;
-  justify-content: space-between;
-}
-
-.footer__list {
-  @include list;
+  justify-content: space-around;
 }
 
 .footer__text {
   margin: 0;
-  text-align: left;
 }

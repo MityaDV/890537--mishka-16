@@ -1,30 +1,26 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.logo {
-  min-height: 79px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: $width_tablet) {
-    justify-content: flex-start;
-    margin-right: auto;
-  }
-}
-
 .logo__link {
   display: block;
 
   @media (min-width: $width_tablet) {
     width: 112px;
     height: 46px;
-    background: $color_white url("../img/logo-tablet.svg") no-repeat 50% 0;
+    background: $color_white url("../img/logo-tablet.svg") no-repeat 0 0;
+  }
+
+  @media (min-width: $width_tablet) {
+    &--tg {
+      width: 102px;
+      height: 34px;
+      background: $color_gray_lightest url("../img/logo-mobile.svg") no-repeat 0 0;
+    }
   }
 }
 
 .logo__img {
   @media (min-width: $width_tablet) {
-    opacity: 0;
+    display: none;
   }
 }
