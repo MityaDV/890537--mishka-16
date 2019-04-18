@@ -1,24 +1,69 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.card__link {
+  display: block;
+
+  @media (min-width: $width_tablet) {
+    flex-basis: 50%;
+    min-height: 334px;
+  }
+
+  @media (min-width: $width_tablet) {
+    &--hare {
+      background: url("../img/photo-hare-tablet@1x.jpg") no-repeat 0 0;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &--bowl {
+      background: url("../img/photo-bowl-tablet@1x.jpg") no-repeat 0 0;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &--toys {
+      background: url("../img/photo-toys-tablet@1x.jpg") no-repeat 0 0;
+    }
+  }
+}
+
 .card__img {
   width: 100%;
+
+  @media (min-width: $width_tablet) {
+    display: none;
+  }
+}
+
+.card__wrapper-feature {
+  padding: 25px;
+
+  @media (min-width: $width_tablet) {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card__title {
-  text-align: left;
-  padding: 0 0 0 30px;
-  color: $dark;
+  margin: 0;
+  color: $color_black;
+
+  @media (min-width: $width_tablet) {
+    padding: 0 0 15px;
+  }
 }
 
 .card__caption {
-  padding: 0 0 0 30px;
+  margin: 0;
   font-weight: $font_weight_normal;
-  color: $greyish-brown;
+  color: $color_greyish_brown;
 }
 
-.card__wrapper {
-  padding: 0 30px 0;
+.card__wrapper-price {
+  padding: 30px 0 0;
+  margin: auto 0 0;
   display: flex;
   justify-content: space-between;
 }
@@ -28,9 +73,8 @@
 }
 
 .card__button {
-  width: 20px;
-  height: 19px;
+  width: 30px;
+  height: 30px;
   border: none;
   opacity: 0.2;
-  background: $white url("../../img/icon-cart.svg") no-repeat 50% 50%;
 }

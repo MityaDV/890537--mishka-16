@@ -1,17 +1,32 @@
 // Цвета
 
-$white: #ffffff;
-$seashell: #f1f1f1;
-$light_gray: #ececec;
+$color_white: #ffffff;
+$color_white_15: rgba(255, 255, 255, 0.15);
 
-$dark: #000000;
-$very_dark_brown: #010000;
-$greyish_brown: #444444;
-$greyish_brown_30: rgba(68, 68, 68, 0.3);
+$color_black_lighten_25: rgba(0, 0, 0, 0.25);
+$color_black_light: #010000;
+$color_black: #000000;
+$color_black_60: rgba(0, 0, 0, 0.6);
 
-$blue_green: #149080;
-$greeny_blue: #56c3b2;
-$seafoam_blue: #63d1bb;
+$color_gray_lightest: #f2f2f2;
+$color_gray_lighten: #ececec;
+$color_gray_light: #c6c6c6;
+$color_gray_dark: #666666;
+$color_gray_darken: #222222;
+$color_gray_darkest: #111111;
+
+$color_bg_header: #f9f9f9;
+$color_greyish_brown: #444444;
+$color_greyish_brown_30: rgba(68, 68, 68, 0.3);
+$color_dark_brown: #010000;
+
+$color_seafoam_blue: #62d1bb;
+$color_greeny_blue: #46c1ae;
+$color_greeny_blue_30: rgba(71, 193, 175, 0.3);
+$color_aqua_marine: #56c3b2;
+$color_blue_green: #149080;
+
+$color_leaf: #68b738;
 
 // Шрифты
 
@@ -58,3 +73,8 @@ $line_height: 1.37;
 $padding_small: 0 30px;
 $padding_medium: 0 50px;
 $padding_large: 0 50px;
+
+// Значения вьюпортов
+
+$width_tablet: 768px;
+$width_desktop: 1140px;

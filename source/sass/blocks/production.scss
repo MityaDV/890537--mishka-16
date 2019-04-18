@@ -9,6 +9,19 @@
   position: relative;
 }
 
+.production__button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 77px;
+  width: 101px;
+  border: none;
+  background: transparent;
+}
+
 .production__video {
   width: 100%;
 }

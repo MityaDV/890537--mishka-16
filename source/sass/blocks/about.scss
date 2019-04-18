@@ -2,23 +2,54 @@
 @import "../base/vars.scss";
 
 .about {
-  padding: 0 0 30px 0;
+  padding: 15px 0;
+
+  @media (min-width: $width_tablet) {
+    padding: 30px 0;
+  }
 }
 
 .about__inner {
-  @include inner();
+  @include inner;
+
+  @media (min-width: $width_tablet) {
+    padding: $padding_medium;
+  }
 }
 
 .about__title {
+  margin: 0;
+  padding: 15px 0 0;
   font-weight: $font_weight_bold;
+
+  @media (min-width: $width_tablet) {
+    padding: 30px 0;
+  }
+}
+
+.about__wrapper {
+  @media (min-width: $width_tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .about__list {
-  @include list();
+  @include list;
+
+  @media (min-width: $width_tablet) {
+    flex-basis: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 66px 0 0;
+  }
+}
+
+.about__item {
+  padding: 50px 0;
 }
 
 .about__caption {
   margin: 0;
-  padding: 80px 0 0;
   font-weight: $font_weight_bold;
 }

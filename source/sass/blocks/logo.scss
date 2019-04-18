@@ -1,11 +1,26 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.logo {
-  box-shadow: 0 1px 0 0 $light_gray, inset 0 1px 0 0 $light_gray;
-}
-
 .logo__link {
   display: block;
-  padding: 22px 0;
+
+  @media (min-width: $width_tablet) {
+    width: 112px;
+    height: 46px;
+    background: $color_white url("../img/logo-tablet.svg") no-repeat 0 0;
+  }
+
+  @media (min-width: $width_tablet) {
+    &--footer {
+      width: 102px;
+      height: 34px;
+      background: $color_gray_lightest url("../img/logo-mobile.svg") no-repeat 0 0;
+    }
+  }
+}
+
+.logo__img {
+  @media (min-width: $width_tablet) {
+    display: none;
+  }
 }

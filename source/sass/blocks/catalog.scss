@@ -6,19 +6,30 @@
 }
 
 .catalog__inner {
-  @include inner();
+  @include inner;
+
+  @media (min-width: $width_tablet) {
+    padding: $padding_medium;
+  }
 }
 
 .catalog__title {
-  min-height: 177px;
   margin: 0;
-  padding: 76px 0 0 0;
+  padding: 75px 0;
   text-align: center;
-  background: $seashell;
+  background: $color_gray_lightest;
+
+  @media (min-width: $width_tablet) {
+    padding: 15px 0 60px;
+  }
 }
 
 .catalog__item {
-  padding: 0 0 30px;
   margin: 30px 0 0;
-  border: 1px solid $seashell;
+  border: 1px solid $color_gray_lightest;
+
+  @media (min-width: $width_tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

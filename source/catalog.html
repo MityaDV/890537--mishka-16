@@ -11,29 +11,38 @@
 
 <body>
   <header class="header">
-    <nav class="header__navigation">
-      <ul class="header__list">
-        <li class="header__logo logo">
-          <a class="logo__link" href="index.html">
-            <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
-          </a>
-          <ul class="header__list submenu">
-            <li class="submenu__item">
-              <a class="submenu__link submenu__link--active">Каталог товаров</a>
-            </li>
-            <li class="submenu__item">
-              <a class="submenu__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="submenu__item search">
-              <p class="search__form">
-                <label class="search__label" for="form-search"></label>
-                <input class="search__input" id="form-search" type="text" placeholder="Поиск по сайту">
-              </p>
-            </li>
-            <li class="submenu__item">
-              <a class="submenu__link" href="cart.html">Корзина: пока пуста</a>
-            </li>
-          </ul>
+    <nav class="header__navigation header__navigation--bg">
+      <div class="header__logo logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+        </a>
+      </div>
+      <ul class="header__list header__list--site">
+        <li class="header__item header__item--catalog">
+          <a class="header__link header__link--active">Каталог товаров</a>
+        </li>
+        <li class="header__item header__item--form">
+          <a class="header__link" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="header__item header__item--supplies">
+          <a href="#" class="header__link">Новые поступления</a>
+        </li>
+        <li class="header__item header__item--sale">
+          <a href="#" class="header__link">Распродажа</a>
+        </li>
+        <li class="header__item header__item--delivery">
+          <a href="#" class="header__link">Бесплатная доставка по России</a>
+        </li>
+      </ul>
+      <ul class="header__list header__list--user">
+        <li class="header__item header__item--search search">
+          <p class="search__form">
+            <label class="search__label" for="form-search"></label>
+            <input class="search__input" id="form-search" type="text" placeholder="Поиск по сайту">
+          </p>
+        </li>
+        <li class="header__item">
+          <a class="header__link header__link--indent" href="cart.html">Корзина: пока пуста</a>
         </li>
       </ul>
     </nav>
@@ -43,62 +52,72 @@
       <h2 class="catalog__title">Каталог товаров</h2>
       <div class="catalog__inner">
         <article class="catalog__item card">
-          <a class="card__link" href="catalog/bunny.html">
-            <img class="card__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195"
-              alt="Зайчик-попрыгайчик.">
+          <a class="card__link card__link--hare" href="catalog/bunny.html">
+            <img class="card__img" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик.">
+          </a>
+          <div class="card__wrapper-feature">
             <h3 class="card__title">Зайчик-попрыгайчик</h3>
-          </a>
-          <p class="card__caption">Рост 30 см, вес 200 г</p>
-          <div class="card__wrapper">
-            <p class="card__price">1 200 руб.</p>
-            <button class="card__button" type="button">
-              <svg width="25" height="25"></svg>
-            </button>
+            <p class="card__caption">Рост 30 см, вес 200 г</p>
+            <div class="card__wrapper-price">
+              <p class="card__price">1 200 руб.</p>
+              <button class="card__button cart" type="button">
+                <svg class="cart__icon" width="20" height="19"></svg>
+              </button>
+            </div>
           </div>
         </article>
         <article class="catalog__item card">
-          <a class="card__link" href="catalog/basket.html">
-            <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195"
-              alt="Корзинка для белья.">
+          <a class="card__link card__link--bowl" href="catalog/basket.html">
+            <img class="card__img" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья.">
+          </a>
+          <div class="card__wrapper-feature">
             <h3 class="card__title">Корзинка для белья</h3>
-          </a>
-          <p class="card__caption">Диаметр 15 см, высота 10 см</p>
-          <div class="card__wrapper">
-            <p class="card__price">690 руб.</p>
-            <button class="card__button" type="button">
-              <svg width="25" height="25"></svg>
-            </button>
+            <p class="card__caption">Диаметр 15 см, высота 10 см</p>
+            <div class="card__wrapper-price">
+              <p class="card__price">690 руб.</p>
+              <button class="card__button cart" type="button">
+                <svg class="cart__icon" width="20" height="19"></svg>
+              </button>
+            </div>
           </div>
         </article>
         <article class="catalog__item card">
-          <a class="card__link" href="catalog/big-basket.html">
-            <img class="card__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195"
-              alt="Большая корзинка для игрушек.">
-            <h3 class="card__title">Большая корзинка для игрушек</h3>
+          <a class="card__link card__link--toys" href="catalog/big-basket.html">
+            <img class="card__img" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек.">
           </a>
-          <p class="card__caption">Диаметр 30 см, высота 30 см</p>
-          <div class="card__wrapper">
-            <p class="card__price">1 500 руб.</p>
-            <button class="card__button" type="button">
-              <svg width="25" height="25"></svg>
-            </button>
+          <div class="card__wrapper-feature">
+            <h3 class="card__title">Большая корзинка для игрушек</h3>
+            <p class="card__caption">Диаметр 30 см, высота 30 см</p>
+            <div class="card__wrapper-price">
+              <p class="card__price">1 500 руб.</p>
+              <button class="card__button cart" type="button">
+                <svg class="cart__icon" width="20" height="19"></svg>
+              </button>
+            </div>
           </div>
         </article>
         <section class="catalog__item production">
           <h3 class="production__title">Процесс производства</h3>
           <div class="production__wrapper">
             <video class="production__video" poster="img/video-mobile@1x.jpg" autoplay="false"></video>
-            <button class="production__button btn btn--play"></button>
+            <button class="production__button play">
+              <img class="play__icon" src="img/icon-play.svg" alt="play" width="101" height="77">
+            </button>
           </div>
           <p class="production__caption">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
             как появляются наши товары.</p>
-          <a class="production__button btn btn--order" href="cart.html">Сделать заказ</a>
+          <a class="production__link btn btn--order" href="cart.html">Сделать заказ</a>
         </section>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__inner">
+      <div class="footer__logo logo">
+        <a class="logo__link  logo__link--footer">
+          <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+        </a>
+      </div>
       <div class="footer__social">
         <ul class="footer__list">
           <li class="footer__item social">

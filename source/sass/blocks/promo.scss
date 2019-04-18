@@ -2,24 +2,56 @@
 @import "../base/vars.scss";
 
 .promo {
+  background: $color_gray_lighten url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+
+  @media (min-width: $width_tablet) {
+    padding: $padding_medium;
+    background: $color_gray_lighten url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
+  }
+}
+
+.promo__inner {
   margin: 0 0 34px 0;
-  background: $light_gray url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+
+  @media (min-width: $width_tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .promo__title {
   margin: 0;
   padding: 70px 39px 120px;
   text-align: center;
-  color: $very_dark_brown;
+  color: $color_dark_brown;
+
+  @media (min-width: $width_tablet) {
+    padding: 80px 85px 220px;
+  }
+}
+
+.promo__list {
+  @media (min-width: $width_tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding: 220px 0 0;
+  }
+}
+
+.promo__link {
+  @media (min-width: $width_tablet) {
+    flex-basis: 50%;
+  }
 }
 
 .promo__item {
   padding: 30px 70px 30px 30px;
   display: flex;
-  background: $seafoam_blue;
+  background: $color_seafoam_blue;
 
   &--shade {
-    background: $greeny_blue;
+    background: $color_greeny_blue;
   }
 }
 
@@ -27,5 +59,5 @@
   flex-basis: 110px;
   margin: 0;
   text-align: left;
-  color: $white;
+  color: $color_white;
 }

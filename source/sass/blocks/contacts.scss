@@ -6,16 +6,17 @@
 }
 
 .contacts__inner {
-  @include inner();
+  @include inner;
 }
 
 .contacts__list {
-  @include list();
+  @include list;
+
   display: flex;
   padding: 0 0 40px 0;
 
   font-weight: $font_weight_normal;
-  color: $greyish_brown;
+  color: $color_greyish_brown;
 }
 
 .contacts__item {
@@ -32,7 +33,7 @@
   display: block;
 
   &--email {
-    color: $greyish-brown;
+    color: $color_greyish_brown;
   }
 }
 
