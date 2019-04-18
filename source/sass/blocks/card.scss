@@ -6,6 +6,7 @@
 
   @media (min-width: $width_tablet) {
     flex-basis: 50%;
+    min-height: 334px;
   }
 
   @media (min-width: $width_tablet) {
@@ -31,7 +32,7 @@
   width: 100%;
 
   @media (min-width: $width_tablet) {
-    opacity: 0;
+    display: none;
   }
 }
 
@@ -48,6 +49,10 @@
 .card__title {
   margin: 0;
   color: $color_black;
+
+  @media (min-width: $width_tablet) {
+    padding: 0 0 15px;
+  }
 }
 
 .card__caption {

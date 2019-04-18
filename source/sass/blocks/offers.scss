@@ -124,7 +124,7 @@
 
 .offers__img {
   @media (min-width: $width_tablet) {
-    opacity: 0;
+    display: none;
   }
 }
 
