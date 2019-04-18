@@ -31,12 +31,20 @@
 
 .footer__social {
   padding: 25px 60px;
+
+  @media (min-width: $width_tablet) {
+    padding: 60px 0;
+  }
 }
 
 .footer__copyright {
   padding: 25px 40px;
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: $width_tablet) {
+    padding: 60px 0;
+  }
 }
 
 .footer__text {

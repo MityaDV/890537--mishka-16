@@ -1,26 +1,28 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.card__wrapper-img {
+.card__link {
+  display: block;
+
   @media (min-width: $width_tablet) {
     flex-basis: 50%;
   }
 
   @media (min-width: $width_tablet) {
     &--hare {
-      background: url("../img/photo-hare-tablet@1x.jpg") no-repeat 50% 0;
+      background: url("../img/photo-hare-tablet@1x.jpg") no-repeat 0 0;
     }
   }
 
   @media (min-width: $width_tablet) {
     &--bowl {
-      background: url("../img/photo-bowl-tablet@1x.jpg") no-repeat 50% 0;
+      background: url("../img/photo-bowl-tablet@1x.jpg") no-repeat 0 0;
     }
   }
 
   @media (min-width: $width_tablet) {
     &--toys {
-      background: url("../img/photo-toys-tablet@1x.jpg") no-repeat 50% 0;
+      background: url("../img/photo-toys-tablet@1x.jpg") no-repeat 0 0;
     }
   }
 }
