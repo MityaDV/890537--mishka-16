@@ -6,7 +6,13 @@
 
   @media (min-width: $width_tablet) {
     padding: $padding_medium;
-    background: $color_gray_lighten url("../img/hero-tablet@1x.jpg") no-repeat 50% 0;
+    background: $color_gray_lighten url("../img/hero-tablet@1x.jpg") no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  @media (min-width: $width_desktop) {
+    background: $color_gray_lighten url("../img/hero-desktop@1x.jpg") no-repeat 50% 50%;
+    background-size: cover;
   }
 }
 
@@ -20,14 +26,21 @@
   }
 }
 
+.promo__wrapper {
+  padding: 70px 35px 120px;
+}
+
 .promo__title {
   margin: 0;
-  padding: 70px 39px 120px;
   text-align: center;
   color: $color_dark_brown;
 
   @media (min-width: $width_tablet) {
     padding: 80px 85px 220px;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 80px 220px 220px;
   }
 }
 
