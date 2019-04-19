@@ -7,6 +7,10 @@
 
 .feedback__inner {
   @include inner;
+
+  @media (min-width: $width_desktop) {
+    padding: 0 50px 0 225px;
+  }
 }
 
 .feedback__text {
