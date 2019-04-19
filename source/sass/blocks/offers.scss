@@ -13,6 +13,11 @@
     margin: 0 0 50px;
   }
 
+  @media (min-width: $width_desktop) {
+    padding: 0 50px 0 225px;
+    margin: 0 0 70px;
+  }
+
   @media (min-width: $width_tablet) {
     &::after {
       content: "Товар недели";
@@ -25,6 +30,13 @@
       text-transform: uppercase;
       text-align: center;
       color: $color_seafoam_blue;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    &::after {
+      content: "";
+      width: 0;
     }
   }
 }
@@ -45,13 +57,33 @@
     color: $color_seafoam_blue;
   }
 
+  @media (min-width: $width_desktop) {
+    &::before {
+      content: "Товар недели";
+      position: absolute;
+      top: 125px;
+      left: -130px;
+      width: 70px;
+      font-size: $font_size_p_desktop;
+      line-height: 1;
+      text-transform: uppercase;
+      text-align: center;
+      color: $color_seafoam_blue;
+    }
+  }
+
   @media (min-width: $width_tablet) {
     padding: 0 0 50px;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 115px 0 43px;
   }
 
   @media (min-width: $width_tablet) {
     &::after {
       content: "";
+      width: 0;
     }
   }
 }
@@ -60,6 +92,11 @@
   @media (min-width: $width_tablet) {
     width: 50%;
     padding: 0 40px 0 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 35%;
+    padding: 0;
   }
 }
 
@@ -70,8 +107,12 @@
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
-    padding: 0 0 50px;
+    padding: 0 0 30px;
     line-height: 1.76;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 0 0 60px;
   }
 }
 
@@ -80,7 +121,11 @@
   padding: 0 0 30px;
 
   @media (min-width: $width_tablet) {
-    padding: 30px 0 50px;
+    padding: 30px 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 40px 0;
   }
 }
 
@@ -104,7 +149,11 @@
 
 .offers__item {
   @media (min-width: $width_tablet) {
-    min-height: 25px;
+    min-height: 35px;
+  }
+
+  @media (min-width: $width_tablet) {
+    min-height: 40px;
   }
 }
 
@@ -118,7 +167,15 @@
     right: 50px;
     width: 333px;
     height: 404px;
-    background: url("../img/triple-set-tablet@1x.jpg") no-repeat 0 0;
+    background: $color_gray_lightest url("../img/triple-set-tablet@1x.jpg") no-repeat 0 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 525px;
+    height: 636px;
+    top: 50px;
+    z-index: -1;
+    background: $color_gray_lightest url("../img/triple-set-desktop@1x.jpg") no-repeat 0 0;
   }
 }
 
