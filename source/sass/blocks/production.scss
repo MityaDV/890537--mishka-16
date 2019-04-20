@@ -1,12 +1,96 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.production__title {
-  padding: 0 0 0 90px;
+.production {
+  position: relative;
+  padding: 85px 0 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width_tablet) {
+    padding: 0;
+    position: static;
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: $width_desktop) {
+    margin: 57px 0 0;
+    flex-direction: row-reverse;
+  }
 }
 
-.production__wrapper {
+.production__inner {
+  padding: 33px 34px;
+  order: 2;
+
+  @media (min-width: $width_tablet) {
+    padding: 40px 42px;
+    order: 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    flex-basis: 40%;
+  }
+}
+
+.production__title {
+  margin: 0;
+  padding: 25px 0 20px 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 34px;
+    width: 32px;
+    height: 32px;
+    background: $color_white url("../img/icon-video.svg") no-repeat 0 0;
+  }
+
+  @media (min-width: $width_tablet) {
+    &::before {
+      top: -6px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    position: relative;
+    padding: 0 0 30px 60px;
+  }
+}
+
+.production__caption {
+  margin: 0;
+  font-weight: $font_weight_normal;
+  padding: 0 0 25px;
+
+  @media (min-width: $width_tablet) {
+    padding: 0 0 30px;
+  }
+}
+
+.production__inner-video {
   position: relative;
+  order: 1;
+
+  @media (min-width: $width_tablet) {
+    min-height: 455px;
+    display: flex;
+    justify-content: center;
+    order: 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    flex-basis: 100%;
+  }
+}
+
+.production__video {
+  width: 100%;
 }
 
 .production__button {
@@ -20,14 +104,4 @@
   width: 101px;
   border: none;
   background: transparent;
-}
-
-.production__video {
-  width: 100%;
-}
-
-.production__caption {
-  margin: 0;
-  padding: 30px 30px;
-  font-weight: $font_weight_normal;
 }

@@ -13,4 +13,11 @@
     margin: 0 auto;
     width: 192px;
   }
+
+  @media (min-width: $width_tablet) {
+    &--order {
+      width: 100%;
+      padding: 20px 0;
+    }
+  }
 }

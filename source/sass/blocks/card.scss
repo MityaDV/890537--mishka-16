@@ -16,19 +16,19 @@
 
   @media (min-width: $width_tablet) {
     &--hare {
-      background: $color_gray_lightest url("../img/photo-hare-tablet@1x.jpg") no-repeat 0 0;
+      background: $color_gray_lightest url("../img/photo-hare-tablet@1x.jpg") no-repeat 50% 0;
     }
   }
 
   @media (min-width: $width_desktop) {
     &--hare {
-      background: $color_gray_lightest url("../img/photo-hare-desktop@1x.jpg") no-repeat 0 0;
+      background: $color_gray_lightest url("../img/photo-hare-desktop@1x.jpg") no-repeat 50% 0;
     }
   }
 
   @media (min-width: $width_tablet) {
     &--bowl {
-      background: $color_gray_lightest url("../img/photo-bowl-tablet@1x.jpg") no-repeat 0 0;
+      background: $color_gray_lightest url("../img/photo-bowl-tablet@1x.jpg") no-repeat 50% 0;
     }
   }
 

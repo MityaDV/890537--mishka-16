@@ -37,7 +37,7 @@
 
 .catalog__item {
   margin: 30px 0 0;
-  border: 1px solid $color_gray_lightest;
+  border: 1px solid $color_gray_lighten;
 
   @media (min-width: $width_tablet) {
     display: flex;
@@ -48,5 +48,6 @@
     flex-direction: column;
     margin: 0 0 0 50px;
     flex-wrap: nowrap;
+    flex-basis: 316px;
   }
 }
