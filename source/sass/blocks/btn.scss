@@ -47,4 +47,10 @@
       padding: 20px 0;
     }
   }
+
+  @media (min-width: $width_tablet) {
+    &--form {
+      width: 230px;
+    }
+  }
 }

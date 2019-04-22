@@ -20,8 +20,8 @@
 .catalog__wrapper {
   @media (min-width: $width_desktop) {
     display: flex;
-    justify-content: center;
-    margin: 0 0 0 -50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -51,7 +51,6 @@
 
   @media (min-width: $width_desktop) {
     flex-direction: column;
-    margin: 0 0 0 50px;
     flex-wrap: nowrap;
     flex-basis: 316px;
   }

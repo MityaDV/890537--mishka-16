@@ -7,9 +7,33 @@
   margin: 0;
   padding: 0 0 30px;
   border: none;
+  position: relative;
+
+  @media (min-width: $width_tablet) {
+    padding: 0 0 0 247px;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 0 110px;
+  }
 }
 
 .form__text {
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
+
+  @media (min-width: $width_tablet) {
+    order: 2;
+  }
+}
+
+.form__inner {
+  @media (min-width: $width_tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 0 110px;
+  }
 }
