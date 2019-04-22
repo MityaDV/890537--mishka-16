@@ -11,11 +11,16 @@
   @media (min-width: $width_tablet) {
     padding: $padding_medium;
   }
+
+  @media (min-width: $width_desktop) {
+    padding: 110px 50px 0;
+  }
 }
 
 .catalog__wrapper {
   @media (min-width: $width_desktop) {
     display: flex;
+    justify-content: center;
     margin: 0 0 0 -50px;
   }
 }

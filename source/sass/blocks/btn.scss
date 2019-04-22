@@ -9,6 +9,33 @@
     width: 260px;
   }
 
+  &--сontact {
+    margin: 0 auto;
+    padding: 18px 0;
+  }
+
+  @media (min-width: $width_tablet) {
+    &--write {
+      margin: 20px 0 45px;
+      padding: 18px 0;
+      width: 175px;
+      order: 2;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &--сontact {
+      width: 230px;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    &--сontact {
+      margin: 0;
+      padding: 15px 0;
+    }
+  }
+
   &--order {
     margin: 0 auto;
     width: 192px;
