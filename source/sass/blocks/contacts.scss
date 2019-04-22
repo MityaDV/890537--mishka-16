@@ -98,7 +98,7 @@
     color: $color_greyish_brown;
   }
 
-   @media (min-width: $width_tablet) {
+  @media (min-width: $width_tablet) {
     &--map {
       min-height: 457px;
     }
