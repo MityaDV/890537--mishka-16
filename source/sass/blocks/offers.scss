@@ -181,7 +181,7 @@
 
 .offers__img {
   @media (min-width: $width_tablet) {
-    display: none;
+    visibility: hidden;
   }
 }
 
