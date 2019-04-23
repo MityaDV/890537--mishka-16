@@ -5,7 +5,7 @@
   background: $color_gray_lightest url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
 
   @media (min-width: $width_tablet) {
-    background: $color_gray_lightest url("../img/hero-tablet@1x.jpg") no-repeat 50% 50%;
+    background: $color_gray_lightest url("../img/hero-tablet@1x.jpg") no-repeat 50% 88px;
     background-size: cover;
   }
 
@@ -31,7 +31,7 @@
   justify-content: center;
 
   @media (min-width: $width_tablet) {
-    padding: 70px 0 180px;
+    padding: 240px 0 180px;
   }
 
   @media (min-width: $width_desktop) {

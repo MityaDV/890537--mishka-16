@@ -3,11 +3,13 @@
 
 .header {
   @media (min-width: $width_tablet) {
-    position: relative;
+    position: fixed;
+    top: 0;
+    background: $color_white;
   }
 }
 
-.header__navigation {
+.header__inner {
   display: flex;
   flex-direction: column;
 
@@ -16,27 +18,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  @media (min-width: $width_tablet) {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 88px;
-      left: 0;
-      width: 100%;
-      min-height: 88px;
-      background: $color_bg_header;
-      z-index: -1;
-    }
-  }
-
-  @media (min-width: $width_tablet) {
-    &--bg {
-      &::before {
-        background: $color_gray_lightest;
-      }
-    }
   }
 }
 
@@ -48,7 +29,7 @@
 
   @media (min-width: $width_tablet) {
     justify-content: flex-start;
-    margin-right: auto;
+    min-height: 88px;
   }
 
   @media (min-width: $width_desktop) {
@@ -180,6 +161,35 @@
   }
 }
 
+.header__label {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    background: transparent url("../img/icon-search.svg") no-repeat 0 0;
+    opacity: 0.2;
+  }
+}
+
+.header__input {
+  padding: 0 0 0 40px;
+  border: none;
+
+  &[type="text"]::placeholder {
+    color: $color_black;
+    font-size: $font_size_h3_mobile;
+    line-height: $line_height_h3_mobile;
+    font-weight: $font_weight_bold;
+  }
+}
+
 .header__link {
   padding: 0 0 0 40px;
   display: block;
@@ -195,3 +205,4 @@
     }
   }
 }
+
