@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    background: $color_gray_lightest url("../img/hero-desktop@1x.jpg") no-repeat 50% 50%;
+    background: $color_gray_lightest url("../img/hero-desktop@1x.jpg") no-repeat 50% 88px;
     background-size: cover;
   }
 }
@@ -35,7 +35,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 70px 0 175px;
+    padding: 190px 0 175px;
   }
 }
 

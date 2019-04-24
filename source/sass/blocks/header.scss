@@ -5,7 +5,8 @@
   @media (min-width: $width_tablet) {
     position: fixed;
     top: 0;
-    background: $color_white;
+    z-index: 10;
+    background: url("../img/color-white-bg.png") repeat-x 0 0;
   }
 }
 
