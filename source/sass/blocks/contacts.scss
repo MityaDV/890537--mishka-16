@@ -7,6 +7,11 @@
   display: flex;
   flex-direction: column;
 
+  &--map {
+    margin: 0 -30px 40px;
+    padding: 0;
+  }
+
   @media (min-width: $width_tablet) {
     padding: 60px 50px;
     flex-direction: row;
@@ -14,10 +19,29 @@
     justify-content: space-between;
   }
 
+  @media (min-width: $width_tablet) {
+    &--map {
+      min-height: 454px;
+      margin: 0 auto 55px;
+      padding: 0;
+      flex-basis: 100%;
+      background: $color_gray_lightest url("../img/map-tablet@1x.jpg") no-repeat 50% 0;
+      background-size: cover;
+    }
+  }
+
   @media (min-width: $width_desktop) {
-    position: relative;
-    flex-direction: column;
+    flex-direction: row;
     padding: 70px 50px 100px 225px;
+  }
+
+  @media (min-width: $width_desktop) {
+    &--map {
+      margin: 0;
+      padding: 0;
+      order: 2;
+      flex-basis: 50%;
+    }
   }
 }
 
@@ -34,6 +58,8 @@
   @media (min-width: $width_desktop) {
     font-size: $font_size_h2_desktop;
     padding: 0 0 60px;
+    flex-basis: 50%;
+    order: 1;
   }
 }
 
@@ -47,10 +73,11 @@
 
   @media (min-width: $width_tablet) {
     flex-basis: 50%;
+    padding: 0 0 50px;
   }
 
-  @media (min-width: $width_tablet) {
-    padding: 0 0 50px;
+  @media (min-width: $width_desktop) {
+    order: 3;
   }
 }
 
@@ -70,24 +97,9 @@
   @media (min-width: $width_desktop) {
     order: 0;
   }
-}
-
-.contacts__inner-map {
-  margin: 0 0 40px;
-  align-self: center;
-
-  @media (min-width: $width_tablet) {
-    margin: 0 0 55px;
-    flex-basis: 100%;
-    background: $color_gray_lightest url("../img/map-tablet@1x.jpg") no-repeat 50% 0;
-  }
 
   @media (min-width: $width_desktop) {
-    position: absolute;
-    top: 0;
-    right: 50px;
-    margin: 0;
-    width: 50%;
+    order: 5;
   }
 }
 
@@ -100,15 +112,16 @@
 
   @media (min-width: $width_tablet) {
     &--map {
-      min-height: 457px;
+      width: 100%;
     }
   }
 }
 
 .contacts__map {
   border: none;
+  width: 100%;
 
   @media (min-width: $width_tablet) {
-    visibility: hidden;
+    display: none;
   }
 }
