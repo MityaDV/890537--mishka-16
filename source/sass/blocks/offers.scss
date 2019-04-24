@@ -8,8 +8,9 @@
   position: relative;
 
   @media (min-width: $width_tablet) {
+    display: flex;
+    flex-wrap: wrap;
     padding: $padding_medium;
-    position: relative;
     margin: 0 0 50px;
   }
 
@@ -57,6 +58,22 @@
     color: $color_seafoam_blue;
   }
 
+  @media (min-width: $width_tablet) {
+    padding: 0 0 50px;
+    flex-basis: 100%;
+  }
+
+  @media (min-width: $width_tablet) {
+    &::after {
+      content: "";
+      width: 0;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 115px 0 43px;
+  }
+
   @media (min-width: $width_desktop) {
     &::before {
       content: "Товар недели";
@@ -71,32 +88,16 @@
       color: $color_seafoam_blue;
     }
   }
-
-  @media (min-width: $width_tablet) {
-    padding: 0 0 50px;
-  }
-
-  @media (min-width: $width_desktop) {
-    padding: 115px 0 43px;
-  }
-
-  @media (min-width: $width_tablet) {
-    &::after {
-      content: "";
-      width: 0;
-    }
-  }
 }
 
 .offers__wrapper {
   @media (min-width: $width_tablet) {
-    width: 50%;
+    flex-basis: 50%;
     padding: 0 40px 0 0;
   }
 
   @media (min-width: $width_desktop) {
-    width: 35%;
-    padding: 0;
+    padding: 0 50px 0 0;
   }
 }
 
@@ -107,8 +108,7 @@
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
-    padding: 0 0 30px;
-    line-height: 1.76;
+    flex-basis: 50%;
   }
 
   @media (min-width: $width_desktop) {
@@ -122,6 +122,7 @@
 
   @media (min-width: $width_tablet) {
     padding: 30px 0;
+    order: 2;
   }
 
   @media (min-width: $width_desktop) {
@@ -152,30 +153,22 @@
     min-height: 35px;
   }
 
-  @media (min-width: $width_tablet) {
+  @media (min-width: $width_desktop) {
     min-height: 40px;
   }
 }
 
 .offers__card {
-  display: flex;
-  justify-content: center;
-
   @media (min-width: $width_tablet) {
-    position: absolute;
-    top: 110px;
-    right: 50px;
-    width: 333px;
-    height: 404px;
-    background: $color_gray_lightest url("../img/triple-set-tablet@1x.jpg") no-repeat 0 0;
+    min-height: 404px;
+    flex-basis: 50%;
+    background: $color_gray_lightest url("../img/triple-set-tablet@1x.jpg") no-repeat 50% 0;
+    order: 1;
   }
 
   @media (min-width: $width_desktop) {
-    width: 525px;
-    height: 636px;
-    top: 50px;
-    z-index: -1;
-    background: $color_gray_lightest url("../img/triple-set-desktop@1x.jpg") no-repeat 0 0;
+    min-height: 636px;
+    background: $color_gray_lightest url("../img/triple-set-desktop@1x.jpg") no-repeat 50% 0;
   }
 }
 
@@ -188,4 +181,15 @@
 .offers__price {
   text-align: center;
   color: $color_greyish_brown;
+
+  @media (min-width: $width_tablet) {
+    flex-basis: 50%;
+    order: 3;
+  }
+}
+
+.offers__button {
+  @media (min-width: $width_tablet) {
+    order: 4;
+  }
 }
