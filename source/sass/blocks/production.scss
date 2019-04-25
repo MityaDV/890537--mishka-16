@@ -1,12 +1,92 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.production__title {
-  padding: 0 0 0 90px;
+.production__inner {
+  padding: 33px 34px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $width_tablet) {
+    padding: 40px 42px;
+  }
+
+  @media (min-width: $width_desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
-.production__wrapper {
+.production__title {
+  margin: 0;
+  padding: 0 0 20px 90px;
   position: relative;
+  order: -2;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background: $color_white url("../img/icon-video.svg") no-repeat 0 0;
+  }
+
+  @media (min-width: $width_tablet) {
+    &::before {
+      top: -6px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    padding: 0 0 30px 60px;
+    order: 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    flex-basis: 30%;
+  }
+}
+
+.production__caption {
+  margin: 0;
+  font-weight: $font_weight_normal;
+  padding: 0 0 25px;
+
+  @media (min-width: $width_tablet) {
+    padding: 0 0 30px;
+  }
+
+  @media (min-width: $width_desktop) {
+    flex-basis: 30%;
+  }
+}
+
+.production__inner-video {
+  position: relative;
+  order: -1;
+  margin: 0 0 30px;
+
+  @media (min-width: $width_tablet) {
+    min-height: 455px;
+    display: flex;
+    background: url("../img/video-tablet@1x.jpg") no-repeat 50% 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    flex-basis: 70%;
+  }
+}
+
+.production__video {
+  width: 100%;
+
+  @media (min-width: $width_tablet) {
+    &[poster] {
+      visibility: hidden;
+    }
+  }
 }
 
 .production__button {
@@ -20,14 +100,4 @@
   width: 101px;
   border: none;
   background: transparent;
-}
-
-.production__video {
-  width: 100%;
-}
-
-.production__caption {
-  margin: 0;
-  padding: 30px 30px;
-  font-weight: $font_weight_normal;
 }

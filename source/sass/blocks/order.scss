@@ -1,12 +1,16 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.order {
-  padding: 0 0 55px;
-}
-
 .order__inner {
-  @include inner;
+  padding: 30px 30px 55px;
+
+  @media (min-width: $width_tablet) {
+    padding: 60px 50px;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 100px 110px 50px;
+  }
 }
 
 .order__title {
@@ -16,12 +20,16 @@
   background: $color_gray_lightest;
 
   @media (min-width: $width_tablet) {
-    padding: 15px 0 60px;
+    padding: 190px 0 60px;
   }
 }
 
 .order__text {
   margin: 0;
-  padding: 30px 0;
+  padding: 0 0 30px;
   font-weight: $font_weight_normal;
+
+  @media (min-width: $width_tablet) {
+    padding: 0 0 50px;
+  }
 }

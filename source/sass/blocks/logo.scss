@@ -10,6 +10,12 @@
     background: $color_white url("../img/logo-tablet.svg") no-repeat 0 0;
   }
 
+  @media (min-width: $width_desktop) {
+    width: 149px;
+    height: 72px;
+    background: $color_white url("../img/logo-desktop.svg") no-repeat 0 0;
+  }
+
   @media (min-width: $width_tablet) {
     &--footer {
       width: 102px;
@@ -21,6 +27,6 @@
 
 .logo__img {
   @media (min-width: $width_tablet) {
-    display: none;
+    visibility: hidden;
   }
 }

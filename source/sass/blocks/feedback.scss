@@ -3,18 +3,49 @@
 
 .feedback {
   margin: 0 0 40px;
+
+  @media (min-width: $width_tablet) {
+    background: url("../../img/review@1x.jpg") no-repeat 0 50%;
+  }
 }
 
 .feedback__inner {
   @include inner;
+
+  @media (min-width: $width_tablet) {
+    padding: 80px 50px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 80px 50px 100px 225px;
+  }
+}
+
+.feedback__title {
+  @media (min-width: $width_tablet) {
+    margin: 0;
+    padding: 0 0 25px;
+    order: 1;
+  }
 }
 
 .feedback__text {
   font-weight: $font_weight_normal;
+  color: $color_greyish_brown;
+
+  @media (min-width: $width_tablet) {
+    padding: 15px 0 30px;
+    order: 3;
+    margin: 0;
+  }
 }
 
 .feedback__autor {
-  margin: 0 0 30px 0;
+  margin: 0 0 30px;
   padding: 40px 0 0;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
@@ -23,12 +54,25 @@
     font-weight: $font_weight_bold;
     color: $color_black;
   }
+
+  @media (min-width: $width_tablet) {
+    margin: 0;
+    padding: 30px 0 0;
+    flex-basis: 50%;
+    order: 4;
+  }
 }
 
 .feedback__list {
   @include list;
   padding: 0 0 38px 0;
   display: flex;
+  justify-content: center;
+
+  @media (min-width: $width_tablet) {
+    padding: 30px 0 0;
+    order: 5;
+  }
 }
 
 .feedback__prew {
@@ -36,6 +80,11 @@
   min-height: 52px;
   border: 1px solid $color_gray_lighten;
   background: $color_white url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
+
+  @media (min-width: $width_tablet) {
+    min-width: 85px;
+    border: none;
+  }
 }
 
 .feedback__next {
@@ -43,4 +92,15 @@
   min-height: 52px;
   border: 1px solid $color_gray_lighten;
   background: $color_white url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
+
+  @media (min-width: $width_tablet) {
+    min-width: 85px;
+    border: none;
+  }
+}
+
+.feedback__button {
+  @media (min-width: $width_tablet) {
+    margin: 0 0 53px;
+  }
 }

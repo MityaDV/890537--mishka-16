@@ -11,6 +11,18 @@
   @media (min-width: $width_tablet) {
     padding: $padding_medium;
   }
+
+  @media (min-width: $width_desktop) {
+    padding: 110px 50px 0;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: $width_desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .catalog__title {
@@ -20,16 +32,22 @@
   background: $color_gray_lightest;
 
   @media (min-width: $width_tablet) {
-    padding: 15px 0 60px;
+    padding: 190px 0 60px;
   }
 }
 
 .catalog__item {
   margin: 30px 0 0;
-  border: 1px solid $color_gray_lightest;
+  border: 1px solid $color_gray_lighten;
 
   @media (min-width: $width_tablet) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $width_desktop) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-basis: 316px;
   }
 }

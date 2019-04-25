@@ -15,6 +15,10 @@
   @media (min-width: $width_tablet) {
     padding: $padding_medium;
   }
+
+  @media (min-width: $width_desktop) {
+    padding: 0 50px 0 225px;
+  }
 }
 
 .about__title {
@@ -30,7 +34,6 @@
 .about__wrapper {
   @media (min-width: $width_tablet) {
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -38,10 +41,14 @@
   @include list;
 
   @media (min-width: $width_tablet) {
-    flex-basis: 45%;
+    flex-basis: 50%;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 66px 0 0;
+    padding: 0 90px 0 0;
+  }
+
+  @media (min-width: $width_tablet) {
+    padding: 0 120px 0 0;
   }
 }
 
