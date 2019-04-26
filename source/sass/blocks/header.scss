@@ -8,15 +8,77 @@
   }
 }
 
+.header__navigation--closed .header__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 20px;
+    height: 14px;
+    background: $color_white url("../img/icon-menu-open.svg") no-repeat 0 0;
+  }
+}
+
+.header__navigation--opened .header__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 21px;
+    height: 20px;
+    background: $color_white url("../img/icon-menu-close.svg") no-repeat 0 0;
+  }
+}
+
+.header__navigation--closed .header__list {
+  @media (max-width: $width_mobile_only) {
+    display: none;
+  }
+}
+
+.header__navigation--nojs {
+  & .header__list {
+    @media (max-width: $width_mobile_only) {
+      display: block;
+    }
+  }
+
+  & .header__toggle {
+    @media (max-width: $width_mobile_only) {
+      display: none;
+    }
+  }
+}
+
 .header__inner {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $width_tablet) {
     padding: $padding_medium;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+.header__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  width: 80px;
+  height: 79px;
+
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $width_tablet) {
+    display: none;
   }
 }
 
@@ -57,6 +119,18 @@
     }
   }
 
+  @media (min-width: $width_tablet) {
+    &--user {
+      order: 2;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &--desktop {
+      order: 4;
+    }
+  }
+
   @media (min-width: $width_desktop) {
     &--site {
       flex-basis: 33%;
@@ -64,21 +138,9 @@
     }
   }
 
-  @media (min-width: $width_tablet) {
-    &--user {
-      order: 2;
-    }
-  }
-
   @media (min-width: $width_desktop) {
     &--user {
       order: 3;
-    }
-  }
-
-  @media (min-width: $width_tablet) {
-    &--desktop {
-      order: 4;
     }
   }
 
@@ -108,21 +170,9 @@
     }
   }
 
-  @media (min-width: $width_desktop) {
-    &--catalog {
-      padding: 30px 0;
-    }
-  }
-
   @media (min-width: $width_tablet) {
     &--form {
       padding: 20px 0;
-    }
-  }
-
-  @media (min-width: $width_desktop) {
-    &--form {
-      padding: 30px 0;
     }
   }
 
@@ -139,16 +189,28 @@
     }
   }
 
+  @media (min-width: $width_tablet) {
+    &--sale {
+      display: none;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    &--catalog {
+      padding: 30px 0;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    &--form {
+      padding: 30px 0;
+    }
+  }
+
   @media (min-width: $width_desktop) {
     &--supplies {
       padding: 20px 0;
       display: block;
-    }
-  }
-
-  @media (min-width: $width_tablet) {
-    &--sale {
-      display: none;
     }
   }
 
@@ -162,18 +224,29 @@
 
 .header__label {
   position: relative;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 0;
+.header__label-icon {
+  position: absolute;
+  top: 4px;
+  left: 0;
 
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
+  opacity: 0.2;
 
-    background: transparent url("../img/icon-search.svg") no-repeat 0 0;
-    opacity: 0.2;
+  &:hover {
+    & path {
+      fill: $color_seafoam_blue;
+    }
+    opacity: 1;
+  }
+
+  &:active {
+    & path {
+      fill: $color_seafoam_blue;
+    }
+    opacity: 0.3;
   }
 }
 
@@ -190,9 +263,18 @@
 }
 
 .header__link {
+  position: relative;
   padding: 0 0 0 40px;
   display: block;
   color: $color_black;
+
+  &:hover {
+    color: $color_black_60;
+  }
+
+  &:active {
+    color: $color_black_30;
+  }
 
   @media (min-width: $width_tablet) {
     padding: 0;
@@ -202,5 +284,29 @@
     &--indent {
       padding: 0 0 0 50px;
     }
+  }
+}
+
+.header__link-icon {
+  position: absolute;
+  top: 4px;
+  left: 0;
+
+  width: 21px;
+  height: 18px;
+  opacity: 0.2;
+
+  &:hover {
+    & path {
+      fill: $color_seafoam_blue;
+    }
+    opacity: 1;
+  }
+
+  &:active {
+    & path {
+      fill: $color_seafoam_blue;
+    }
+    opacity: 0.3;
   }
 }
