@@ -47,7 +47,7 @@
   color: $color_dark_brown;
 
   @media (min-width: $width_tablet) {
-    flex-basis: 63%;
+    flex-basis: 75%;
   }
 }
 
@@ -72,12 +72,32 @@
 }
 
 .promo__item {
-  padding: 30px 70px 30px 30px;
+  position: relative;
+  padding: 30px 80px 30px 30px;
   display: flex;
   background: $color_seafoam_blue;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 36px;
+    width: 40px;
+    height: 62px;
+    background: url("../img/icon-interior.svg") no-repeat 0 0;
+    opacity: 0.5;
+  }
+
   &--shade {
     background: $color_greeny_blue;
+
+    &::after {
+      top: 21px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+      background: url("../img/icon-toy.svg") no-repeat 0 0;
+    }
   }
 
   @media (min-width: $width_tablet) {
@@ -88,6 +108,5 @@
 .promo__caption {
   flex-basis: 110px;
   margin: 0;
-  text-align: left;
   color: $color_white;
 }
