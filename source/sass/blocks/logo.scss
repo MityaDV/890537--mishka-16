@@ -10,17 +10,29 @@
     background: $color_white url("../img/logo-tablet.svg") no-repeat 0 0;
   }
 
+  @media (min-width: $width_tablet) {
+    &--footer {
+      width: 102px;
+      height: 34px;
+      background: $color_gray_lightest url("../img/logo-mobile.svg") no-repeat 0 0;
+    }
+  }
+
   @media (min-width: $width_desktop) {
     width: 149px;
     height: 72px;
     background: $color_white url("../img/logo-desktop.svg") no-repeat 0 0;
   }
 
-  @media (min-width: $width_tablet) {
-    &--footer {
-      width: 102px;
-      height: 34px;
-      background: $color_gray_lightest url("../img/logo-mobile.svg") no-repeat 0 0;
+  @media (min-width: $width_desktop) {
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    &:active {
+      opacity: 0.3;
     }
   }
 }

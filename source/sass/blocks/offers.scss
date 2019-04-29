@@ -1,17 +1,43 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.offers {
+  @media (min-width: $width_tablet) {
+    position: relative;
+    padding: 40px 0 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -15px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 50px 0 70px;
+
+    &::before {
+      height: 34px;
+    }
+  }
+}
+
 .offers__inner {
   @include inner;
 
   margin: 0 0 30px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $width_tablet) {
-    display: flex;
+    position: relative;
     flex-wrap: wrap;
     padding: $padding_medium;
-    margin: 0 0 50px;
+    margin: 0;
   }
 
   @media (min-width: $width_desktop) {
@@ -116,9 +142,16 @@
   }
 }
 
-.offers__table {
+.offers__list {
+  @include list;
+  align-self: flex-start;
   display: flex;
+  flex-wrap: wrap;
   padding: 0 0 30px;
+  font-size: $font_size_p_mobile;
+  line-height: $line_height_p_mobile;
+  font-weight: $font_weight_normal;
+  color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
     padding: 30px 0;
@@ -130,27 +163,17 @@
   }
 }
 
-.offers__list {
-  @include list;
-
-  font-size: $font_size_p_mobile;
-  line-height: $line_height_p_mobile;
-  font-weight: $font_weight_normal;
-  color: $color_greyish_brown;
-
-  &:first-child {
-    padding: 0 30px 0 0;
-  }
-
-  @media (min-width: $width_tablet) {
-    font-size: 15px;
-    line-height: 1.33;
-  }
-}
-
 .offers__item {
-  @media (min-width: $width_tablet) {
-    min-height: 35px;
+  min-height: 35px;
+  border-bottom: 1px solid $color_gray_lighten;
+
+  &:nth-child(odd) {
+    flex-basis: 25%;
+  }
+
+  &:nth-child(even) {
+    flex-basis: 70%;
+    padding: 0 0 0 30px;
   }
 
   @media (min-width: $width_desktop) {
@@ -159,16 +182,18 @@
 }
 
 .offers__card {
+  align-self: center;
+
   @media (min-width: $width_tablet) {
     min-height: 404px;
     flex-basis: 50%;
-    background: $color_gray_lightest url("../img/triple-set-tablet@1x.jpg") no-repeat 50% 0;
+    background: $color_gray_lightest url("../img/triple-set-tablet@1x.jpg") no-repeat center 0;
     order: 1;
   }
 
   @media (min-width: $width_desktop) {
     min-height: 636px;
-    background: $color_gray_lightest url("../img/triple-set-desktop@1x.jpg") no-repeat 50% 0;
+    background: $color_gray_lightest url("../img/triple-set-desktop@1x.jpg") no-repeat center 0;
   }
 }
 

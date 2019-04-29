@@ -18,9 +18,10 @@
 
 @mixin btn() {
   display: block;
-  width: 100%;
+  width: 260px;
   min-height: 52px;
   padding: 14px 0;
+  margin: 0 auto;
 
   text-align: center;
   font-size: $font_size_h3_mobile;

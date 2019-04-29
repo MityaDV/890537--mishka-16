@@ -1,15 +1,22 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.catalog {
-  padding: 0 0 60px;
-}
-
 .catalog__inner {
   @include inner;
 
   @media (min-width: $width_tablet) {
-    padding: $padding_medium;
+    padding: 67px 50px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -24px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
+    }
   }
 
   @media (min-width: $width_desktop) {
@@ -41,6 +48,7 @@
   border: 1px solid $color_gray_lighten;
 
   @media (min-width: $width_tablet) {
+    margin: 0 0 53px;
     display: flex;
     flex-wrap: wrap;
   }
