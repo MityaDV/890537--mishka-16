@@ -1,6 +1,12 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.field--bg {
+  @media (min-width: $width_tablet) {
+    background: $color_gray_lightest;
+  }
+}
+
 .field__list {
   @include list;
 
@@ -148,10 +154,20 @@
 
   &[type="tel"]::placeholder {
     color: $color_greyish_brown_30;
+    background: $color_gray_lightest;
+  }
+
+  &[type="tel"] {
+    background: $color_gray_lightest;
   }
 
   &[type="email"]::placeholder {
     color: $color_greyish_brown_30;
+    background: $color_gray_lightest;
+  }
+
+  &[type="email"] {
+    background: $color_gray_lightest;
   }
 }
 
