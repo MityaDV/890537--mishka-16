@@ -19,21 +19,29 @@
 }
 
 .field__item {
-  padding: 0 0 25px;
+  min-height: 40px;
+
+  &--radio {
+    padding: 0 0 0 60px;
+  }
+
+  &--checkbox {
+    padding: 0 0 25px 60px;
+  }
 
   @media (min-width: $width_tablet) {
     padding: 0 0 50px;
   }
 
   @media (min-width: $width_tablet) {
-    &--color {
+    &--checkbox {
       flex-basis: 50%;
       padding: 0 0 60px;
     }
   }
 
   @media (min-width: $width_desktop) {
-    &--color {
+    &--checkbox {
       flex-basis: 33%;
       padding: 0 0 60px;
     }
@@ -64,7 +72,9 @@
 
 .field__label {
   font-size: $font_size_h3_mobile;
-  line-height: 1.06;
+  position: relative;
+  display: block;
+  padding: 10px 0;
 
   @media (min-width: $width_tablet) {
     padding: 0 25px 0 0;
@@ -79,10 +89,58 @@
   font-family: $font_family_base, $font_family_extra;
   font-weight: $font_weight_normal;
   font-size: $font_size_h3_mobile;
-  line-height: 1.06;
 
   border: none;
   box-shadow: inset 0 -2px 0 0 $color_black;
+
+  &--radio + .field__label--radio::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $color_greyish_brown;
+    border-radius: 50%;
+  }
+
+  &--radio:checked + .field__label--radio::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: -48px;
+    width: 16px;
+    height: 16px;
+    background: $color_seafoam_blue;
+    border-radius: 50%;
+  }
+
+  &--checkbox + .field__label--checkbox::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $color_greyish_brown;
+  }
+
+  &--checkbox:checked + .field__label--checkbox::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 9px;
+    left: -49px;
+    width: 21px;
+    height: 11px;
+
+    border-bottom: 2px solid $color_greyish_brown;
+    border-left: 2px solid $color_greyish_brown;
+    transform: rotate(-45deg);
+  }
 
   &[type="text"]::placeholder {
     color: $color_greyish_brown_30;
