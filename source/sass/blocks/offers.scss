@@ -35,6 +35,7 @@
 
   @media (min-width: $width_tablet) {
     position: relative;
+    flex-direction: row;
     flex-wrap: wrap;
     padding: $padding_medium;
     margin: 0;
