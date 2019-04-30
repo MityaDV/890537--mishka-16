@@ -44,6 +44,20 @@
   &--map {
     margin: 0 -30px 40px;
     padding: 0;
+    position: relative;
+  }
+
+  &--map::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 100px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: url("../img/icon-map-pin.svg") no-repeat 0 0;
   }
 
   @media (min-width: $width_tablet) {
@@ -59,14 +73,14 @@
       margin: 0 auto 55px;
       padding: 0;
       flex-basis: 100%;
-      background: $color_gray_lightest url("../img/map-tablet@1x.jpg") no-repeat 50% 0;
+      background: $color_gray_lightest url("../img/map-tablet@1x.jpg") no-repeat 50% 50%;
       background-size: cover;
     }
   }
 
   @media (min-width: $width_desktop) {
     flex-direction: row;
-    padding: 0 50px 0 225px;
+    padding: 0 50px 0 113px;
     align-items: flex-start;
   }
 
@@ -85,15 +99,48 @@
   padding: 0 0 30px;
 
   @media (min-width: $width_tablet) {
+    position: relative;
+    padding: 0 47px 60px 0;
     font-size: $font_size_h2_tablet;
     font-weight: $font_weight_bold;
     flex-basis: 100%;
   }
 
+  @media (min-width: $width_tablet) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 47px;
+      height: 81px;
+      background: $color_white url("../img/icon-flag.svg") no-repeat 0 0;
+    }
+  }
+
   @media (min-width: $width_desktop) {
     font-size: $font_size_h2_desktop;
-    padding: 0 0 60px;
+    padding: 0 0 60px 110px;
     flex-basis: 50%;
+  }
+
+  @media (min-width: $width_desktop) {
+    &::after {
+      content: "";
+      width: 0;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 47px;
+      height: 81px;
+      background: $color_white url("../img/icon-flag.svg") no-repeat 0 0;
+    }
   }
 }
 
