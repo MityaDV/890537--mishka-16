@@ -79,14 +79,17 @@
   font-size: $font_size_h3_mobile;
   position: relative;
   display: block;
-  padding: 10px 0;
 
   &--radio {
+    padding: 10px 0 10px 60px;
+  }
+
+  &--first {
     padding: 0 0 0 60px;
   }
 
   &--checkbox {
-    padding: 0 0 0 60px;
+    padding: 10px 0 10px 60px;
   }
 
   @media (min-width: $width_tablet) {
@@ -104,7 +107,7 @@
   font-size: $font_size_h3_mobile;
 
   border: none;
-  box-shadow: inset 0 -2px 0 0 $color_black;
+  border-bottom: 2px solid $color_black;
 
   &--radio + .field__label--radio::before {
     content: "";
@@ -161,20 +164,23 @@
 
   &[type="tel"]::placeholder {
     color: $color_greyish_brown_30;
-    background: $color_gray_lightest;
   }
 
-  &[type="tel"] {
-    background: $color_gray_lightest;
-  }
 
   &[type="email"]::placeholder {
     color: $color_greyish_brown_30;
-    background: $color_gray_lightest;
   }
 
-  &[type="email"] {
-    background: $color_gray_lightest;
+  @media (min-width: $width_tablet) {
+    &[type="tel"] {
+      background: $color_gray_lightest;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &[type="email"] {
+      background: $color_gray_lightest;
+    }
   }
 }
 
