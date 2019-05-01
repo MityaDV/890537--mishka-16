@@ -25,14 +25,12 @@
 }
 
 .field__item {
-  min-height: 40px;
-
   &--radio {
-    padding: 0 0 0 60px;
+    padding: 0 0 20px;
   }
 
   &--checkbox {
-    padding: 0 0 25px 60px;
+    padding: 0 0 20px;
   }
 
   @media (min-width: $width_tablet) {
@@ -77,10 +75,19 @@
 }
 
 .field__label {
+  min-height: 40px;
   font-size: $font_size_h3_mobile;
   position: relative;
   display: block;
   padding: 10px 0;
+
+  &--radio {
+    padding: 0 0 0 60px;
+  }
+
+  &--checkbox {
+    padding: 0 0 0 60px;
+  }
 
   @media (min-width: $width_tablet) {
     padding: 0 25px 0 0;
@@ -104,7 +111,7 @@
     display: inline-block;
     position: absolute;
     top: 0;
-    left: -60px;
+    left: 0;
     width: 40px;
     height: 40px;
     border: 2px solid $color_greyish_brown;
@@ -116,7 +123,7 @@
     display: inline-block;
     position: absolute;
     top: 12px;
-    left: -48px;
+    left: 12px;
     width: 16px;
     height: 16px;
     background: $color_seafoam_blue;
@@ -128,7 +135,7 @@
     display: inline-block;
     position: absolute;
     top: 0;
-    left: -60px;
+    left: 0;
     width: 40px;
     height: 40px;
     border: 2px solid $color_greyish_brown;
@@ -139,7 +146,7 @@
     display: inline-block;
     position: absolute;
     top: 9px;
-    left: -49px;
+    left: 10px;
     width: 21px;
     height: 11px;
 
