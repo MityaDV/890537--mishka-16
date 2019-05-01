@@ -34,7 +34,7 @@
   }
 
   @media (min-width: $width_tablet) {
-    padding: 0 0 50px;
+    padding: 0 0 23px;
   }
 
   @media (min-width: $width_tablet) {
@@ -61,10 +61,27 @@
 }
 
 .field__legend {
+  position: relative;
   font-size: $font_size_h3_mobile;
-  line-height: 0.94;
   color: $color_seafoam_blue;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 60px;
+    width: 198px;
+    height: 1px;
+    background: $color_seafoam_blue;
+  }
+
+  @media (min-width: $width_tablet) {
+    &::after {
+      content: "";
+      width: 0;
+    }
+  }
 
   @media (min-width: $width_tablet) {
     padding: 0;
@@ -93,7 +110,19 @@
   }
 
   @media (min-width: $width_tablet) {
-    padding: 0 25px 0 0;
+    min-height: 53px;
+  }
+
+  @media (min-width: $width_tablet) {
+    &--radio {
+      padding: 10px 0 10px 80px;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &--checkbox {
+      padding: 10px 0 10px 80px;
+    }
   }
 }
 
@@ -169,6 +198,38 @@
 
   &[type="email"]::placeholder {
     color: $color_greyish_brown_30;
+  }
+
+  @media (min-width: $width_tablet) {
+    &--radio + .field__label--radio::before {
+      width: 52px;
+      height: 53px;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &--radio:checked + .field__label--radio::after {
+      top: 15px;
+      left: 15px;
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &--checkbox + .field__label--checkbox::before {
+      width: 54px;
+      height: 52px;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    &--checkbox:checked + .field__label--checkbox::after {
+      top: 9px;
+      left: 14px;
+      width: 29px;
+      height: 18px;
+    }
   }
 
   @media (min-width: $width_tablet) {
