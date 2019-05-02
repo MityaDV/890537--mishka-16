@@ -28,7 +28,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 77px 0 105px;
+    padding: 77px 50px 105px;
 
     &::before {
       height: 23px;
@@ -38,16 +38,26 @@
 
 .contacts__inner {
   padding: $padding_small;
-  display: flex;
-  flex-direction: column;
 
-  &--map {
-    margin: 0 -30px 40px;
-    padding: 0;
-    position: relative;
+  @media (min-width: $width_tablet) {
+    padding: $padding_medium;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  &--map::before {
+  @media (min-width: $width_desktop) {
+    padding: 0 0 0 180px;
+    max-height: 500px;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+}
+
+.contacts__wrapper {
+  margin: 0 -30px 40px;
+  position: relative;
+
+  &::before {
     content: "";
     position: absolute;
     width: 67px;
@@ -61,36 +71,17 @@
   }
 
   @media (min-width: $width_tablet) {
-    padding: $padding_medium;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $width_tablet) {
-    &--map {
-      min-height: 454px;
-      margin: 0 auto 55px;
-      padding: 0;
-      flex-basis: 100%;
-      background: $color_gray_lightest url("../img/map-tablet@1x.jpg") no-repeat 50% 50%;
-      background-size: cover;
-    }
+    min-height: 457px;
+    margin: 0 auto 55px;
+    flex-basis: 100%;
+    background: $color_gray_lightest url("../img/map-tablet@1x.jpg") no-repeat 50% 50%;
+    background-size: cover;
   }
 
   @media (min-width: $width_desktop) {
-    flex-direction: row;
-    padding: 0 50px 0 113px;
-    align-items: flex-start;
-  }
-
-  @media (min-width: $width_desktop) {
-    &--map {
-      margin: 0;
-      padding: 0;
-      order: 1;
-      flex-basis: 50%;
-    }
+    min-width: 525px;
+    margin: 0 0 0 50px;
+    order: 1;
   }
 }
 
@@ -120,8 +111,8 @@
 
   @media (min-width: $width_desktop) {
     font-size: $font_size_h2_desktop;
-    padding: 0 0 60px 110px;
-    flex-basis: 50%;
+    padding: 0 0 60px;
+    flex-basis: auto;
   }
 
   @media (min-width: $width_desktop) {
@@ -136,7 +127,7 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 0;
+      left: -105px;
       width: 47px;
       height: 81px;
       background: $color_white url("../img/icon-flag.svg") no-repeat 0 0;
@@ -159,10 +150,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    flex-basis: 50%;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    order: 2;
+    display: block;
   }
 }
 
@@ -171,13 +159,7 @@
   padding: 0 0 35px;
 
   @media (min-width: $width_tablet) {
-    justify-content: space-between;
     flex-basis: 50%;
-  }
-
-  @media (min-width: $width_desktop) {
-    justify-content: space-between;
-    flex-basis: 80%;
   }
 }
 
@@ -190,18 +172,6 @@
 
   &:nth-child(even) {
     flex-basis: 75%;
-  }
-}
-
-.contacts__button {
-  order: 1;
-
-  @media (min-width: $width_tablet) {
-    order: 1;
-  }
-
-  @media (min-width: $width_desktop) {
-    order: 3;
   }
 }
 
