@@ -116,59 +116,51 @@
 .header__list {
   @include list;
 
-  &--desktop {
-    display: none;
-  }
-
   @media (min-width: $width_tablet) {
     display: flex;
     flex-wrap: wrap;
   }
 
-  @media (min-width: $width_tablet) {
-    &--site {
-      flex-basis: 50%;
-      justify-content: space-between;
-      order: 3;
-    }
-  }
+  &--desktop {
+    display: none;
 
-  @media (min-width: $width_tablet) {
-    &--user {
-      flex-basis: 50%;
-      order: 2;
-      box-shadow: 0 1px 0 0 $color_gray_lighten, inset 0 1px 0 0 $color_gray_lighten;
-    }
-  }
-
-  @media (min-width: $width_tablet) {
-    &--desktop {
+    @media (min-width: $width_tablet) {
       flex-basis: 50%;
       justify-content: flex-end;
       order: 4;
     }
+
+    @media (min-width: $width_desktop) {
+      flex-basis: 100%;
+      justify-content: flex-start;
+    }
   }
 
-  @media (min-width: $width_desktop) {
-    &--site {
+  &--site {
+    @media (min-width: $width_tablet) {
+      flex-basis: 50%;
+      justify-content: space-between;
+      order: 3;
+    }
+
+    @media (min-width: $width_desktop) {
       flex-basis: 30%;
       justify-content: space-between;
       order: 1;
     }
   }
 
-  @media (min-width: $width_desktop) {
-    &--user {
+  &--user {
+    @media (min-width: $width_tablet) {
+      flex-basis: 50%;
+      order: 2;
+      box-shadow: 0 1px 0 0 $color_gray_lighten, inset 0 1px 0 0 $color_gray_lighten;
+    }
+
+    @media (min-width: $width_desktop) {
       flex-basis: 30%;
       justify-content: space-between;
       order: 3;
-    }
-  }
-
-  @media (min-width: $width_desktop) {
-    &--desktop {
-      flex-basis: 100%;
-      justify-content: flex-start;
     }
   }
 }
@@ -186,75 +178,65 @@
     box-shadow: none;
   }
 
-  @media (min-width: $width_tablet) {
-    &--catalog {
+  &--catalog {
+    @media (min-width: $width_tablet) {
       padding: 20px 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 30px 0;
     }
   }
 
-  @media (min-width: $width_tablet) {
-    &--form {
+  &--form {
+    @media (min-width: $width_tablet) {
       padding: 20px 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 30px 0;
     }
   }
 
-  @media (min-width: $width_tablet) {
-    &--delivery {
+  &--delivery {
+    @media (min-width: $width_tablet) {
       padding: 20px 0;
       font-weight: $font_weight_normal;
     }
   }
 
-  @media (min-width: $width_tablet) {
-    &--search {
+  &--search {
+    @media (min-width: $width_tablet) {
       min-width: 82px;
       flex-basis: 20%;
       padding: 30px 30px;
       margin: 0 auto 0 0;
       box-shadow: 1px 0 0 0 $color_gray_lighten, inset 1px 0 0 0 $color_gray_lighten;
     }
-  }
 
-  @media (min-width: $width_tablet) {
-    &--supplies {
-      display: none;
-    }
-  }
-
-  @media (min-width: $width_tablet) {
-    &--sale {
-      display: none;
-    }
-  }
-
-  @media (min-width: $width_desktop) {
-    &--catalog {
-      padding: 30px 0;
-    }
-  }
-
-  @media (min-width: $width_desktop) {
-    &--form {
-      padding: 30px 0;
-    }
-  }
-
-  @media (min-width: $width_desktop) {
-    &--search {
+    @media (min-width: $width_desktop) {
       margin: 0;
     }
   }
 
-  @media (min-width: $width_desktop) {
-    &--supplies {
+  &--supplies {
+    @media (min-width: $width_tablet) {
+      display: none;
+    }
+
+    @media (min-width: $width_desktop) {
       margin: 0 60px 0 0;
       padding: 20px 0;
       display: block;
     }
   }
 
-  @media (min-width: $width_desktop) {
-    &--sale {
+  &--sale {
+    @media (min-width: $width_tablet) {
+      display: none;
+    }
+
+    @media (min-width: $width_desktop) {
       margin: 0 auto 0 0;
       padding: 20px 0;
       display: block;
@@ -294,15 +276,15 @@
   padding: 0 0 0 40px;
   border: none;
 
+  @media (min-width: $width_tablet) {
+    visibility: hidden;
+  }
+
   &[type="text"]::placeholder {
     color: $color_black;
     font-size: $font_size_h3_mobile;
     line-height: $line_height_h3_mobile;
     font-weight: $font_weight_bold;
-  }
-
-  @media (min-width: $width_tablet) {
-    visibility: hidden;
   }
 }
 
@@ -312,22 +294,22 @@
   display: block;
   color: $color_black;
 
+  @media (min-width: $width_tablet) {
+    padding: 0;
+  }
+
+  &--indent {
+    @media (min-width: $width_tablet) {
+      padding: 0 0 0 45px;
+    }
+  }
+
   &:hover {
     color: $color_black_60;
   }
 
   &:active {
     color: $color_black_30;
-  }
-
-  @media (min-width: $width_tablet) {
-    padding: 0;
-  }
-
-  @media (min-width: $width_tablet) {
-    &--indent {
-      padding: 0 0 0 45px;
-    }
   }
 }
 

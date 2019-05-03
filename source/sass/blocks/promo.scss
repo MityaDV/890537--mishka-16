@@ -77,6 +77,10 @@
   display: flex;
   background: $color_seafoam_blue;
 
+  @media (min-width: $width_tablet) {
+    padding: 30px 95px 35px 36px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -98,10 +102,6 @@
       height: 60px;
       background: url("../img/icon-toy.svg") no-repeat 0 0;
     }
-  }
-
-  @media (min-width: $width_tablet) {
-    padding: 30px 95px 35px 36px;
   }
 }
 
