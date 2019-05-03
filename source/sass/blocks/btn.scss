@@ -47,6 +47,8 @@
   }
 
   &--form {
+    margin: 0;
+
     @media (min-width: $width_tablet) {
       width: 230px;
     }

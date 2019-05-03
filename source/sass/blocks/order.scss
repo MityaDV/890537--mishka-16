@@ -2,14 +2,14 @@
 @import "../base/vars.scss";
 
 .order__inner {
-  padding: 30px 30px 55px;
+  padding: 25px 50px 20px 30px;
 
   @media (min-width: $width_tablet) {
-    padding: 60px 50px;
+    padding: 60px 50px 10px;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 100px 110px 50px;
+    padding: 100px 225px 10px;
   }
 }
 
@@ -26,10 +26,6 @@
 
 .order__text {
   margin: 0;
-  padding: 0 0 30px;
   font-weight: $font_weight_normal;
-
-  @media (min-width: $width_tablet) {
-    padding: 0 0 50px;
-  }
+  color: $color_greyish_brown;
 }

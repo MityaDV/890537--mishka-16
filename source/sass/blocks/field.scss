@@ -7,51 +7,41 @@
   }
 }
 
-.field__list {
-  @include list;
-
-  padding: 25px 0 0;
+.field__inner {
+  @include inner;
 
   @media (min-width: $width_tablet) {
-    padding: 0;
+    padding: 50px 50px;
+    display: flex;
   }
 
-  &--color {
-    @media (min-width: $width_tablet) {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-}
-
-.field__item {
-  @media (min-width: $width_tablet) {
-    padding: 0 0 23px;
-  }
-
-  &--radio {
-    padding: 0 0 20px;
+  @media (min-width: $width_desktop) {
+    padding: 50px 225px 50px 114px;
   }
 
   &--checkbox {
-    padding: 0 0 20px;
-
-    @media (min-width: $width_tablet) {
-      flex-basis: 50%;
-      padding: 0 0 60px;
-    }
-
     @media (min-width: $width_desktop) {
-      flex-basis: 33%;
-      padding: 0 0 60px;
+      padding: 50px 50px 50px 114px;
     }
   }
 
-  &--user {
+  &--phone {
     @media (min-width: $width_tablet) {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
+      padding: 50px 50px 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 50px 225px 50px 114px;
+    }
+  }
+
+  &--letter {
+    @media (min-width: $width_tablet) {
+      padding: 0 50px 50px;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 50px 225px 50px 114px;
     }
   }
 }
@@ -63,10 +53,11 @@
   text-transform: uppercase;
 
   @media (min-width: $width_tablet) {
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
+    flex-basis: 25%;
+  }
+
+  @media (min-width: $width_desktop) {
+    flex-basis: 12%;
   }
 
   &::after {
@@ -80,6 +71,87 @@
 
     @media (min-width: $width_tablet) {
       display: none;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $width_desktop) {
+      flex-basis: 11%;
+    }
+  }
+}
+
+.field__list {
+  @include list;
+
+  padding: 25px 0 0;
+
+  @media (min-width: $width_tablet) {
+    padding: 0;
+    flex-basis: 75%;
+  }
+
+  @media (min-width: $width_desktop) {
+    flex-basis: 88%;
+  }
+
+  &--color {
+    @media (min-width: $width_tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.field__item {
+  &--radio {
+    padding: 0 0 20px;
+  }
+
+  &--checkbox {
+    padding: 0 0 20px;
+
+    @media (min-width: $width_tablet) {
+      flex-basis: 50%;
+      padding: 0 0 24px;
+    }
+
+    @media (min-width: $width_desktop) {
+      flex-basis: 33%;
+    }
+  }
+
+  &--user {
+    padding: 0 0 24px;
+
+    @media (min-width: $width_tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    &:last-child {
+      @media (min-width: $width_tablet) {
+        padding: 0;
+      }
+    }
+  }
+
+  &--phone {
+    padding: 0 0 34px;
+    position: relative;
+
+    @media (min-width: $width_tablet) {
+      padding: 0 0 24px;
+    }
+  }
+
+  &--letter {
+    padding: 0 0 34px;
+    position: relative;
+
+    @media (min-width: $width_tablet) {
+      padding: 0 0 24px;
     }
   }
 }
@@ -104,6 +176,10 @@
 
   &--first {
     padding: 0 0 0 60px;
+
+    @media (min-width: $width_tablet) {
+      padding: 10px 0 10px 80px;
+    }
   }
 
   &--checkbox {
@@ -113,6 +189,43 @@
       padding: 10px 0 10px 80px;
     }
   }
+
+  &--user {
+    min-height: auto;
+
+    @media (min-width: $width_tablet) {
+      padding: 0 25px 0 0;
+      min-height: 52px;
+    }
+  }
+
+  &--phone {
+    position: absolute;
+    top: 17px;
+    right: 3px;
+    width: 24px;
+    height: 24px;
+
+    @media (min-width: $width_tablet) {
+      right: 21px;
+    }
+  }
+
+  &--letter {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    width: 32px;
+    height: 32px;
+
+    @media (min-width: $width_tablet) {
+      right: 20px;
+    }
+  }
+}
+
+.field__icon {
+  opacity: 0.2;
 }
 
 .field__input {
@@ -212,14 +325,28 @@
     color: $color_greyish_brown_30;
   }
 
-  &[type="tel"] {
+  &[type="text"] {
+    padding: 18px 0;
+
     @media (min-width: $width_tablet) {
+      padding: 0 0 18px 18px;
+    }
+  }
+
+  &[type="tel"] {
+    padding: 18px 0;
+
+    @media (min-width: $width_tablet) {
+      padding: 18px 27px 18px 18px;
       background: $color_gray_lightest;
     }
   }
 
   &[type="email"] {
+    padding: 18px 0;
+
     @media (min-width: $width_tablet) {
+      padding: 18px 35px 18px 18px;
       background: $color_gray_lightest;
     }
   }
