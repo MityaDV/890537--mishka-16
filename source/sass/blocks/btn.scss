@@ -12,6 +12,7 @@
     &--buy {
       width: 292px;
       padding: 18px 0;
+      margin: 0;
     }
   }
 
@@ -47,12 +48,19 @@
   @media (min-width: $width_desktop) {
     &--order {
       width: 230px;
+      margin: 0;
     }
   }
 
   @media (min-width: $width_desktop) {
     &--form {
       margin: 0 auto 0 0;
+    }
+  }
+
+  @media (min-width: $width_desktop) {
+    &--сontact {
+      margin: 0;
     }
   }
 }
