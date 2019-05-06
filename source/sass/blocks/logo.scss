@@ -20,15 +20,18 @@
 .logo__img {
   @media (min-width: $width_tablet) {
     width: 112px;
+    height: auto;
   }
 
   @media (min-width: $width_desktop) {
     width: 149px;
+    height: auto;
   }
 
   &--footer {
     @media (min-width: $width_tablet) {
       width: 102px;
+      height: auto;
     }
   }
 }
