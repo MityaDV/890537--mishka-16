@@ -18,7 +18,11 @@
         </button>
         <div class="header__logo logo">
           <a class="logo__link" href="index.html">
-            <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+            <picture>
+              <source media="(min-width: 1140px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+            </picture>
           </a>
         </div>
         <ul class="header__list header__list--site">
@@ -232,7 +236,8 @@
     <div class="footer__inner">
       <div class="footer__logo logo">
         <a class="logo__link  logo__link--footer">
-          <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+          <img class="logo__img  logo__img--footer" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="102"
+            height="34">
         </a>
       </div>
       <div class="footer__social">
