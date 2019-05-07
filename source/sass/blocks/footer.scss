@@ -15,10 +15,10 @@
 }
 
 .footer__logo {
-  visibility: hidden;
+  display: none;
 
   @media (min-width: $width_tablet) {
-    visibility: visible;
+    display: block;
   }
 }
 

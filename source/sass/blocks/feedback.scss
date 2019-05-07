@@ -5,7 +5,21 @@
   margin: 0 0 40px;
 
   @media (min-width: $width_tablet) {
-    background: url("../../img/review@1x.jpg") no-repeat 0 50%;
+    background: url("../img/review@1x.jpg") no-repeat 0 0;
+    background-size: contain;
+  }
+
+  @media (min-width: $width_desktop) {
+    background-position: 50px 0;
+  }
+
+  @media (min-width: $width_tablet) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
+    background: url("../img/review@2x.jpg") no-repeat 0 0;
+    background-size: contain;
+  }
+
+  @media (min-width: $width_desktop) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
+    background-position: 50px 0;
   }
 }
 
@@ -21,7 +35,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 80px 50px 100px 225px;
+    padding: 80px 50px 100px 220px;
   }
 }
 

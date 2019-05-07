@@ -1,39 +1,40 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+
 .form__field {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
-  padding: 0 0 30px;
+  padding: 0;
   border: none;
-  position: relative;
-
-  @media (min-width: $width_tablet) {
-    padding: 0 0 0 167px;
-  }
-
-  @media (min-width: $width_desktop) {
-    padding: 0 110px;
-  }
 }
 
 .form__text {
+  margin: 0;
+  padding: 0 0 30px;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
+    padding: 0;
     order: 2;
   }
 }
 
-.form__inner {
+.form__wrapper {
+  @include inner;
+
+  padding: 18px 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media (min-width: $width_tablet) {
-    display: flex;
+    padding: 0 50px 50px;
+    flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 0 110px;
+    padding: 50px 225px;
   }
 }

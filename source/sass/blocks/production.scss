@@ -27,23 +27,6 @@
   position: relative;
   max-width: 130px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    background: $color_white url("../img/icon-video.svg") no-repeat 0 0;
-  }
-
-  @media (min-width: $width_tablet) {
-    &::before {
-      top: -6px;
-      left: 0;
-    }
-  }
-
   @media (min-width: $width_tablet) {
     padding: 0 0 30px 60px;
     max-width: none;
@@ -54,8 +37,21 @@
     width: 30%;
   }
 
-  @media (min-width: $width_desktop) {
-    &::before {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background: $color_white url("../img/icon-video.svg") no-repeat 0 0;
+
+    @media (min-width: $width_tablet) {
+      top: -6px;
+      left: 0;
+    }
+
+    @media (min-width: $width_desktop) {
       top: 40px;
     }
   }
@@ -89,15 +85,15 @@
   @media (min-width: $width_desktop) {
     min-width: 682px;
     margin: 0 60px 0 0;
-    background: url("../../img/video-desktop@1x.jpg") no-repeat 0 0;
+    background: url("../img/video-desktop@1x.jpg") no-repeat 0 0;
   }
 }
 
 .production__video {
   width: 100%;
 
-  @media (min-width: $width_tablet) {
-    &[poster] {
+  &[poster] {
+    @media (min-width: $width_tablet) {
       visibility: hidden;
     }
   }

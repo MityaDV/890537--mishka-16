@@ -18,7 +18,11 @@
         </button>
         <div class="header__logo logo">
           <a class="logo__link">
-            <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+            <picture>
+              <source media="(min-width: 1140px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+            </picture>
           </a>
         </div>
         <ul class="header__list header__list--site">
@@ -95,19 +99,27 @@
         <p class="offers__text offers__text--flag">Товар недели</p>
       </div>
       <div class="offers__inner">
-          <p class="offers__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
-            размерах.</p>
-          <ul class="offers__list">
-            <li class="offers__item">Цвет:</li>
-            <li class="offers__item">«Тиффани»/серый</li>
-            <li class="offers__item">Диаметр:</li>
-            <li class="offers__item">25 см</li>
-            <li class="offers__item">Высота:</li>
-            <li class="offers__item">15 см</li>
-          </ul>
+        <p class="offers__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+          размерах.</p>
+        <ul class="offers__list">
+          <li class="offers__item">Цвет:</li>
+          <li class="offers__item">«Тиффани»/серый</li>
+          <li class="offers__item">Диаметр:</li>
+          <li class="offers__item">25 см</li>
+          <li class="offers__item">Высота:</li>
+          <li class="offers__item">15 см</li>
+        </ul>
         <div class="offers__card">
-          <img class="offers__img" src="img/triple-set-mobile@1x.jpg" alt="товар недели «Вязаные корзинки»" width="260"
-            height="315">
+          <picture>
+            <source media="(max-width: 767px)"
+              srcset="img/triple-set-mobile@1x.jpg 1x, img/triple-set-mobile@2x.jpg 2x">
+            <source media="(max-width: 1139px)"
+              srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <source media="(min-width: 1140px)"
+              srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <img class="offers__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+              alt="товар недели «Вязаные корзинки»">
+          </picture>
         </div>
         <p class="offers__price">Цена: 990 руб.</p>
         <button class="offers__button btn btn--buy" type="button">Заказать</button>
@@ -275,19 +287,27 @@
           </li>
         </ul>
         <div class="contacts__wrapper">
-          <a class="contacts__link contacts__link--map" href="#">
-            <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="Найти нас на карте" width="320" height="457">
+          <a class="contacts__link" href="#">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
+              <source media="(max-width: 1139px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <source media="(min-width: 1140px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
+                alt="Найти нас на карте">
           </a>
+          </picture>
         </div>
         <a class="contacts__button btn btn--сontact" href="writeus.html">Напишите нам</a>
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__logo logo">
-        <a class="logo__link logo__link--footer">
-          <img class="logo__img" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35">
+        <a class="logo__link">
+          <img class="logo__img  logo__img--footer" src="img/logo-mobile.svg" alt="Логотип магазина Мишка" width="102"
+            height="34">
         </a>
       </div>
       <div class="footer__social">

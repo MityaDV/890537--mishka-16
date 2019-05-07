@@ -7,8 +7,14 @@
   @media (min-width: $width_tablet) {
     padding: 67px 50px 0;
     position: relative;
+  }
 
-    &::before {
+  @media (min-width: $width_desktop) {
+    padding: 110px 50px 0;
+  }
+
+  &::before {
+    @media (min-width: $width_tablet) {
       content: "";
       position: absolute;
       top: -24px;
@@ -17,10 +23,6 @@
       height: 24px;
       background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
     }
-  }
-
-  @media (min-width: $width_desktop) {
-    padding: 110px 50px 0;
   }
 }
 
