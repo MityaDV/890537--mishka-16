@@ -46,7 +46,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 0 0 0 180px;
+    padding: 0 0 0 170px;
     max-height: 500px;
     flex-direction: column;
     align-content: flex-start;
@@ -180,7 +180,7 @@
 
 .contacts__map {
   border: none;
-  widows: 100%;
+  width: 100%;
 
   @media (min-width: $width_desktop) {
     width: auto;
