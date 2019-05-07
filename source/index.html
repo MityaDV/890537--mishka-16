@@ -287,9 +287,15 @@
           </li>
         </ul>
         <div class="contacts__wrapper">
-          <a class="contacts__link contacts__link--map" href="#">
-            <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="Найти нас на карте" width="320" height="457">
+          <a class="contacts__link" href="#">
+            <picture>
+                <source media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
+              <source media="(min-width: 1140px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x"
+                alt="Найти нас на карте">
           </a>
+          </picture>
         </div>
         <a class="contacts__button btn btn--сontact" href="writeus.html">Напишите нам</a>
       </div>
