@@ -163,23 +163,23 @@
   align-self: center;
 
   @media (min-width: $width_tablet) {
-    min-width: 333px;
-    min-height: 404px;
-    background: $color_gray_lightest url("../img/triple-set-tablet@1x.jpg") no-repeat center 0;
     order: 3;
   }
 
   @media (min-width: $width_desktop) {
     margin: 0 0 0 60px;
-    min-width: 525px;
-    min-height: 636px;
-    background: $color_gray_lightest url("../img/triple-set-desktop@1x.jpg") no-repeat center 0;
   }
 }
 
 .offers__img {
+  min-width: 260px;
+
   @media (min-width: $width_tablet) {
-    visibility: hidden;
+    min-width: 333px;
+  }
+
+  @media (min-width: $width_desktop) {
+    min-width: 525px;
   }
 }
 
