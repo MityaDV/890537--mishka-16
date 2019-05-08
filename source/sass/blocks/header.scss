@@ -50,7 +50,7 @@
 
   & .header__toggle {
     @media (max-width: $width_mobile_only) {
-      display: none;
+      display: block;
     }
   }
 }
