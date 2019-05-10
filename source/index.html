@@ -10,6 +10,17 @@
 </head>
 
 <body>
+  <svg style="display: none;">
+    <symbol viewBox="-0.8 -0.8 17.6 17.6" id="icon-search">
+      <path
+        d="M16.47 14.93l-3.415-3.415A7.67 7.67 0 0 0 14.6 6.899C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33a1.1 1.1 0 0 0 1.1-1.1c0-.24-.061-.499-.33-.769zM1.399 6.899a5.5 5.5 0 1 1 11 0c0 3.038-2.462 5.5-5.5 5.5s-5.5-2.461-5.5-5.5z" />
+    </symbol>
+    <symbol viewBox="264.205 370.961 20.294 18.849" id="icon-cart">
+      <path
+        d="M283.75 378.19h-3.151l-3.407-6.814a.75.75 0 1 0-1.341.671l3.071 6.143h-9.138l3.072-6.143a.75.75 0 0 0-1.341-.671l-3.407 6.814h-3.151a.75.75 0 0 0 0 1.5h.157l.855 2.991a.737.737 0 0 0-.316.595c0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795a.745.745 0 0 0 .698-.739.738.738 0 0 0-.316-.596l.854-2.991h.157a.75.75 0 1 0-.002-1.499zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z" />
+    </symbol>
+  </svg>
+
   <header class="header">
     <nav class="header__navigation header__navigation--opened header__navigation--nojs">
       <div class="header__inner">
@@ -36,23 +47,16 @@
         <ul class="header__list header__list--user">
           <li class="header__item header__item--search">
             <label class="header__label" for="form-search">
-              <svg class="header__label-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px"
-                viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-                <path fill="#231F20"
-                  d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z" />
+              <svg class="header__label-icon" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6">
+                <use xlink:href="#icon-search"></use>
               </svg>
             </label>
             <input class="header__input" id="form-search" type="text" placeholder="Поиск по сайту">
           </li>
           <li class="header__item">
             <a class="header__link header__link--indent" href="cart.html">
-              <svg class="header__link-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="18px"
-                viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849"
-                xml:space="preserve">
-                <path fill="#231F20"
-                  d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z" />
+              <svg class="header__link-icon" xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849">
+                <use xlink:href="#icon-cart"></use>
               </svg>
               Корзина: пока пуста
             </a>
