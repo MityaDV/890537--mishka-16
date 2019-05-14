@@ -68,13 +68,13 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/*.svg" )
+  return gulp.src("source/img/sprite-svg-icons/icon-*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(cheerio({
-      run: function (sprite) {
-        sprite("svg").attr("style", "display: none;");
+      run: function ($) {
+        $("svg").addClass("visually-hidden");
       },
       parserOptions: {
         xmlMode: true
