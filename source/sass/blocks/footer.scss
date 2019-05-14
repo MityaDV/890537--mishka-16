@@ -27,6 +27,7 @@
 
   display: flex;
   justify-content: space-around;
+  align-items: flex-end;
 }
 
 .footer__social {
@@ -41,7 +42,7 @@
 .footer__copyright {
   padding: 25px 40px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 
   @media (min-width: $width_tablet) {
     padding: 60px 0;
@@ -54,7 +55,5 @@
 }
 
 .footer__icon {
-  & path {
-    fill: $color_seafoam_blue;
-  }
+  fill: $color_seafoam_blue;
 }

@@ -93,11 +93,11 @@
   }
 }
 
-.feedback__prew {
+.feedback__prev {
   min-width: 130px;
   min-height: 52px;
   border: 1px solid $color_gray_lighten;
-  background: $color_white url("../img/icon-left-arrow.svg") no-repeat 50% 50%;
+  background: $color_white;
 
   @media (min-width: $width_tablet) {
     min-width: 85px;
@@ -109,7 +109,7 @@
   min-width: 130px;
   min-height: 52px;
   border: 1px solid $color_gray_lighten;
-  background: $color_white url("../img/icon-right-arrow.svg") no-repeat 50% 50%;
+  background: $color_white;
 
   @media (min-width: $width_tablet) {
     min-width: 85px;

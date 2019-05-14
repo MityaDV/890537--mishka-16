@@ -76,36 +76,17 @@
 }
 
 .promo__item {
-  position: relative;
-  padding: 30px 80px 30px 30px;
+  padding: 30px;
   display: flex;
+  justify-content: space-between;
   background: $color_seafoam_blue;
 
   @media (min-width: $width_tablet) {
-    padding: 30px 95px 35px 36px;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 23px;
-    right: 36px;
-    width: 40px;
-    height: 62px;
-    background: url("../img/icon-interior.svg") no-repeat 0 0;
-    opacity: 0.5;
+    padding: 30px 35px 35px;
   }
 
   &--shade {
     background: $color_greeny_blue;
-
-    &::after {
-      top: 21px;
-      right: 27px;
-      width: 60px;
-      height: 60px;
-      background: url("../img/icon-toy.svg") no-repeat 0 0;
-    }
   }
 }
 
@@ -113,4 +94,16 @@
   flex-basis: 110px;
   margin: 0;
   color: $color_white;
+}
+
+.promo__icon {
+  opacity: 0.5;
+
+  &--interior {
+    margin: 0 10px 0 0;
+
+    @media (min-width: $width_tablet) {
+      margin: 0;
+    }
+  }
 }
