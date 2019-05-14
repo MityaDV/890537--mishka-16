@@ -250,7 +250,7 @@
 
 .header__label-icon {
   position: absolute;
-  top: 7px;
+  top: 4px;
   left: 0;
 
   width: 18px;
@@ -258,16 +258,12 @@
   opacity: 0.2;
 
   &:hover {
-    & path {
-      fill: $color_seafoam_blue;
-    }
+    fill: $color_seafoam_blue;
     opacity: 1;
   }
 
   &:active {
-    & path {
-      fill: $color_seafoam_blue;
-    }
+    fill: $color_seafoam_blue;
     opacity: 0.3;
   }
 }
@@ -315,7 +311,7 @@
 
 .header__link-icon {
   position: absolute;
-  top: 4px;
+  top: 0;
   left: 0;
 
   width: 21px;
@@ -323,16 +319,12 @@
   opacity: 0.2;
 
   &:hover {
-    & path {
-      fill: $color_seafoam_blue;
-    }
+    fill: $color_seafoam_blue;
     opacity: 1;
   }
 
   &:active {
-    & path {
-      fill: $color_seafoam_blue;
-    }
+    fill: $color_seafoam_blue;
     opacity: 0.3;
   }
 }

@@ -3,18 +3,6 @@
 
 .logo__link {
   display: block;
-
-  &:hover {
-    @media (min-width: $width_desktop) {
-      opacity: 0.6;
-    }
-  }
-
-  &:active {
-    @media (min-width: $width_desktop) {
-      opacity: 0.3;
-    }
-  }
 }
 
 .logo__img {
@@ -28,10 +16,27 @@
     height: auto;
   }
 
-  &--footer {
-    @media (min-width: $width_tablet) {
-      width: 102px;
-      height: auto;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
+
+.logo__icon {
+  @media (min-width: $width_tablet) {
+    width: 102px;
+    height: auto;
+  }
+
+  &:hover {
+    fill: $color_greeny_blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+

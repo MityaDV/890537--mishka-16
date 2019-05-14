@@ -52,8 +52,20 @@
 .footer__text {
   margin: 0;
   padding: 0 50px 0 0;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__icon {
   fill: $color_seafoam_blue;
+
+  &:hover {
+    fill: $color_greeny_blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
