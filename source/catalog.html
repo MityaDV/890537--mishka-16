@@ -141,7 +141,7 @@
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
                 <source type="image/webp" media="(max-width: 1139px)"
-                  srcset="imgphoto-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                  srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 1140px)"
                   srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)"
@@ -235,6 +235,31 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal">
+    <div class="modal__inner">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <legend class="modal__legend">Выберите размер:</legend>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-s" value="S" checked>
+            <label class="modal__label" for="size-s">s</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-m" value="M">
+            <label class="modal__label" for="size-m">m</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-l" value="L">
+            <label class="modal__label" for="size-l">l</label>
+          </li>
+        </ul>
+        <a class="modal__button btn btn--modal" href="cart.html">Добавить</a>
+      </form>
+    </div>
+  </section>
+
   <script src="js/menu.js"></script>
 </body>
 

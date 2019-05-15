@@ -57,4 +57,14 @@
       margin: 0 auto 0 0;
     }
   }
+
+  &--modal {
+    border: none;
+    background: $color_seafoam_blue;
+    color: $color_white;
+
+    @media (min-width: $width_tablet) {
+      width: auto;
+    }
+  }
 }

@@ -7,21 +7,33 @@
   box-shadow: 0 5px 10px 0 $color_black_lighten_25;
   border: solid 1px $color_gray_light;
   opacity: 0.9;
+
+  @media (min-width: $width_tablet) {
+    min-width: 570px;
+  }
 }
 
 .modal__inner {
   padding: 20px 30px 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  @media (min-width: $width_tablet) {
+    display: block;
+    padding: 35px 107px 46px;
+  }
 }
 
 .modal__title {
   max-width: 150px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 0 15px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $width_tablet) {
+    max-width: none;
+    font-size: 30px;
+    line-height: 1.9;
+  }
 }
 
 .modal__legend {
@@ -51,16 +63,12 @@
   text-transform: uppercase;
   color: $color_greyish_brown;
   border: 2px solid $color_greyish_brown_10;
+
+  @media (min-width: $width_tablet) {
+    min-width: 112px;
+  }
 }
 
 .modal__input:checked + .modal__label {
   border: 2px solid $color_seafoam_blue;
-}
-
-.modal__button {
-  @include btn;
-
-  border: none;
-  background: $color_seafoam_blue;
-  color: $color_white;
 }
