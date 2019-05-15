@@ -5,7 +5,7 @@
   margin: 0 0 40px;
 
   @media (min-width: $width_tablet) {
-    background: $color_gray_lightest url("../img/review@1x.jpg") no-repeat 0 0;
+    background: $color_white url("../img/review@1x.jpg") no-repeat 0 0;
     background-size: contain;
   }
 
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $width_tablet) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
-    background: $color_gray_lightest url("../img/review@2x.jpg") no-repeat 0 0;
+    background: $color_white url("../img/review@2x.jpg") no-repeat 0 0;
     background-size: contain;
   }
 
