@@ -11,7 +11,7 @@
   flex-direction: column;
 
   @media (min-width: $width_tablet) {
-    padding: 40px 42px;
+    padding: 0 42px 40px;
   }
 
   @media (min-width: $width_desktop) {
@@ -76,16 +76,29 @@
   margin: 20px -34px 30px;
 
   @media (min-width: $width_tablet) {
+    margin: 0 -42px 30px;
     min-height: 455px;
     display: flex;
-    background: url("../img/video-tablet@1x.jpg") no-repeat 50% 0;
+    background: $color_gray_lightest url("../img/video-tablet@1x.jpg") no-repeat 50% 0;
+    background-size: cover;
     order: -1;
+  }
+
+  @media (min-width: $width_tablet) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
+    background: $color_gray_lightest url("../img/video-tablet@2x.jpg") no-repeat 50% 0;
+    background-size: cover;
   }
 
   @media (min-width: $width_desktop) {
     min-width: 682px;
     margin: 0 60px 0 0;
-    background: url("../img/video-desktop@1x.jpg") no-repeat 0 0;
+    background: $color_gray_lightest url("../img/video-desktop@1x.jpg") no-repeat 0 0;
+    background-size: cover;
+  }
+
+  @media (min-width: $width_desktop) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
+    background: $color_gray_lightest url("../img/video-desktop@2x.jpg") no-repeat 0 0;
+    background-size: cover;
   }
 }
 
