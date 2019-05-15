@@ -1,0 +1,66 @@
+@import "../base/mixins.scss";
+@import "../base/vars.scss";
+
+.modal {
+  max-width: 320px;
+  margin: 0 auto;
+  box-shadow: 0 5px 10px 0 $color_black_lighten_25;
+  border: solid 1px $color_gray_light;
+  opacity: 0.9;
+}
+
+.modal__inner {
+  padding: 20px 30px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__title {
+  max-width: 150px;
+  margin: 0;
+  padding: 0 0 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal__legend {
+  margin: 0 auto;
+  padding: 0 0 20px;
+  font-size: $font_size_p_mobile;
+  font-weight: $font_weight_normal;
+  line-height: 2;
+}
+
+.modal__list {
+  @include list;
+
+  padding: 0 0 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__label {
+  min-width: 82px;
+  padding: 16px 0;
+  display: inline-block;
+  font-size: $font_size_h3_mobile;
+  line-height: 0.94;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color_greyish_brown;
+  border: 2px solid $color_greyish_brown_10;
+}
+
+.modal__input:checked + .modal__label {
+  border: 2px solid $color_seafoam_blue;
+}
+
+.modal__button {
+  @include btn;
+
+  border: none;
+  background: $color_seafoam_blue;
+  color: $color_white;
+}

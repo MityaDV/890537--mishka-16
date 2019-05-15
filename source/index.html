@@ -12,7 +12,7 @@
 <body>
   <include src="build/img/sprite.svg"></include>
   <header class="header">
-    <nav class="header__navigation header__navigation--closed header__navigation--nojs">
+    <nav class="header__navigation header__navigation--opened header__navigation--nojs">
       <div class="header__inner">
         <button class="header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -128,7 +128,7 @@
           </picture>
         </div>
         <p class="offers__price">Цена: 990 руб.</p>
-        <button class="offers__button btn btn--buy" type="button">Заказать</button>
+        <a class="offers__button btn btn--buy" href="offers.html">Заказать</a>
       </div>
     </section>
     <section class="about">
@@ -307,6 +307,30 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal">
+    <div class="modal__inner">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
+        <legend class="modal__legend">Выберите размер:</legend>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-s" value="S" checked>
+            <label class="modal__label" for="size-s">s</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-m" value="M">
+            <label class="modal__label" for="size-m">m</label>
+          </li>
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-l" value="L">
+            <label class="modal__label" for="size-l">l</label>
+          </li>
+        </ul>
+        <a class="modal__button" href="cart.html">Добавить</a>
+      </form>
+    </div>
+  </section>
   <script src="js/menu.js"></script>
 </body>
 

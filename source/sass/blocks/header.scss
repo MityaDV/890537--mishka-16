@@ -125,6 +125,7 @@
     display: none;
 
     @media (min-width: $width_tablet) {
+      display: flex;
       flex-basis: 50%;
       justify-content: flex-end;
       order: 4;
