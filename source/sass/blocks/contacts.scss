@@ -10,10 +10,6 @@
     padding: 76px 0 60px;
   }
 
-  @media (min-width: $width_desktop) {
-    padding: 77px 50px 105px;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -40,13 +36,15 @@
   padding: $padding_small;
 
   @media (min-width: $width_tablet) {
-    padding: $padding_medium;
+    @include fixed_inner;
+
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 0 0 0 170px;
+    width: 1150px;
+    padding: $padding_large;
     max-height: 500px;
     flex-direction: column;
     align-content: flex-start;

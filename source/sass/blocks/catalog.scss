@@ -5,12 +5,14 @@
   @include inner;
 
   @media (min-width: $width_tablet) {
-    padding: 67px 50px 0;
+    @include fixed_inner;
+
     position: relative;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 110px 50px 0;
+    width: 1150px;
+    padding: $padding_large;
   }
 
   &::before {

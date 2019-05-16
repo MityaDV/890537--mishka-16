@@ -5,8 +5,9 @@
 }
 
 @mixin fixed_inner() {
-  width: 100%;
-  padding: $padding_small;
+  width: 768px;
+  margin: 0 auto;
+  padding: $padding_medium;
 }
 
 @mixin list() {

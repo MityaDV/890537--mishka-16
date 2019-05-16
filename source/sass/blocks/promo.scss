@@ -23,10 +23,14 @@
   margin: 0 0 35px;
 
   @media (min-width: $width_tablet) {
-    padding: $padding_medium;
-    margin: 0;
+    @include fixed_inner;
     display: flex;
     flex-direction: column;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 1150px;
+    padding: $padding_large;
   }
 }
 

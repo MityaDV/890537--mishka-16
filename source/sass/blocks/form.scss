@@ -29,12 +29,14 @@
   align-items: center;
 
   @media (min-width: $width_tablet) {
-    padding: 0 50px 50px;
+    @include fixed_inner;
+
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 50px 225px;
+    width: 1150px;
+    padding: $padding_large;
   }
 }

@@ -27,7 +27,8 @@
   @include inner;
 
   @media (min-width: $width_tablet) {
-    padding: 80px 50px 50px;
+    @include fixed_inner;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -35,7 +36,8 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 80px 50px 100px 220px;
+    width: 1150px;
+    padding: $padding_large;
   }
 }
 

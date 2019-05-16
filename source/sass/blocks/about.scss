@@ -39,11 +39,12 @@
   @include inner;
 
   @media (min-width: $width_tablet) {
-    padding: $padding_medium;
+    @include fixed_inner;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 0 50px 0 225px;
+    width: 1150px;
+    padding: $padding_large;
   }
 }
 

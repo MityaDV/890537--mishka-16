@@ -61,15 +61,15 @@
   position: relative;
 
   @media (min-width: $width_tablet) {
-    padding: $padding_medium;
+    @include fixed_inner;
+
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   @media (min-width: $width_desktop) {
-    padding: $padding_medium;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 1150px;
+    padding: $padding_large;
     justify-content: space-between;
   }
 }

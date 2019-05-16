@@ -7,10 +7,17 @@
   background: $color_gray_lightest;
 
   @media (min-width: $width_tablet) {
+    @include fixed_inner;
+
     padding: $padding_medium;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 1150px;
+    padding: $padding_large;
   }
 }
 

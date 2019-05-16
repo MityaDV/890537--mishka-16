@@ -11,12 +11,14 @@
   @include inner;
 
   @media (min-width: $width_tablet) {
-    padding: 50px 50px;
+    @include fixed_inner;
+
     display: flex;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 50px 225px 50px 114px;
+    width: 1150px;
+    padding: $padding_large;
   }
 
   &--checkbox {
