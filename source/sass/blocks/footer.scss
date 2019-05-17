@@ -1,10 +1,12 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.footer {
+  background: $color_gray_lightest;
+}
+
 .footer__inner {
   @include inner;
-
-  background: $color_gray_lightest;
 
   @media (min-width: $width_tablet) {
     @include fixed_inner;
