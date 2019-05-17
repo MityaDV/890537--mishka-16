@@ -123,7 +123,8 @@
               srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
             <source media="(min-width: 1140px)"
               srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-            <img class="offers__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="товар недели «Вязаные корзинки»" width="260" height="315">
+            <img class="offers__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+              alt="товар недели «Вязаные корзинки»" width="260" height="315">
           </picture>
         </div>
         <p class="offers__price">Цена: 990 руб.</p>
@@ -134,7 +135,7 @@
       <div class="about__inner">
         <h2 class="about__title">Коротко о нас:</h2>
         <div class="about__wrapper">
-          <ul class="about__list">
+          <ul class="about__list about__list--first">
             <li class="about__item">
               <svg class="about__icon" width="32" height="37">
                 <use xlink:href="#icon-feature-flower"></use>
@@ -160,7 +161,7 @@
               </p>
             </li>
           </ul>
-          <ul class="about__list">
+          <ul class="about__list about__list--second">
             <li class="about__item">
               <svg class="about__icon" width="34.373" height="34.373">
                 <use xlink:href="#icon-feature-ball"></use>
@@ -222,7 +223,12 @@
     </section>
     <section class="contacts">
       <div class="contacts__inner">
-        <h3 class="contacts__title">Контакты</h3>
+        <div class="contacts__wrapper-title">
+          <h3 class="contacts__title">Контакты</h3>
+          <svg class="contacts__icon contacts__icon--flag" width="46.68" height="81.691">
+            <use xlink:href="#icon-flag"></use>
+          </svg>
+        </div>
         <ul class="contacts__list">
           <li class="contacts__item">
             <p class="contacts__text">e-mail:</p>
@@ -252,6 +258,9 @@
                 alt="Найти нас на карте" width="322" height="457">
             </picture>
           </a>
+          <svg class="contacts__icon contacts__icon--pin" width="66" height="100.801">
+            <use xlink:href="#icon-map-pin"></use>
+          </svg>
         </div>
         <a class="contacts__button btn btn--сontact" href="writeus.html">Напишите нам</a>
       </div>

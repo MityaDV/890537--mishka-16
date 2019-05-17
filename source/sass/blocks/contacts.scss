@@ -47,7 +47,7 @@
     padding: $padding_large;
     max-height: 500px;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: flex-end;
   }
 }
 
@@ -57,8 +57,7 @@
 
   @media (min-width: $width_tablet) {
     min-height: 457px;
-    margin: 0 auto 55px;
-    flex-basis: 100%;
+    margin: 0 -50px 55px;
   }
 
   @media (min-width: $width_desktop) {
@@ -66,65 +65,60 @@
     margin: 0 0 0 50px;
     order: 1;
   }
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 67px;
-    height: 100px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    background: url("../img/sprite-svg-icons/icon-map-pin.svg") no-repeat 0 0;
+.contacts__wrapper-title {
+  padding: 0 0 30px;
+
+  @media (min-width: $width_tablet) {
+    padding: 0 0 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 50px 40px 40px 100px;
+    flex-direction: row-reverse;
+    position: relative;
   }
 }
 
 .contacts__title {
   margin: 0;
-  padding: 0 0 30px;
 
   @media (min-width: $width_tablet) {
-    position: relative;
-    padding: 0 47px 60px 0;
     font-size: $font_size_h2_tablet;
     font-weight: $font_weight_bold;
-    flex-basis: 100%;
   }
 
   @media (min-width: $width_desktop) {
     font-size: $font_size_h2_desktop;
-    padding: 0 0 60px;
-    flex-basis: auto;
   }
+}
 
-  &::after {
+.contacts__icon {
+  &--flag {
+    display: none;
+
     @media (min-width: $width_tablet) {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 47px;
-      height: 81px;
-      background: $color_white url("../img/sprite-svg-icons/icon-flag.svg") no-repeat 0 0;
+      display: block;
     }
 
     @media (min-width: $width_desktop) {
-      display: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
     }
   }
 
-  &::before {
-    @media (min-width: $width_desktop) {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -105px;
-      width: 47px;
-      height: 81px;
-      background: $color_white url("../img/sprite-svg-icons/icon-flag.svg") no-repeat 0 0;
-    }
+  &--pin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
   }
 }
 
@@ -144,6 +138,7 @@
 
   @media (min-width: $width_desktop) {
     display: block;
+    padding: 0 0 40px 100px;
   }
 }
 
@@ -153,6 +148,12 @@
 
   @media (min-width: $width_tablet) {
     flex-basis: 50%;
+    padding: 0;
+  }
+
+  @media (min-width: $width_tablet) {
+    flex-basis: auto;
+    padding: 0 0 40px;
   }
 }
 
