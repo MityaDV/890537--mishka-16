@@ -6,15 +6,17 @@
 
   &--order {
     width: 192px;
+    margin: 0 auto 30px;
 
     @media (min-width: $width_tablet) {
       width: 100%;
       padding: 18px 0;
+      margin: 0 auto 46px;
     }
 
     @media (min-width: $width_desktop) {
       width: 230px;
-      margin: 0;
+      margin: 0 0 60px;
     }
   }
 
