@@ -1,6 +1,26 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.social {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $width_tablet) {
+    padding: 60px 0 50px 0;
+    margin: 0 0 0 75px;
+  }
+}
+
+.social__item {
+  padding: 0 40px 0 0;
+
+  &:last-child {
+    padding: 0;
+  }
+}
+
 .social__icon {
   &:hover {
     fill: $color_greeny_blue;
