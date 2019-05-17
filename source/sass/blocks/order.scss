@@ -2,7 +2,7 @@
 @import "../base/vars.scss";
 
 .order__inner {
-  padding: 25px 50px 20px 30px;
+  @include inner;
 
   @media (min-width: $width_tablet) {
     @include fixed_inner;
@@ -30,17 +30,30 @@
 
 .order__title {
   margin: 0;
-  padding: 75px 0;
+  padding: 70px 0;
   text-align: center;
   background: $color_gray_lightest;
 
   @media (min-width: $width_tablet) {
-    padding: 190px 0 60px;
+    padding: 190px 0 90px;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 190px 0 110px;
   }
 }
 
 .order__text {
   margin: 0;
+  padding: 25px 0 0;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
+
+  @media (min-width: $width_tablet) {
+    padding: 60px 0 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 105px 110px 0 180px;
+  }
 }

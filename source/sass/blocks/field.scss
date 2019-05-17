@@ -20,32 +20,6 @@
     width: 1150px;
     padding: $padding_large;
   }
-
-  &--checkbox {
-    @media (min-width: $width_desktop) {
-      padding: 50px 50px 50px 114px;
-    }
-  }
-
-  &--phone {
-    @media (min-width: $width_tablet) {
-      padding: 50px 50px 0;
-    }
-
-    @media (min-width: $width_desktop) {
-      padding: 50px 225px 50px 114px;
-    }
-  }
-
-  &--letter {
-    @media (min-width: $width_tablet) {
-      padding: 0 50px 50px;
-    }
-
-    @media (min-width: $width_desktop) {
-      padding: 50px 225px 50px 114px;
-    }
-  }
 }
 
 .field__legend {
@@ -59,7 +33,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    flex-basis: 12%;
+    flex-basis: 17%;
   }
 
   &::after {
@@ -76,9 +50,63 @@
     }
   }
 
-  &--checkbox {
+  &--radio {
+    @media (min-width: $width_tablet) {
+      padding: 10px 0 0;
+    }
+
     @media (min-width: $width_desktop) {
-      flex-basis: 11%;
+      padding: 10px 0 0 70px;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $width_tablet) {
+      padding: 60px 0 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 60px 0 0 70px;
+    }
+  }
+
+  &--user {
+    @media (min-width: $width_tablet) {
+      padding: 65px 0 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 50px 0 0 70px;
+    }
+  }
+
+  &--phone {
+    @media (min-width: $width_tablet) {
+      padding: 65px 0 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 65px 0 0 70px;
+    }
+  }
+
+  &--letter {
+    @media (min-width: $width_tablet) {
+      padding: 17px 0 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 17px 0 0 70px;
+    }
+  }
+
+  &--more {
+    @media (min-width: $width_tablet) {
+      padding: 65px 0 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 65px 0 0 70px;
     }
   }
 }
@@ -89,18 +117,64 @@
   padding: 25px 0 0;
 
   @media (min-width: $width_tablet) {
-    padding: 0;
     flex-basis: 75%;
   }
 
   @media (min-width: $width_desktop) {
-    flex-basis: 88%;
+    flex-basis: 83%;
   }
 
-  &--color {
+  &--radio {
     @media (min-width: $width_tablet) {
+      padding: 0 0 30px;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $width_tablet) {
+      padding: 50px 0 25px;
       display: flex;
       flex-wrap: wrap;
+    }
+  }
+
+  &--user {
+    @media (min-width: $width_tablet) {
+      padding: 65px 0 50px;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 50px 180px 50px 0;
+    }
+  }
+
+  &--phone {
+    @media (min-width: $width_tablet) {
+      padding: 50px 0 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 50px 180px 0 0;
+    }
+  }
+
+  &--letter {
+    @media (min-width: $width_tablet) {
+      padding: 0 0 50px;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 0 180px 50px 0;
+    }
+  }
+
+  &--more {
+    @media (min-width: $width_tablet) {
+      padding: 50px 0 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 50px 180px 0 0;
     }
   }
 }
@@ -115,7 +189,7 @@
 
     @media (min-width: $width_tablet) {
       flex-basis: 50%;
-      padding: 0 0 24px;
+      padding: 0 0 25px;
     }
 
     @media (min-width: $width_desktop) {
@@ -144,7 +218,7 @@
     position: relative;
 
     @media (min-width: $width_tablet) {
-      padding: 0 0 24px;
+      padding: 0 0 25px;
     }
   }
 
@@ -153,7 +227,7 @@
     position: relative;
 
     @media (min-width: $width_tablet) {
-      padding: 0 0 24px;
+      padding: 0;
     }
   }
 }
@@ -331,7 +405,7 @@
     padding: 18px 0;
 
     @media (min-width: $width_tablet) {
-      padding: 0 0 18px 18px;
+      padding: 15px 0 15px 18px;
     }
   }
 

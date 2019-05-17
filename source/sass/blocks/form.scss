@@ -1,6 +1,13 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
+.form {
+  padding: 25px 0 55px;
+
+  @media (min-width: $width_tablet) {
+    padding: 50px 0;
+  }
+}
 
 .form__field {
   margin: 0;
@@ -10,7 +17,7 @@
 
 .form__text {
   margin: 0;
-  padding: 0 0 30px;
+  padding: 15px 0 30px;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 
@@ -18,12 +25,15 @@
     padding: 0;
     order: 2;
   }
+
+  @media (min-width: $width_desktop) {
+    padding: 0 180px 0 0;
+  }
 }
 
-.form__wrapper {
+.form__inner {
   @include inner;
 
-  padding: 18px 30px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,12 +41,13 @@
   @media (min-width: $width_tablet) {
     @include fixed_inner;
 
+    padding: 50px 50px 0;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $width_desktop) {
     width: 1150px;
-    padding: $padding_large;
+    padding: 50px 45px 0;
   }
 }

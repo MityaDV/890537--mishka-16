@@ -77,8 +77,8 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__field field">
           <div class="field__inner">
-            <legend class="field__legend">Тип</legend>
-            <ul class="field__list">
+            <legend class="field__legend field__legend--radio">Тип</legend>
+            <ul class="field__list field__list--radio">
               <li class="field__item field__item--radio">
                 <input class="field__input field__input--radio visually-hidden" type="radio" name="filter-accessory"
                   id="filter-property" value="interior" checked>
@@ -94,9 +94,9 @@
           </div>
         </fieldset>
         <fieldset class="form__field field field--bg">
-          <div class="field__inner field__inner--checkbox">
+          <div class="field__inner">
             <legend class="field__legend field__legend--checkbox">Цвет</legend>
-            <ul class="field__list field__list--color">
+            <ul class="field__list field__list--checkbox">
               <li class="field__item field__item--checkbox">
                 <input class="field__input field__input--checkbox visually-hidden" type="checkbox" name="filter-color"
                   id="filter-white" value="white" checked="">
@@ -132,8 +132,8 @@
         </fieldset>
         <fieldset class="form__field field">
           <div class="field__inner">
-            <legend class="field__legend">ФИО</legend>
-            <ul class="field__list">
+            <legend class="field__legend field__legend--user">ФИО</legend>
+            <ul class="field__list field__list--user">
               <li class="field__item field__item--user">
                 <label class="field__label field__label--user" for="user-name">Имя:</label>
                 <input class="field__input" type="text" name="username" id="user-name" placeholder="Введите ваше имя*"
@@ -153,9 +153,9 @@
           </div>
         </fieldset>
         <fieldset class="form__field field field--bg">
-          <div class="field__inner field__inner--phone">
-            <legend class="field__legend">Tел</legend>
-            <ul class="field__list">
+          <div class="field__inner">
+            <legend class="field__legend field__legend--phone">Tел</legend>
+            <ul class="field__list field__list--phone">
               <li class="field__item field__item--phone">
                 <label class="field__label field__label--phone" for="user-phone">
                   <svg class="field__icon" width="24.829px" height="24.333px">
@@ -169,9 +169,9 @@
           </div>
         </fieldset>
         <fieldset class="form__field field field--bg">
-          <div class="field__inner field__inner--letter">
-            <legend class="field__legend">E-mail</legend>
-            <ul class="field__list">
+          <div class="field__inner">
+            <legend class="field__legend field__legend--letter">E-mail</legend>
+            <ul class="field__list field__list--letter">
               <li class="field__item field__item--letter">
                 <label class="field__label field__label--letter" for="user-email">
                   <svg class="field__icon" width="32px" height="32px">
@@ -186,8 +186,8 @@
         </fieldset>
         <fieldset class="form__field field">
           <div class="field__inner">
-            <legend class="field__legend">Доп</legend>
-            <ul class="field__list">
+            <legend class="field__legend field__legend--more">Доп</legend>
+            <ul class="field__list field__list--more">
               <li class="field__item">
                 <textarea class="field__textarea" name="userwishes"
                   placeholder="Опишите все ваши пожелания к заказу"></textarea>
@@ -195,7 +195,7 @@
             </ul>
           </div>
         </fieldset>
-        <div class="form__wrapper">
+        <div class="form__inner">
           <p class="form__text">*Поля обязательны для заполнения</p>
           <button class="form__button btn btn--form" type="submit">Отправить заказ</button>
         </div>
