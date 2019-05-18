@@ -5,6 +5,14 @@
   margin: 0 0 60px;
   border: 1px solid $color_gray_lighten;
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 $color_black_10;
+  }
+
+  &:active {
+    box-shadow: 0 6px 10px 0 $color_black_10;
+  }
+
   @media (min-width: $width_desktop) {
     margin: 0 0 105px;
   }
@@ -121,9 +129,17 @@
   bottom: 0;
   left: 0;
   margin: auto;
-  height: 77px;
-  width: 101px;
+  height: 82px;
+  width: 115px;
   border: none;
   background: transparent;
   cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+  }
 }

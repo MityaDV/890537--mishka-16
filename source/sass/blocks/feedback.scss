@@ -105,6 +105,14 @@
   background: $color_white;
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $width_tablet) {
     min-width: 85px;
     border: none;
@@ -117,6 +125,14 @@
   border: 1px solid $color_gray_lighten;
   background: $color_white;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $width_tablet) {
     min-width: 85px;

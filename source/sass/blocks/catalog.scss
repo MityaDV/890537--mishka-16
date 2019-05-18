@@ -62,6 +62,14 @@
   margin: 0 0 30px;
   border: 1px solid $color_gray_lighten;
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 $color_black_10;
+  }
+
+  &:active {
+    box-shadow: 0 6px 10px 0 $color_black_10;
+  }
+
   &:last-child {
     margin: 0;
   }
