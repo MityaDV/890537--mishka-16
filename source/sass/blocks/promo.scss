@@ -80,13 +80,14 @@
 }
 
 .promo__item {
-  padding: 30px;
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: $color_seafoam_blue;
 
   @media (min-width: $width_tablet) {
-    padding: 30px 35px 35px;
+    padding: 30px 35px;
   }
 
   &--shade {

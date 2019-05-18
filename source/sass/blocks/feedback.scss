@@ -103,6 +103,7 @@
   min-height: 52px;
   border: 1px solid $color_gray_lighten;
   background: $color_white;
+  cursor: pointer;
 
   @media (min-width: $width_tablet) {
     min-width: 85px;
@@ -115,6 +116,7 @@
   min-height: 52px;
   border: 1px solid $color_gray_lighten;
   background: $color_white;
+  cursor: pointer;
 
   @media (min-width: $width_tablet) {
     min-width: 85px;

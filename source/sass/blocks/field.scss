@@ -237,6 +237,7 @@
   font-size: $font_size_h3_mobile;
   position: relative;
   display: block;
+  cursor: pointer;
 
   @media (min-width: $width_tablet) {
     min-height: 53px;

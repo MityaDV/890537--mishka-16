@@ -63,6 +63,7 @@
   text-transform: uppercase;
   color: $color_greyish_brown;
   border: 2px solid $color_greyish_brown_10;
+  cursor: pointer;
 
   @media (min-width: $width_tablet) {
     min-width: 112px;
