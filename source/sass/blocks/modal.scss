@@ -2,8 +2,14 @@
 @import "../base/vars.scss";
 
 .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
   max-width: 320px;
-  margin: 0 auto;
+  display: none;
+  transform: translateX(-50%) translateY(-50%);
+  background: $color_white;
   box-shadow: 0 5px 10px 0 $color_black_lighten_25;
   border: solid 1px $color_gray_light;
   opacity: 0.9;
@@ -11,6 +17,32 @@
   @media (min-width: $width_tablet) {
     min-width: 570px;
   }
+}
+
+@keyframes departure {
+  0% {
+    transform: translateX(-200%) translateY(-50%);
+  }
+
+  70% {
+    transform: translateX(-30%) translateY(-50%);
+  }
+
+  90% {
+    transform: translateX(-70%) translateY(-50%);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.modal-open {
+  display: block;
+  transition: ease-out;
+  animation-name: departure;
+  animation-duration: 0.7s;
+  will-change: transform;
 }
 
 .modal__inner {
