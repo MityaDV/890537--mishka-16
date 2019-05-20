@@ -85,15 +85,20 @@
 }
 
 .contacts__title {
+  @include heading_h3;
+
   margin: 0;
+  font-size: $font_size_h3_mobile_l;
+  line-height: $line_height_h3_mobile_l;
 
   @media (min-width: $width_tablet) {
     font-size: $font_size_h2_tablet;
-    font-weight: $font_weight_bold;
+    line-height: $line_height_h2_tablet;
   }
 
   @media (min-width: $width_desktop) {
     font-size: $font_size_h2_desktop;
+    line-height: $line_height_h2_desktop;
   }
 }
 
@@ -158,7 +163,10 @@
 }
 
 .contacts__text {
+  @include indent_p;
+
   margin: 0;
+  line-height: $line_height_p_mobile_xl;
 
   &:nth-child(odd) {
     flex-basis: 25%;

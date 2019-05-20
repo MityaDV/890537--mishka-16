@@ -24,8 +24,9 @@
 }
 
 .card__title {
+  @include heading_h3;
+
   margin: 0;
-  color: $color_black;
 
   @media (min-width: $width_tablet) {
     padding: 0 0 15px;
@@ -33,9 +34,18 @@
 }
 
 .card__caption {
+  @include indent_p;
+
   margin: 0;
+  font-size: $font_size_p_mobile_s;
+  line-height: $line_height_p_mobile_xxl;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
+
+  @media (min-width: $width_tablet) {
+    font-size: $font_size_p_mobile;
+    line-height: $line_height_p_mobile_xl;
+  }
 }
 
 .card__wrapper-price {
@@ -46,7 +56,13 @@
 }
 
 .card__price {
+  @include indent_p;
+
   margin: 0;
+
+  @media (min-width: $width_tablet) {
+    line-height: $line_height_h3_mobile;
+  }
 }
 
 .card__button {

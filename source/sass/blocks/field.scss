@@ -25,6 +25,7 @@
 .field__legend {
   position: relative;
   font-size: $font_size_h3_mobile;
+  line-height: $line_height_p_mobile_s;
   color: $color_seafoam_blue;
   text-transform: uppercase;
 
@@ -234,13 +235,16 @@
 
 .field__label {
   min-height: 40px;
-  font-size: $font_size_h3_mobile;
   position: relative;
   display: block;
+  font-size: $font_size_h3_mobile;
+  line-height: 1.06;
   cursor: pointer;
 
   @media (min-width: $width_tablet) {
     min-height: 53px;
+    font-size: $font_size_h3_mobile_xl;
+    line-height: $line_height_p_mobile_s;
   }
 
   &--radio {
@@ -310,12 +314,18 @@
   margin: 0;
   padding: 18px 0;
 
+  font-size: $font_size_h3_mobile;
   font-family: $font_family_base, $font_family_extra;
   font-weight: $font_weight_normal;
-  font-size: $font_size_h3_mobile;
+  line-height: 1.06;
 
   border: none;
   border-bottom: 2px solid $color_black;
+
+  @media (min-width: $width_tablet) {
+    font-size: $font_size_h3_mobile_xl;
+    line-height: $line_height_p_mobile_s;
+  }
 
   &--radio + .field__label--radio::before {
     content: "";
@@ -441,6 +451,11 @@
 
   border: solid 2px $color_greyish_brown;
   resize: none;
+
+  @media (min-width: $width_tablet) {
+    font-size: $font_size_h3_mobile_xl;
+    line-height: $line_height_p_mobile_s;
+  }
 
   &::placeholder {
     color: $color_greyish_brown_30;

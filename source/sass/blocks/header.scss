@@ -114,6 +114,9 @@
 .header__list {
   @include list;
 
+  font-size: $font_size_h3_mobile;
+  line-height: $line_height_h3_mobile;
+
   @media (min-width: $width_tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -126,6 +129,8 @@
       display: flex;
       flex-basis: 50%;
       justify-content: flex-end;
+      font-size: $font_size_p_mobile;
+      line-height: $line_height_p_mobile;
       order: 4;
     }
 
@@ -139,12 +144,16 @@
     @media (min-width: $width_tablet) {
       flex-basis: 50%;
       justify-content: space-between;
+      font-size: $font_size_p_mobile;
+      line-height: $line_height_p_mobile;
       order: 3;
     }
 
     @media (min-width: $width_desktop) {
       flex-basis: 35%;
       justify-content: space-between;
+      font-size: $font_size_h3_mobile;
+      line-height: $line_height_h3_mobile;
       order: 1;
     }
   }
@@ -167,8 +176,6 @@
 .header__item {
   min-height: 79px;
   padding: 30px 30px 30px;
-  line-height: $line_height_h3_mobile;
-  font-size: $font_size_h3_mobile;
   box-shadow: 0 1px 0 0 $color_gray_lighten, inset 0 1px 0 0 $color_gray_lighten;
 
   @media (min-width: $width_tablet) {
@@ -180,24 +187,20 @@
   &--catalog {
     @media (min-width: $width_tablet) {
       padding: 20px 0;
-      font-size: 15px;
     }
 
     @media (min-width: $width_desktop) {
       padding: 30px 0;
-      font-size: 17px;
     }
   }
 
   &--form {
     @media (min-width: $width_tablet) {
       padding: 20px 0;
-      font-size: 15px;
     }
 
     @media (min-width: $width_desktop) {
       padding: 30px 0;
-      font-size: 17px;
     }
   }
 
@@ -205,7 +208,6 @@
     @media (min-width: $width_tablet) {
       padding: 20px 0;
       font-weight: $font_weight_normal;
-      font-size: 15px;
     }
   }
 
@@ -232,7 +234,6 @@
       margin: 0 60px 0 0;
       padding: 20px 0;
       display: block;
-      font-size: 15px;
     }
   }
 
@@ -245,7 +246,6 @@
       margin: 0 auto 0 0;
       padding: 20px 0;
       display: block;
-      font-size: 15px;
     }
   }
 }

@@ -49,9 +49,13 @@
 }
 
 .promo__title {
+  @include heading_h2;
+
   margin: 0;
-  text-align: center;
   flex-basis: 245px;
+  text-align: center;
+  font-size: $font_size_h2_mobile_l;
+  line-height: $line_height_h2_mobile_s;
   color: $color_dark_brown;
 
   @media (min-width: $width_tablet) {
@@ -96,9 +100,17 @@
 }
 
 .promo__caption {
-  flex-basis: 110px;
+  @include heading_h3;
+
   margin: 0;
+  flex-basis: 110px;
+  font-size: $font_size_h3_mobile_xl;
+  line-height: $line_height_h3_mobile_s;
   color: $color_white;
+
+  @media (min-width: $width_tablet) {
+    line-height: $line_height_h3_tablet_l;
+  }
 }
 
 .promo__icon {

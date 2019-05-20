@@ -16,6 +16,7 @@
   &--order {
     width: 192px;
     margin: 0 auto 30px;
+    line-height: $line_height_p_mobile_s;
 
     @media (min-width: $width_tablet) {
       width: 100%;
@@ -42,16 +43,26 @@
   }
 
   &--write {
+    font-size: $font_size_h3_mobile_l;
+    line-height: $line_height_h2_mobile_s;
+
     @media (min-width: $width_tablet) {
       margin: 80px 0 25px;
       padding: 18px 0;
       width: 175px;
+      font-size: $font_size_h3_mobile;
+      line-height: $line_height_p_mobile_xxs;
       order: 2;
     }
   }
 
   &--сontact {
+    font-size: $font_size_h3_mobile_l;
+    line-height: $line_height_h2_mobile_s;
+
     @media (min-width: $width_tablet) {
+      font-size: $font_size_h3_mobile;
+      line-height: $line_height_p_mobile_xxs;
       width: 230px;
       padding: 18px 0;
     }
@@ -63,6 +74,7 @@
 
   &--form {
     margin: 0;
+    line-height: $line_height_p_mobile_s;
 
     @media (min-width: $width_tablet) {
       width: 230px;
@@ -74,6 +86,7 @@
   }
 
   &--modal {
+    line-height: $line_height_p_mobile_s;
     border: none;
     background: $color_seafoam_blue;
     color: $color_white;

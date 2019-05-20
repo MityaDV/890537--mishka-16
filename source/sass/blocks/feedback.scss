@@ -36,6 +36,8 @@
 }
 
 .feedback__title {
+  @include heading_h2;
+
   @media (min-width: $width_tablet) {
     margin: 0;
     padding: 80px 0 25px;
@@ -49,6 +51,9 @@
 }
 
 .feedback__text {
+  @include indent_p;
+
+  line-height: $line_height_p_mobile_xl;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 
@@ -64,8 +69,12 @@
 }
 
 .feedback__autor {
+  @include indent_p;
+
   margin: 0 0 30px;
   padding: 40px 0 0;
+  font-size: $font_size_h3_mobile;
+  line-height: $line_height_h3_mobile;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 
@@ -73,11 +82,15 @@
     margin: 0;
     padding: 30px 0 40px;
     flex-basis: 50%;
+    font-size: $font_size_h3_mobile_l;
+    line-height: $line_height_p_mobile_xxxs;
     order: 4;
   }
 
   @media (min-width: $width_desktop) {
     padding: 20px 0 100px 180px;
+    font-size: $font_size_h3_mobile;
+    line-height: $line_height_h3_mobile;
   }
 }
 

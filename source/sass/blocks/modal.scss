@@ -55,6 +55,8 @@
 }
 
 .modal__title {
+  @include heading_h2;
+
   max-width: 150px;
   margin: 0 auto;
   padding: 0 0 15px;
@@ -73,7 +75,13 @@
   padding: 0 0 20px;
   font-size: $font_size_p_mobile;
   font-weight: $font_weight_normal;
-  line-height: 2;
+  line-height: $line_height_p_mobile_xl;
+  color: $color_greyish_brown;
+
+  @media (min-width: $width_tablet) {
+    font-size: $font_size_h3_mobile;
+    line-height: 1.76;
+  }
 }
 
 .modal__list {
@@ -90,7 +98,7 @@
   padding: 16px 0;
   display: inline-block;
   font-size: $font_size_h3_mobile;
-  line-height: 0.94;
+  line-height: $line_height_p_mobile_s;
   text-align: center;
   text-transform: uppercase;
   color: $color_greyish_brown;
