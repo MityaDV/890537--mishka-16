@@ -3,7 +3,7 @@
 
 
 .contacts {
-  padding: 40px 0;
+  padding: 42px 0 39px;
   position: relative;
 
   @media (min-width: $width_tablet) {
@@ -68,7 +68,7 @@
 }
 
 .contacts__wrapper-title {
-  padding: 0 0 30px;
+  padding: 0 0 26px;
 
   @media (min-width: $width_tablet) {
     padding: 0 0 40px;
@@ -130,6 +130,7 @@
 .contacts__list {
   @include list;
 
+  padding: 0 0 37px;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 
@@ -149,7 +150,11 @@
 
 .contacts__item {
   display: flex;
-  padding: 0 0 35px;
+  padding: 0 0 30px;
+
+  &:last-child {
+    padding: 0;
+  }
 
   @media (min-width: $width_tablet) {
     flex-basis: 50%;
@@ -169,15 +174,15 @@
   line-height: $line_height_p_mobile_xl;
 
   &:nth-child(odd) {
-    flex-basis: 25%;
+    flex-basis: 30%;
   }
 
   &:nth-child(even) {
-    flex-basis: 75%;
+    flex-basis: 70%;
   }
 
   &--second {
-    max-width: 160px;
+    max-width: 145px;
 
     @media (min-width: $width_tablet) {
       max-width: 240px;

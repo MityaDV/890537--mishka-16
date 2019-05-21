@@ -2,7 +2,7 @@
 @import "../base/vars.scss";
 
 .about {
-  padding: 30px 0;
+  padding: 34px 0;
   position: relative;
 
   @media (min-width: $width_tablet) {
@@ -99,15 +99,18 @@
 }
 
 .about__item {
-  padding: 30px 0 0;
+  padding: 32px 0 0;
+
+  &--heart {
+    padding: 34px 0 0;
+  }
 }
 
 .about__caption {
   @include indent_p;
 
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  padding: 14px 0 0;
   font-size: $font_size_h3_mobile;
   line-height: $line_height_p_mobile_xxs;
 
@@ -116,8 +119,54 @@
     font-size: $font_size_h3_tablet;
     line-height: $line_height_p_tablet_s;
   }
+
+  &--flower {
+    max-width: 190px;
+  }
+
+  &--money {
+    max-width: 210px;
+    padding: 21px 0 0;
+  }
+
+  &--heart {
+    padding: 18px 0 0;
+    max-width: 190px;
+  }
+
+  &--ball {
+    max-width: 210px;
+  }
+
+  &--rocket {
+    padding: 25px 0 0;
+  }
+
+  &--gift {
+    max-width: 210px;
+  }
 }
 
 .about__icon {
   fill: $color_seafoam_blue;
+
+  &--flower {
+    margin: 0 0 0 8px;
+  }
+
+  &--heart {
+    margin: 0 0 0 8px;
+  }
+
+  &--ball {
+    margin: 0 0 0 4px;
+  }
+
+  &--rocket {
+    margin: 0 0 0 -5px;
+  }
+
+  &--gift {
+    margin: 0 0 0 4px;
+  }
 }
