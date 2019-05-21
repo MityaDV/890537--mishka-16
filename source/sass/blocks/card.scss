@@ -28,6 +28,10 @@
 
   margin: 0;
 
+  &--narrow {
+    max-width: 170px;
+  }
+
   @media (min-width: $width_tablet) {
     padding: 0 0 15px;
   }
@@ -37,6 +41,7 @@
   @include indent_p;
 
   margin: 0;
+  padding: 6px 0 0;
   font-size: $font_size_p_mobile_s;
   line-height: $line_height_p_mobile_xxl;
   font-weight: $font_weight_normal;
@@ -53,12 +58,14 @@
   margin: auto 0 0;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .card__price {
   @include indent_p;
 
   margin: 0;
+  padding: 12px 0 0;
 
   @media (min-width: $width_tablet) {
     line-height: $line_height_h3_mobile;
@@ -66,8 +73,10 @@
 }
 
 .card__button {
+  padding: 0 0 0 3px;
   width: 30px;
   height: 30px;
   border: none;
   background: transparent;
+  cursor: pointer;
 }

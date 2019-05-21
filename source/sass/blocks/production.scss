@@ -35,7 +35,7 @@
 }
 
 .production__wrapper-title {
-  padding: 25px 0;
+  padding: 26px 0;
   display: flex;
 
   @media (min-width: $width_tablet) {
@@ -50,14 +50,15 @@
   }
 }
 
-.production__icon {
+.production__icon-title {
+  margin: 6px 0 0 2px;
   fill: $color_seafoam_blue;
 }
 
 .production__title {
   @include heading_h3;
 
-  margin: 0 0 0 25px;
+  margin: 0 0 0 26px;
   max-width: 130px;
 
   @media (min-width: $width_tablet) {
@@ -72,12 +73,12 @@
   }
 }
 
-
 .production__caption {
   @include indent_p;
 
   margin: 0;
-  padding: 30px 0;
+  max-width: 190px;
+  padding: 25px 0;
   font-size: $font_size_p_mobile_s;
   line-height: $line_height_p_mobile_l;
   font-weight: $font_weight_normal;
