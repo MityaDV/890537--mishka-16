@@ -3,7 +3,6 @@
 
 .about {
   padding: 34px 0;
-  position: relative;
 
   @media (min-width: $width_tablet) {
     padding: 65px 0 50px;
@@ -12,27 +11,6 @@
   @media (min-width: $width_desktop) {
     padding: 76px 0 40px;
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 100%;
-    height: 6px;
-    background: #ffffff url("../img/bg-zigzag-line.svg") repeat-x 0 0;
-    background-size: contain;
-
-    @media (min-width: $width_tablet) {
-      height: 15px;
-    }
-
-    @media (min-width: $width_desktop) {
-      height: 23px;
-    }
-  }
 }
 
 .about__inner {
@@ -40,11 +18,36 @@
 
   @media (min-width: $width_tablet) {
     @include fixed_inner;
+
+    position: relative;
   }
 
   @media (min-width: $width_desktop) {
     width: 1150px;
     padding: $padding_large;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -65px;
+    width: 100%;
+    height: 6px;
+    background: #ffffff url("../img/bg-zigzag-line.svg") repeat-x center 0;
+    background-size: contain;
+
+    @media (min-width: $width_tablet) {
+      height: 15px;
+      width: 768px;
+      left: 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      height: 23px;
+      top: -70px;
+      left: auto;
+      width: 1060px;
+    }
   }
 }
 

@@ -2,19 +2,19 @@
 @import "../base/vars.scss";
 
 .promo {
-  background: $color_gray_lightest url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
+  background: $color_bg_header url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
 
   @media (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
-    background: $color_gray_lightest url("../img/hero-mobile@2x.jpg") no-repeat center 0;
+    background: $color_bg_header url("../img/hero-mobile@2x.jpg") no-repeat center 0;
     background-size: cover;
   }
 
   @media (min-width: $width_tablet) {
-    background: $color_gray_lightest url("../img/hero-tablet@1x.jpg") no-repeat center 88px;
+    background: $color_bg_header url("../img/hero-tablet@1x.jpg") no-repeat center 88px;
   }
 
   @media (min-width: $width_tablet) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
-    background: $color_gray_lightest url("../img/hero-tablet@2x.jpg") no-repeat center 88px;
+    background: $color_bg_header url("../img/hero-tablet@2x.jpg") no-repeat center 88px;
     background-size: cover;
   }
 }
@@ -69,11 +69,11 @@
   @media (min-width: $width_tablet) {
     display: flex;
     justify-content: space-between;
-    padding: 191px 0 0;
+    padding: 187px 0 0;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 175px 0 0;
+    padding: 170px 0 0;
   }
 }
 
@@ -116,11 +116,15 @@
 .promo__icon {
   opacity: 0.5;
 
+  @media (min-width: $width_tablet) {
+    margin: 4px 0 0;
+  }
+
   &--interior {
     margin: 0 7px 0 0;
 
     @media (min-width: $width_tablet) {
-      margin: 0;
+      margin: 2px 0 0;
     }
   }
 }

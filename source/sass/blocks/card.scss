@@ -14,7 +14,7 @@
 }
 
 .card__wrapper-feature {
-  padding: 25px;
+  padding: 25px 25px 25px 25px;
 
   @media (min-width: $width_tablet) {
     flex-basis: 50%;
@@ -30,10 +30,14 @@
 
   &--narrow {
     max-width: 170px;
+
+    @media (min-width: $width_tablet) {
+      max-width: 200px;
+    }
   }
 
   @media (min-width: $width_tablet) {
-    padding: 0 0 15px;
+    padding: 0 0 8px;
   }
 }
 
@@ -48,6 +52,7 @@
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
+    padding: 0;
     font-size: $font_size_p_mobile;
     line-height: $line_height_p_mobile_xl;
   }
@@ -68,6 +73,7 @@
   padding: 12px 0 0;
 
   @media (min-width: $width_tablet) {
+    padding: 0 0 6px 7px;
     line-height: $line_height_h3_mobile;
   }
 }
@@ -79,4 +85,8 @@
   border: none;
   background: transparent;
   cursor: pointer;
+
+  @media (min-width: $width_tablet) {
+    padding: 0 2px 0 0;
+  }
 }

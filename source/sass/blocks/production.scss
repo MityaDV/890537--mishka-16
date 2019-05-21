@@ -39,7 +39,7 @@
   display: flex;
 
   @media (min-width: $width_tablet) {
-    padding: 40px 0 30px;
+    padding: 32px 0 25px;
     align-items: center;
   }
 
@@ -53,6 +53,10 @@
 .production__icon-title {
   margin: 6px 0 0 2px;
   fill: $color_seafoam_blue;
+
+  @media (min-width: $width_tablet) {
+    margin: 2px 0;
+  }
 }
 
 .production__title {
@@ -84,7 +88,8 @@
   font-weight: $font_weight_normal;
 
   @media (min-width: $width_tablet) {
-    padding: 0 0 30px;
+    max-width: none;
+    padding: 0 0 35px;
     font-size: $font_size_p_mobile;
     line-height: $line_height_p_mobile_xl;
   }
