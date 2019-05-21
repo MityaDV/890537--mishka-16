@@ -83,13 +83,13 @@
 
   &--first {
     @media (min-width: $width_tablet) {
-      padding: 0 120px 0 0;
+      padding: 0 100px 0 0;
     }
   }
 
   &--second {
     @media (min-width: $width_tablet) {
-      padding: 0 70px 0 0;
+      padding: 0 40px 0 0;
     }
   }
 
@@ -101,8 +101,30 @@
 .about__item {
   padding: 32px 0 0;
 
+  &--money {
+    @media (min-width: $width_tablet) {
+      padding: 57px 0 0;
+    }
+  }
+
   &--heart {
     padding: 34px 0 0;
+
+    @media (min-width: $width_tablet) {
+      padding: 63px 0 0;
+    }
+  }
+
+  &--rocket {
+    @media (min-width: $width_tablet) {
+      padding: 60px 0 0;
+    }
+  }
+
+  &--gift {
+    @media (min-width: $width_tablet) {
+      padding: 60px 0 0;
+    }
   }
 }
 
@@ -122,20 +144,39 @@
 
   &--flower {
     max-width: 190px;
+
+    @media (min-width: $width_tablet) {
+      padding: 16px 0 0;
+      max-width: 205px;
+    }
   }
 
   &--money {
     max-width: 210px;
     padding: 21px 0 0;
+
+    @media (min-width: $width_tablet) {
+      max-width: 240px;
+      padding: 24px 0 0;
+    }
   }
 
   &--heart {
     padding: 18px 0 0;
     max-width: 190px;
+
+    @media (min-width: $width_tablet) {
+      max-width: 220px;
+    }
   }
 
   &--ball {
     max-width: 210px;
+
+    @media (min-width: $width_tablet) {
+      padding: 14px 0 0;
+      max-width: 250px;
+    }
   }
 
   &--rocket {
@@ -144,6 +185,11 @@
 
   &--gift {
     max-width: 210px;
+
+    @media (min-width: $width_tablet) {
+      padding: 17px 0 0;
+      max-width: 240px;
+    }
   }
 }
 
@@ -160,6 +206,10 @@
 
   &--ball {
     margin: 0 0 0 4px;
+
+    @media (min-width: $width_tablet) {
+      margin: 4px 0 0 4px;
+    }
   }
 
   &--rocket {

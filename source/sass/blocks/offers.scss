@@ -4,7 +4,7 @@
 .offers {
   @media (min-width: $width_tablet) {
     position: relative;
-    padding: 40px 0 50px;
+    padding: 42px 0 50px;
   }
 
   @media (min-width: $width_desktop) {
@@ -16,11 +16,12 @@
   &::before {
     content: "";
     position: absolute;
-    top: -20px;
+    top: -15px;
     left: 0;
     width: 100%;
     height: 24px;
-    background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
+    background: url("../img/bg-zigzag-fill.svg") repeat-x center 0;
+    background-size: contain;
 
     @media (min-width: $width_desktop) {
       height: 34px;
@@ -98,7 +99,7 @@
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
-    padding: 0 30px 45px 0;
+    padding: 0 34px 39px 0;
     width: 50%;
   }
 
@@ -115,9 +116,8 @@
     color: $color_seafoam_blue;
 
     @media (min-width: $width_tablet) {
-      padding: 0;
       max-width: 70px;
-      flex-basis: 20%;
+      margin: 7px 28px 0 0;
       line-height: $line_height_p_mobile_s;
       text-align: center;
     }
@@ -140,7 +140,7 @@
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
-    padding: 0 30px 60px 0;
+    padding: 0 30px 56px 0;
     width: 50%;
   }
 
@@ -165,7 +165,7 @@
 
   &:nth-child(even) {
     flex-basis: 70%;
-    padding: 0 0 0 31px;
+    padding: 0 0 0 19px;
   }
 }
 
@@ -173,6 +173,7 @@
   align-self: center;
 
   @media (min-width: $width_tablet) {
+    padding: 8px 0 0;
     order: 3;
   }
 }
@@ -202,7 +203,7 @@
   @media (min-width: $width_tablet) {
     width: 50%;
     margin: 0;
-    padding: 0 30px 35px 0;
+    padding: 0 47px 34px 0;
     font-size: $font_size_h3_tablet;
     line-height: $line_height_h3_tablet;
     order: 1;
