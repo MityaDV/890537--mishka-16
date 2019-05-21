@@ -47,12 +47,16 @@
     line-height: $line_height_h2_mobile_s;
 
     @media (min-width: $width_tablet) {
-      margin: 80px 0 25px;
+      margin: 77px 0 25px;
       padding: 13px 0;
       width: 175px;
       font-size: $font_size_h3_mobile;
       line-height: $line_height_p_mobile_xxs;
       order: 2;
+    }
+
+    @media (min-width: $width_desktop) {
+      margin: 76px 5px 25px 0;
     }
   }
 
@@ -68,7 +72,7 @@
     }
 
     @media (min-width: $width_desktop) {
-      margin: 0 0 0 100px;
+      margin: 0 0 0 108px;
     }
   }
 

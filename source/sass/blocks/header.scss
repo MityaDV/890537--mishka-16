@@ -106,7 +106,7 @@
   @media (min-width: $width_desktop) {
     order: 2;
     margin: 0;
-    flex-basis: 30%;
+    flex-basis: 28%;
     justify-content: center;
   }
 }
@@ -136,6 +136,7 @@
     }
 
     @media (min-width: $width_desktop) {
+      padding: 0;
       flex-basis: 100%;
       justify-content: flex-start;
     }
@@ -151,7 +152,8 @@
     }
 
     @media (min-width: $width_desktop) {
-      flex-basis: 35%;
+      flex-basis: 36%;
+      padding: 0;
       justify-content: space-between;
       font-size: $font_size_h3_mobile;
       line-height: $line_height_h3_mobile;
@@ -192,7 +194,8 @@
     }
 
     @media (min-width: $width_desktop) {
-      padding: 30px 0;
+      margin: 0;
+      padding: 30px 0 30px 4px;
     }
   }
 
@@ -211,6 +214,11 @@
       padding: 0;
       font-weight: $font_weight_normal;
     }
+
+    @media (min-width: $width_desktop) {
+      padding: 18px 0 0;
+      margin: 0 6px 0 0;
+    }
   }
 
   &--search {
@@ -223,7 +231,15 @@
     }
 
     @media (min-width: $width_desktop) {
+      flex-basis: 27%;
+      padding: 30px 0 30px 47px;
       margin: 0;
+    }
+  }
+
+  &--indent {
+    @media (min-width: $width_desktop) {
+      flex-basis: 63%;
     }
   }
 
@@ -234,7 +250,7 @@
 
     @media (min-width: $width_desktop) {
       margin: 0 60px 0 0;
-      padding: 20px 0;
+      padding: 18px 0 20px 5px;
       display: block;
     }
   }
@@ -246,7 +262,7 @@
 
     @media (min-width: $width_desktop) {
       margin: 0 auto 0 0;
-      padding: 20px 0;
+      padding: 18px 0;
       display: block;
     }
   }
