@@ -11,6 +11,10 @@
     padding: 58px 0 53px 0;
     margin: 0 0 0 75px;
   }
+
+  @media (min-width: $width_desktop) {
+    margin: 0 0 0 49px;
+  }
 }
 
 .social__item {

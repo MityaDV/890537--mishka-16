@@ -6,11 +6,11 @@
   position: relative;
 
   @media (min-width: $width_tablet) {
-    padding: 68px 0;
+    padding: 65px 0 50px;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 76px 0;
+    padding: 76px 0 40px;
   }
 
   &::before {
@@ -123,7 +123,7 @@
 
   &--gift {
     @media (min-width: $width_tablet) {
-      padding: 60px 0 0;
+      padding: 58px 0 0;
     }
   }
 }

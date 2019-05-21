@@ -2,8 +2,17 @@
 @import "../base/vars.scss";
 
 .feedback {
-  margin: 0 0 43px;
-  padding: 16px 0 0;
+  margin: 0 0 42px;
+  padding: 22px 0 0;
+
+  @media (min-width: $width_tablet) {
+    margin: 0 0 72px;
+    padding: 32px 0 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 50px 0 0;
+  }
 }
 
 .feedback__inner {
@@ -48,7 +57,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 60px 0 25px 180px;
+    padding: 60px 0 18px 180px;
   }
 }
 

@@ -7,23 +7,23 @@
   position: relative;
 
   @media (min-width: $width_tablet) {
-    padding: 89px 0 56px;
+    padding: 63px 0 56px;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 122px 0 103px;
+    padding: 93px 0 103px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 26px;
+    top: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 100%;
     height: 6px;
-    background: #ffffff url("../img/bg-zigzag-line.svg") repeat-x 0 0;
+    background: #ffffff url("../img/bg-zigzag-line.svg") repeat-x center 0;
     background-size: contain;
 
     @media (min-width: $width_tablet) {
@@ -77,12 +77,13 @@
   @media (min-width: $width_tablet) {
     padding: 0 0 32px;
     display: flex;
-    justify-content: space-between;
     flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 56px 40px 49px 100px;
+    padding: 72px 40px 40px 100px;
     flex-direction: row-reverse;
     position: relative;
   }
@@ -96,7 +97,7 @@
   line-height: $line_height_h3_mobile_l;
 
   @media (min-width: $width_tablet) {
-    padding: 14px 0 0;
+    padding: 0 0 6px;
     font-size: $font_size_h2_tablet;
     line-height: $line_height_h2_tablet;
   }
@@ -187,7 +188,7 @@
       flex-basis: 23%;
     }
 
-    @media (min-width: $width_tablet) {
+    @media (min-width: $width_desktop) {
       flex-basis: 27%;
     }
   }

@@ -35,6 +35,7 @@
 
 .logo__icon {
   @media (min-width: $width_tablet) {
+    margin: 0 0 9px 0;
     width: 102px;
     height: auto;
   }
