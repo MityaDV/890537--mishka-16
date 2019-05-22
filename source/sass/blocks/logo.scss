@@ -1,7 +1,7 @@
 @import "../base/mixins.scss";
 @import "../base/vars.scss";
 
-.logo__link {
+.logo__link-header {
   display: block;
 
   @media (min-width: $width_tablet) {
@@ -33,11 +33,19 @@
   }
 }
 
-.logo__icon {
+.logo__link-footer {
+  display: block;
+}
+
+.logo__icon-footer {
   @media (min-width: $width_tablet) {
-    margin: 0 0 9px 0;
+    margin: 0 0 4px 0;
     width: 102px;
     height: auto;
+  }
+
+  @media (min-width: $width_desktop) {
+    margin: 0 0 0 6px;
   }
 
   &:hover {

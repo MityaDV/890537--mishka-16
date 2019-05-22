@@ -26,11 +26,11 @@
       background: url("../img/bg-zigzag-fill.svg") repeat-x center 0;
       background-size: contain;
     }
-  }
 
-  @media (min-width: $width_desktop) {
-    top: -14px;
-    height: 34px;
+    @media (min-width: $width_desktop) {
+      top: -14px;
+      height: 34px;
+    }
   }
 }
 
@@ -68,6 +68,6 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 105px 110px 0 180px;
+    padding: 124px 160px 0 180px;
   }
 }

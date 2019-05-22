@@ -11,6 +11,7 @@
   @media (min-width: $width_tablet) {
     @include fixed_inner;
 
+    min-height: 143px;
     padding: $padding_medium;
     display: flex;
     justify-content: space-between;
@@ -48,7 +49,7 @@
   align-items: center;
 
   @media (min-width: $width_tablet) {
-    padding: 52px 0 46px;
+    padding: 0;
   }
 
   @media (min-width: $width_desktop) {
@@ -76,7 +77,11 @@
   margin: 5px 0 0;
 
   @media (min-width: $width_tablet) {
-    margin: 8px 0 0;
+    margin: 9px 0 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    margin: 10px 0 0;
   }
 
   &:hover {
