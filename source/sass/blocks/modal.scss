@@ -37,7 +37,7 @@
   }
 }
 
-.modal-open {
+.modal__open {
   display: block;
   transition: ease-out;
   animation-name: departure;
@@ -110,6 +110,10 @@
   }
 }
 
-.modal__input:checked + .modal__label {
+.modal__input:hover + .modal__label {
+  border: 2px solid $color_greyish_brown_30;
+}
+
+.modal__input:active + .modal__label {
   border: 2px solid $color_seafoam_blue;
 }
