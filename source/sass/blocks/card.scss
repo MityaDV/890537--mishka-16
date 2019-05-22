@@ -39,6 +39,10 @@
   @media (min-width: $width_tablet) {
     padding: 0 0 8px;
   }
+
+  @media (min-width: $width_desktop) {
+    padding: 0 0 5px;
+  }
 }
 
 .card__caption {
@@ -75,6 +79,10 @@
   @media (min-width: $width_tablet) {
     padding: 0 0 6px 7px;
     line-height: $line_height_h3_mobile;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 0 0 6px;
   }
 }
 

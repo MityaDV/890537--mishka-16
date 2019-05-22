@@ -75,6 +75,10 @@
   fill: $color_seafoam_blue;
   margin: 5px 0 0;
 
+  @media (min-width: $width_tablet) {
+    margin: 8px 0 0;
+  }
+
   &:hover {
     fill: $color_greeny_blue;
   }

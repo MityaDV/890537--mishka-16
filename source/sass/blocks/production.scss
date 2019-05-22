@@ -44,7 +44,8 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 47px 0 30px;
+    max-width: 370px;
+    padding: 47px 0 30px 80px;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -56,6 +57,10 @@
 
   @media (min-width: $width_tablet) {
     margin: 2px 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    margin: 0;
   }
 }
 
@@ -71,7 +76,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 30px 0 0;
+    padding: 20px 0 0;
     max-width: 150px;
     margin: 0;
   }
@@ -82,21 +87,22 @@
 
   margin: 0;
   max-width: 190px;
-  padding: 25px 0;
+  padding: 26px 0;
   font-size: $font_size_p_mobile_s;
   line-height: $line_height_p_mobile_l;
   font-weight: $font_weight_normal;
 
   @media (min-width: $width_tablet) {
     max-width: none;
-    padding: 0 0 35px;
+    padding: 0 0 37px;
     font-size: $font_size_p_mobile;
     line-height: $line_height_p_mobile_xl;
   }
 
   @media (min-width: $width_desktop) {
-    width: 30%;
-    padding: 0 0 45px;
+    width: auto;
+    padding: 0 0 49px 80px;
+    max-width: 370px;
   }
 }
 
@@ -108,21 +114,25 @@
     margin: 0 -42px;
     min-height: 455px;
     background: $color_gray_lightest url("../img/video-tablet@1x.jpg") no-repeat 50% 0;
+    background-size: contain;
     order: -1;
   }
 
   @media (min-width: $width_tablet) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
     background: $color_gray_lightest url("../img/video-tablet@2x.jpg") no-repeat 50% 0;
+    background-size: contain;
   }
 
   @media (min-width: $width_desktop) {
     min-width: 682px;
-    margin: 0 80px 0 0;
+    margin: 0;
     background: $color_gray_lightest url("../img/video-desktop@1x.jpg") no-repeat 0 0;
+    background-size: cover;
   }
 
   @media (min-width: $width_desktop) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
     background: $color_gray_lightest url("../img/video-desktop@2x.jpg") no-repeat 0 0;
+    background-size: cover;
   }
 }
 

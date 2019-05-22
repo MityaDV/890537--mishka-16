@@ -3,7 +3,7 @@
 
 
 .contacts {
-  padding: 42px 0 39px;
+  padding: 44px 0 39px;
 
   @media (min-width: $width_tablet) {
     padding: 63px 0 56px;
@@ -58,7 +58,7 @@
 }
 
 .contacts__wrapper {
-  margin: 0 -30px 40px;
+  margin: 0 -30px 39px;
   position: relative;
 
   @media (min-width: $width_tablet) {
@@ -140,7 +140,7 @@
 .contacts__list {
   @include list;
 
-  padding: 0 0 37px;
+  padding: 0 0 39px;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 
@@ -154,7 +154,7 @@
 
   @media (min-width: $width_desktop) {
     display: block;
-    padding: 0 0 54px 100px;
+    padding: 0 0 57px 100px;
   }
 }
 

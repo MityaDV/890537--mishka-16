@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 50px 0 70px;
+    padding: 53px 0 70px;
     display: flex;
     flex-direction: column;
   }
@@ -204,7 +204,7 @@
   @include indent_p;
 
   margin: 0;
-  padding: 21px 0 27px;
+  padding: 21px 0 28px;
   font-size: $font_size_h3_mobile;
   line-height: $line_height_h3_mobile;
   text-align: center;
@@ -213,7 +213,7 @@
   @media (min-width: $width_tablet) {
     width: 50%;
     margin: 0;
-    padding: 0 47px 34px 0;
+    padding: 0 47px 35px 0;
     font-size: $font_size_h3_tablet;
     line-height: $line_height_h3_tablet;
     order: 1;

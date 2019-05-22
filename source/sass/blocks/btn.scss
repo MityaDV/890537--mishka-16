@@ -20,20 +20,19 @@
 
     @media (min-width: $width_tablet) {
       width: 100%;
-      padding: 18px 0;
       margin: 0 auto 46px;
     }
 
     @media (min-width: $width_desktop) {
       width: 230px;
-      margin: 0 0 60px;
+      margin: 0 0 60px 20px;
+      align-self: center;
     }
   }
 
   &--buy {
     @media (min-width: $width_tablet) {
       width: 292px;
-      padding: 13px 0;
       margin: 0 43px 0 0;
     }
 
@@ -47,8 +46,7 @@
     line-height: $line_height_h2_mobile_s;
 
     @media (min-width: $width_tablet) {
-      margin: 77px 0 25px;
-      padding: 13px 0;
+      margin: 79px 0 25px;
       width: 175px;
       font-size: $font_size_h3_mobile;
       line-height: $line_height_p_mobile_xxs;
@@ -56,7 +54,7 @@
     }
 
     @media (min-width: $width_desktop) {
-      margin: 78px 5px 25px 0;
+      margin: 79px 5px 25px 0;
     }
   }
 
@@ -68,7 +66,6 @@
       font-size: $font_size_h3_mobile;
       line-height: $line_height_p_mobile_xxs;
       width: 230px;
-      padding: 14px 0;
     }
 
     @media (min-width: $width_desktop) {
