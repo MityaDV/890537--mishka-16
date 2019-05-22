@@ -5,25 +5,41 @@
   padding: 22px 0 55px;
 
   @media (min-width: $width_tablet) {
-    padding: 50px 0;
+    padding: 58px 0 52px;
   }
 }
 
 .form__field {
   margin: 0;
-  padding: 0 0 15px;
+  padding: 0 0 16px;
   border: none;
+
+  @media (min-width: $width_tablet) {
+    padding: 0;
+  }
 
   &--checkbox {
     padding: 0 0 8px;
+
+    @media (min-width: $width_tablet) {
+      padding: 0;
+    }
   }
 
   &--user {
     padding: 0 0 9px;
+
+    @media (min-width: $width_tablet) {
+      padding: 0;
+    }
   }
 
   &--more {
     padding: 0 0 9px;
+
+    @media (min-width: $width_tablet) {
+      padding: 0;
+    }
   }
 }
 
