@@ -9,7 +9,17 @@
     color: $color_white;
   }
 
-  &:active {
+  &:hover:active {
+    color: $color_white_30;
+  }
+
+  &:focus {
+    background: $color_greyish_brown;
+    color: $color_white;
+  }
+
+  &:focus:active {
+    background: $color_greyish_brown;
     color: $color_white_30;
   }
 

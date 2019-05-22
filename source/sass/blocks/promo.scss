@@ -88,14 +88,51 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $color_seafoam_blue;
+  background-color: $color_seafoam_blue;
 
   @media (min-width: $width_tablet) {
     padding: 30px 35px;
+    position: relative;
+  }
+
+  @media (min-width: $width_desktop) {
+    position: relative;
+  }
+
+  &::after {
+    @media (min-width: $width_desktop) {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background-color: $color_seafoam_blue;
+    }
   }
 
   &--shade {
-    background: $color_greeny_blue;
+    background-color: $color_greeny_blue;
+
+    &::after {
+      @media (min-width: $width_desktop) {
+        background-color: $color_greeny_blue;
+      }
+    }
+  }
+
+  &:hover {
+    @media (min-width: $width_desktop) {
+      transform: translateY(-5px);
+    }
+  }
+
+  &:active > .promo__caption {
+    color: $color_white_30;
+  }
+
+  &:active > .promo__icon {
+    opacity: 0.3;
   }
 }
 
