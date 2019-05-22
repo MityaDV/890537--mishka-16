@@ -26,8 +26,14 @@
   }
 }
 
-.social__icon {
+.social__link {
+  outline: none;
+
   &:hover {
+    fill: $color_greeny_blue;
+  }
+
+  &:focus {
     fill: $color_greeny_blue;
   }
 

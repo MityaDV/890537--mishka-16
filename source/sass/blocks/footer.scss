@@ -63,12 +63,26 @@
   font-size: $font_size_h3_mobile_xl;
   line-height: $line_height_p_mobile_s;
 
-  &:active {
+  & .footer__link:active {
     opacity: 0.3;
   }
 
   @media (min-width: $width_tablet) {
     padding: 0 30px 0 0;
+  }
+}
+
+.footer__link {
+  &:hover {
+    fill: $color_greeny_blue;
+  }
+
+  &:focus {
+    fill: $color_greeny_blue;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -82,13 +96,5 @@
 
   @media (min-width: $width_desktop) {
     margin: 10px 0 0;
-  }
-
-  &:hover {
-    fill: $color_greeny_blue;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }

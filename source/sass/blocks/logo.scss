@@ -3,6 +3,7 @@
 
 .logo__link-header {
   display: block;
+  outline: none;
 
   @media (min-width: $width_tablet) {
     margin: 3px 0 0;
@@ -10,6 +11,18 @@
 
   @media (min-width: $width_desktop) {
     margin: 7px 23px 0 0;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -23,18 +36,23 @@
     width: 149px;
     height: auto;
   }
+}
+
+.logo__link-footer {
+  display: block;
+  outline: none;
 
   &:hover {
-    opacity: 0.6;
+    fill: $color_greeny_blue;
+  }
+
+  &:focus {
+    fill: $color_greeny_blue;
   }
 
   &:active {
     opacity: 0.3;
   }
-}
-
-.logo__link-footer {
-  display: block;
 }
 
 .logo__icon-footer {
@@ -46,13 +64,5 @@
 
   @media (min-width: $width_desktop) {
     margin: 0 0 0 6px;
-  }
-
-  &:hover {
-    fill: $color_greeny_blue;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
