@@ -81,6 +81,26 @@
   @media (min-width: $width_tablet) {
     flex-basis: 50%;
   }
+
+  &:hover {
+    @media (min-width: $width_desktop) {
+      transform: translateY(-5px);
+    }
+  }
+
+  &:focus {
+    @media (min-width: $width_desktop) {
+      transform: translateY(-5px);
+    }
+  }
+
+  &:active > .promo__caption {
+    color: $color_white_30;
+  }
+
+  &:active > .promo__icon {
+    opacity: 0.3;
+  }
 }
 
 .promo__item {
@@ -119,20 +139,6 @@
         background-color: $color_greeny_blue;
       }
     }
-  }
-
-  &:hover {
-    @media (min-width: $width_desktop) {
-      transform: translateY(-5px);
-    }
-  }
-
-  &:active > .promo__caption {
-    color: $color_white_30;
-  }
-
-  &:active > .promo__icon {
-    opacity: 0.3;
   }
 }
 

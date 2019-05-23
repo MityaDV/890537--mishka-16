@@ -73,6 +73,9 @@
 }
 
 .footer__link {
+  outline: none;
+  fill: $color_seafoam_blue;
+
   &:hover {
     fill: $color_greeny_blue;
   }
@@ -87,7 +90,6 @@
 }
 
 .footer__icon {
-  fill: $color_seafoam_blue;
   margin: 5px 0 0;
 
   @media (min-width: $width_tablet) {

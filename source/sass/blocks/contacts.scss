@@ -219,6 +219,10 @@
       color: $color_greeny_blue;
     }
 
+    &:focus {
+      color: $color_greeny_blue;
+    }
+
     &:active {
       opacity: 0.3;
     }

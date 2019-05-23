@@ -97,4 +97,19 @@
   @media (min-width: $width_tablet) {
     padding: 0 2px 0 0;
   }
+
+  &:hover > .cart__icon {
+    fill: $color_seafoam_blue;
+    opacity: 1;
+  }
+
+  &:focus > .cart__icon {
+    fill: $color_seafoam_blue;
+    opacity: 1;
+  }
+
+  &:active > .cart__icon {
+    fill: $color_seafoam_blue;
+    opacity: 0.3;
+  }
 }
