@@ -25,22 +25,25 @@
 .field__legend {
   position: relative;
   font-size: $font_size_h3_mobile;
+  line-height: $line_height_p_mobile_s;
   color: $color_seafoam_blue;
   text-transform: uppercase;
 
   @media (min-width: $width_tablet) {
+    min-width: 25%;
     flex-basis: 25%;
   }
 
   @media (min-width: $width_desktop) {
+    min-width: 17%;
     flex-basis: 17%;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 11px;
-    left: 60px;
+    top: 9px;
+    left: 61px;
     width: 198px;
     height: 1px;
     background: $color_seafoam_blue;
@@ -52,47 +55,7 @@
 
   &--radio {
     @media (min-width: $width_tablet) {
-      padding: 10px 0 0;
-    }
-
-    @media (min-width: $width_desktop) {
-      padding: 10px 0 0 70px;
-    }
-  }
-
-  &--checkbox {
-    @media (min-width: $width_tablet) {
-      padding: 60px 0 0;
-    }
-
-    @media (min-width: $width_desktop) {
-      padding: 60px 0 0 70px;
-    }
-  }
-
-  &--user {
-    @media (min-width: $width_tablet) {
-      padding: 65px 0 0;
-    }
-
-    @media (min-width: $width_desktop) {
-      padding: 50px 0 0 70px;
-    }
-  }
-
-  &--phone {
-    @media (min-width: $width_tablet) {
-      padding: 65px 0 0;
-    }
-
-    @media (min-width: $width_desktop) {
-      padding: 65px 0 0 70px;
-    }
-  }
-
-  &--letter {
-    @media (min-width: $width_tablet) {
-      padding: 17px 0 0;
+      padding: 18px 0 0;
     }
 
     @media (min-width: $width_desktop) {
@@ -100,13 +63,58 @@
     }
   }
 
-  &--more {
+  &--checkbox {
     @media (min-width: $width_tablet) {
-      padding: 65px 0 0;
+      padding: 67px 0 0;
     }
 
     @media (min-width: $width_desktop) {
-      padding: 65px 0 0 70px;
+      padding: 65px 0 0 66px;
+    }
+  }
+
+  &--user {
+    @media (min-width: $width_tablet) {
+      padding: 68px 0 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 65px 0 0 65px;
+    }
+  }
+
+  &--phone {
+    @media (min-width: $width_tablet) {
+      padding: 67px 0 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 66px 0 0 66px;
+    }
+  }
+
+  &--letter {
+    &::after {
+      left: 81px;
+      width: 179px;
+    }
+
+    @media (min-width: $width_tablet) {
+      padding: 24px 0 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 26px 0 0 66px;
+    }
+  }
+
+  &--more {
+    @media (min-width: $width_tablet) {
+      padding: 67px 0 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 66px 0 0 68px;
     }
   }
 }
@@ -114,7 +122,7 @@
 .field__list {
   @include list;
 
-  padding: 25px 0 0;
+  padding: 26px 0 0;
 
   @media (min-width: $width_tablet) {
     flex-basis: 75%;
@@ -126,7 +134,7 @@
 
   &--radio {
     @media (min-width: $width_tablet) {
-      padding: 0 0 30px;
+      padding: 0 0 27px;
     }
   }
 
@@ -139,26 +147,32 @@
   }
 
   &--user {
+    padding: 29px 0 0;
+
     @media (min-width: $width_tablet) {
-      padding: 65px 0 50px;
+      padding: 46px 0 36px;
     }
 
     @media (min-width: $width_desktop) {
-      padding: 50px 180px 50px 0;
+      padding: 46px 180px 35px 0;
     }
   }
 
   &--phone {
+    padding: 5px 0 0;
+
     @media (min-width: $width_tablet) {
-      padding: 50px 0 0;
+      padding: 43px 0 0;
     }
 
     @media (min-width: $width_desktop) {
-      padding: 50px 180px 0 0;
+      padding: 42px 180px 0 0;
     }
   }
 
   &--letter {
+    padding: 5px 0 0;
+
     @media (min-width: $width_tablet) {
       padding: 0 0 50px;
     }
@@ -181,26 +195,39 @@
 
 .field__item {
   &--radio {
-    padding: 0 0 20px;
+    padding: 0 0 14px;
+
+    @media (min-width: $width_tablet) {
+      padding: 0 0 23px;
+    }
   }
 
   &--checkbox {
-    padding: 0 0 20px;
+    padding: 0 0 21px;
 
     @media (min-width: $width_tablet) {
-      flex-basis: 50%;
-      padding: 0 0 25px;
+      flex-basis: 45%;
+      padding: 0 0 23px;
+    }
+
+    &:nth-child(odd) {
+      margin: 0 37px 0 0;
+
+      @media (min-width: $width_desktop) {
+        margin: 0;
+      }
     }
 
     @media (min-width: $width_desktop) {
-      flex-basis: 33%;
+      flex-basis: 30%;
     }
   }
 
   &--user {
-    padding: 0 0 24px;
+    padding: 0 0 20px;
 
     @media (min-width: $width_tablet) {
+      padding: 0 0 5px;
       display: flex;
       justify-content: space-between;
       align-items: baseline;
@@ -214,16 +241,16 @@
   }
 
   &--phone {
-    padding: 0 0 34px;
+    padding: 0 0 15px;
     position: relative;
 
     @media (min-width: $width_tablet) {
-      padding: 0 0 25px;
+      padding: 0 0 17px;
     }
   }
 
   &--letter {
-    padding: 0 0 34px;
+    padding: 0 0 15px;
     position: relative;
 
     @media (min-width: $width_tablet) {
@@ -234,28 +261,31 @@
 
 .field__label {
   min-height: 40px;
-  font-size: $font_size_h3_mobile;
   position: relative;
   display: block;
+  font-size: $font_size_h3_mobile;
+  line-height: 1.06;
   cursor: pointer;
 
   @media (min-width: $width_tablet) {
     min-height: 53px;
+    font-size: $font_size_h3_mobile_xl;
+    line-height: $line_height_p_mobile_s;
   }
 
   &--radio {
     padding: 10px 0 10px 60px;
 
     @media (min-width: $width_tablet) {
-      padding: 10px 0 10px 80px;
+      padding: 15px 0 10px 80px;
     }
   }
 
   &--first {
-    padding: 0 0 0 60px;
+    padding: 10px 0 0 60px;
 
     @media (min-width: $width_tablet) {
-      padding: 10px 0 10px 80px;
+      padding: 15px 0 10px 80px;
     }
   }
 
@@ -263,7 +293,7 @@
     padding: 10px 0 10px 60px;
 
     @media (min-width: $width_tablet) {
-      padding: 10px 0 10px 80px;
+      padding: 14px 0 10px 80px;
     }
   }
 
@@ -278,31 +308,37 @@
 
   &--phone {
     position: absolute;
-    top: 17px;
-    right: 3px;
+    top: 14px;
+    right: 9px;
     width: 24px;
     height: 24px;
 
     @media (min-width: $width_tablet) {
-      right: 21px;
+      top: 18px;
+      right: 28px;
+    }
+
+    @media (min-width: $width_desktop) {
+      right: 9px;
     }
   }
 
   &--letter {
     position: absolute;
-    top: 12px;
-    right: 2px;
+    top: 14px;
+    right: 3px;
     width: 32px;
     height: 32px;
 
     @media (min-width: $width_tablet) {
-      right: 20px;
+      top: 18px;
+      right: 22px;
+    }
+
+    @media (min-width: $width_desktop) {
+      right: 3px;
     }
   }
-}
-
-.field__icon {
-  opacity: 0.2;
 }
 
 .field__input {
@@ -310,12 +346,19 @@
   margin: 0;
   padding: 18px 0;
 
+  font-size: $font_size_h3_mobile;
   font-family: $font_family_base, $font_family_extra;
   font-weight: $font_weight_normal;
-  font-size: $font_size_h3_mobile;
+  line-height: 1.06;
 
   border: none;
   border-bottom: 2px solid $color_black;
+  outline: none;
+
+  @media (min-width: $width_tablet) {
+    font-size: $font_size_h3_mobile_xl;
+    line-height: $line_height_p_mobile_s;
+  }
 
   &--radio + .field__label--radio::before {
     content: "";
@@ -351,6 +394,21 @@
       width: 22px;
       height: 22px;
     }
+  }
+
+  &--radio:hover + .field__label--radio::before {
+    content: "";
+    border: 2px solid $color_seafoam_blue;
+  }
+
+  &--radio:focus + .field__label--radio::before {
+    content: "";
+    border: 2px solid $color_seafoam_blue;
+  }
+
+  &--radio:active + .field__label--radio::before {
+    content: "";
+    border: 2px solid $color_greyish_brown_30;
   }
 
   &--checkbox + .field__label--checkbox::before {
@@ -390,6 +448,21 @@
     }
   }
 
+  &--checkbox:hover + .field__label--checkbox::before {
+    content: "";
+    border: 2px solid $color_seafoam_blue;
+  }
+
+  &--checkbox:focus + .field__label--checkbox::before {
+    content: "";
+    border: 2px solid $color_seafoam_blue;
+  }
+
+  &--checkbox:active + .field__label--checkbox::before {
+    content: "";
+    border: 2px solid $color_greyish_brown_30;
+  }
+
   &[type="text"]::placeholder {
     color: $color_greyish_brown_30;
   }
@@ -403,10 +476,31 @@
   }
 
   &[type="text"] {
-    padding: 18px 0;
+    padding: 17px 0;
 
     @media (min-width: $width_tablet) {
       padding: 15px 0 15px 18px;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding: 15px 0 12px 18px;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color_seafoam_blue;
+    }
+
+    &:active {
+      &::placeholder {
+        color: $color_greyish_brown;
+      }
+    }
+
+    &:focus {
+      &::placeholder {
+        color: $color_greyish_brown;
+      }
+      border-bottom: 2px solid $color_seafoam_blue;
     }
   }
 
@@ -414,8 +508,35 @@
     padding: 18px 0;
 
     @media (min-width: $width_tablet) {
-      padding: 18px 27px 18px 18px;
+      padding: 18px 27px 13px 18px;
       background: $color_gray_lightest;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color_seafoam_blue;
+    }
+
+    &:hover + .field__label > .field__icon {
+      opacity: 1;
+      fill: $color_seafoam_blue;
+    }
+
+    &:active {
+      &::placeholder {
+        color: $color_greyish_brown;
+      }
+    }
+
+    &:focus {
+      &::placeholder {
+        color: $color_greyish_brown;
+      }
+      border-bottom: 2px solid $color_seafoam_blue;
+    }
+
+    &:focus + .field__label > .field__icon {
+      opacity: 1;
+      fill: $color_seafoam_blue;
     }
   }
 
@@ -423,8 +544,35 @@
     padding: 18px 0;
 
     @media (min-width: $width_tablet) {
-      padding: 18px 35px 18px 18px;
+      padding: 18px 35px 13px 18px;
       background: $color_gray_lightest;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $color_seafoam_blue;
+    }
+
+    &:hover + .field__label > .field__icon {
+      opacity: 1;
+      fill: $color_seafoam_blue;
+    }
+
+    &:active {
+      &::placeholder {
+        color: $color_greyish_brown;
+      }
+    }
+
+    &:focus {
+      &::placeholder {
+        color: $color_greyish_brown;
+      }
+      border-bottom: 2px solid $color_seafoam_blue;
+    }
+
+    &:focus + .field__label > .field__icon {
+      opacity: 1;
+      fill: $color_seafoam_blue;
     }
   }
 }
@@ -432,7 +580,7 @@
 .field__textarea {
   width: 100%;
   min-height: 142px;
-  padding: 18px 70px 0 17px;
+  padding: 15px 70px 0 14px;
 
   font-family: $font_family_base, $font_family_extra;
   font-weight: $font_weight_normal;
@@ -441,8 +589,36 @@
 
   border: solid 2px $color_greyish_brown;
   resize: none;
+  outline: none;
+
+  @media (min-width: $width_tablet) {
+    padding: 13px 70px 0 14px;
+    font-size: $font_size_h3_mobile_xl;
+    line-height: $line_height_p_mobile_s;
+  }
+
+  &:hover {
+    border: solid 2px $color_seafoam_blue;
+  }
+
+  &:active {
+    &::placeholder {
+      color: $color_greyish_brown;
+    }
+  }
+
+  &:focus {
+    &::placeholder {
+      color: $color_greyish_brown;
+    }
+    border: solid 2px $color_seafoam_blue;
+  }
 
   &::placeholder {
     color: $color_greyish_brown_30;
   }
+}
+
+.field__icon {
+  opacity: 0.2;
 }

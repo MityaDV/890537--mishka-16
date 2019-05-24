@@ -19,11 +19,17 @@
     @media (min-width: $width_tablet) {
       content: "";
       position: absolute;
-      top: -24px;
+      top: -9px;
       left: 0;
       width: 100%;
       height: 24px;
-      background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
+      background: url("../img/bg-zigzag-fill.svg") repeat-x center 0;
+      background-size: contain;
+    }
+
+    @media (min-width: $width_desktop) {
+      top: -14px;
+      height: 34px;
     }
   }
 }
@@ -32,11 +38,11 @@
   padding: 30px 0;
 
   @media (min-width: $width_tablet) {
-    padding: 60px 0 50px;
+    padding: 81px 0 50px;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 110px 0 60px;
+    padding: 130px 0 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -44,30 +50,38 @@
 }
 
 .catalog__title {
+  @include heading_h2;
+
   margin: 0;
-  padding: 70px 0;
+  padding: 70px 0 77px;
   text-align: center;
+  font-size: $font_size_h2_mobile_l;
+  line-height: $line_height_h2_mobile_s;
   background: $color_gray_lightest;
 
   @media (min-width: $width_tablet) {
-    padding: 190px 0 75px;
+    padding: 184px 0 79px;
   }
 
-  @media (min-width: $width_tablet) {
-    padding: 190px 0 95px;
+  @media (min-width: $width_desktop) {
+    padding: 182px 0 102px;
   }
 }
 
 .catalog__item {
-  margin: 0 0 30px;
-  border: 1px solid $color_gray_lighten;
+  margin: 0 0 31px;
+  box-shadow:
+    inset 1px 0 0 0 $color_gray_lighten,
+    inset -1px 0 0 0 $color_gray_lighten,
+    inset 0 1px 0 0 $color_gray_lighten,
+    inset 0 -1px 0 0 $color_gray_lighten;
 
   &:hover {
     box-shadow: 0 6px 10px 0 $color_black_10;
   }
 
   &:active {
-    box-shadow: 0 6px 10px 0 $color_black_10;
+    box-shadow: 0 3px 5px 0 $color_black_10;
   }
 
   &:last-child {
@@ -75,7 +89,7 @@
   }
 
   @media (min-width: $width_tablet) {
-    margin: 0 0 54px;
+    margin: 0 0 51px;
     display: flex;
     flex-wrap: wrap;
   }

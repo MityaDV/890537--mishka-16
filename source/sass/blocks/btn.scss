@@ -9,31 +9,41 @@
     color: $color_white;
   }
 
-  &:active {
+  &:hover:active {
+    color: $color_white_30;
+  }
+
+  &:focus {
+    background: $color_greyish_brown;
+    color: $color_white;
+  }
+
+  &:focus:active {
+    background: $color_greyish_brown;
     color: $color_white_30;
   }
 
   &--order {
     width: 192px;
     margin: 0 auto 30px;
+    line-height: $line_height_p_mobile_s;
 
     @media (min-width: $width_tablet) {
       width: 100%;
-      padding: 18px 0;
       margin: 0 auto 46px;
     }
 
     @media (min-width: $width_desktop) {
       width: 230px;
-      margin: 0 0 60px;
+      margin: 0 0 60px 20px;
+      align-self: center;
     }
   }
 
   &--buy {
     @media (min-width: $width_tablet) {
       width: 292px;
-      padding: 18px 0;
-      margin: 0 40px 0 0;
+      margin: 0 43px 0 0;
     }
 
     @media (min-width: $width_desktop) {
@@ -42,27 +52,40 @@
   }
 
   &--write {
+    font-size: $font_size_h3_mobile_l;
+    line-height: $line_height_h2_mobile_s;
+
     @media (min-width: $width_tablet) {
-      margin: 80px 0 25px;
-      padding: 18px 0;
+      margin: 79px 0 25px;
       width: 175px;
+      font-size: $font_size_h3_mobile;
+      line-height: $line_height_p_mobile_xxs;
       order: 2;
+    }
+
+    @media (min-width: $width_desktop) {
+      margin: 79px 5px 25px 0;
     }
   }
 
   &--сontact {
+    font-size: $font_size_h3_mobile_l;
+    line-height: $line_height_h2_mobile_s;
+
     @media (min-width: $width_tablet) {
+      font-size: $font_size_h3_mobile;
+      line-height: $line_height_p_mobile_xxs;
       width: 230px;
-      padding: 18px 0;
     }
 
     @media (min-width: $width_desktop) {
-      margin: 0 0 0 100px;
+      margin: 0 0 0 108px;
     }
   }
 
   &--form {
     margin: 0;
+    line-height: $line_height_p_mobile_s;
 
     @media (min-width: $width_tablet) {
       width: 230px;
@@ -74,6 +97,7 @@
   }
 
   &--modal {
+    line-height: $line_height_p_mobile_s;
     border: none;
     background: $color_seafoam_blue;
     color: $color_white;

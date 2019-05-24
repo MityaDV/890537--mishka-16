@@ -2,25 +2,25 @@
 @import "../base/vars.scss";
 
 .promo {
-  background: $color_gray_lightest url("../img/hero-mobile@1x.jpg") no-repeat center 0;
+  background: $color_bg_header url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
 
   @media (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
-    background: $color_gray_lightest url("../img/hero-mobile@2x.jpg") no-repeat center 0;
+    background: $color_bg_header url("../img/hero-mobile@2x.jpg") no-repeat center 0;
     background-size: cover;
   }
 
   @media (min-width: $width_tablet) {
-    background: $color_gray_lightest url("../img/hero-tablet@1x.jpg") no-repeat center 88px;
+    background: $color_bg_header url("../img/hero-tablet@1x.jpg") no-repeat center 88px;
   }
 
   @media (min-width: $width_tablet) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
-    background: $color_gray_lightest url("../img/hero-tablet@2x.jpg") no-repeat center 88px;
+    background: $color_bg_header url("../img/hero-tablet@2x.jpg") no-repeat center 88px;
     background-size: cover;
   }
 }
 
 .promo__inner {
-  margin: 0 0 35px;
+  margin: 0 0 27px;
 
   @media (min-width: $width_tablet) {
     @include fixed_inner;
@@ -35,23 +35,27 @@
 }
 
 .promo__wrapper {
-  padding: 70px 35px 60px;
+  padding: 71px 35px 65px;
   display: flex;
   justify-content: center;
 
   @media (min-width: $width_tablet) {
-    padding: 240px 0 184px;
+    padding: 242px 0 184px;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 250px 0 175px;
+    padding: 240px 0 185px;
   }
 }
 
 .promo__title {
+  @include heading_h2;
+
   margin: 0;
-  text-align: center;
   flex-basis: 245px;
+  text-align: center;
+  font-size: $font_size_h2_mobile_l;
+  line-height: $line_height_h2_mobile_s;
   color: $color_dark_brown;
 
   @media (min-width: $width_tablet) {
@@ -65,11 +69,11 @@
   @media (min-width: $width_tablet) {
     display: flex;
     justify-content: space-between;
-    padding: 184px 0 0;
+    padding: 187px 0 0;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 175px 0 0;
+    padding: 170px 0 0;
   }
 }
 
@@ -77,38 +81,93 @@
   @media (min-width: $width_tablet) {
     flex-basis: 50%;
   }
+
+  &:hover {
+    @media (min-width: $width_desktop) {
+      transform: translateY(-5px);
+    }
+  }
+
+  &:focus {
+    @media (min-width: $width_desktop) {
+      transform: translateY(-5px);
+    }
+  }
+
+  &:active > .promo__caption {
+    color: $color_white_30;
+  }
+
+  &:active > .promo__icon {
+    opacity: 0.3;
+  }
 }
 
 .promo__item {
-  padding: 20px 30px;
+  padding: 19px 29px 23px 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $color_seafoam_blue;
+  background-color: $color_seafoam_blue;
 
   @media (min-width: $width_tablet) {
     padding: 30px 35px;
+    position: relative;
+  }
+
+  @media (min-width: $width_desktop) {
+    position: relative;
+  }
+
+  &::after {
+    @media (min-width: $width_desktop) {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background-color: $color_seafoam_blue;
+    }
   }
 
   &--shade {
-    background: $color_greeny_blue;
+    background-color: $color_greeny_blue;
+
+    &::after {
+      @media (min-width: $width_desktop) {
+        background-color: $color_greeny_blue;
+      }
+    }
   }
 }
 
 .promo__caption {
-  flex-basis: 110px;
+  @include heading_h3;
+
   margin: 0;
+  flex-basis: 110px;
+  font-size: $font_size_h3_mobile_xl;
+  line-height: $line_height_h3_mobile_s;
   color: $color_white;
+
+  @media (min-width: $width_tablet) {
+    line-height: $line_height_h3_tablet_l;
+  }
 }
 
 .promo__icon {
   opacity: 0.5;
 
+  @media (min-width: $width_tablet) {
+    margin: 4px 0 0;
+  }
+
   &--interior {
-    margin: 0 10px 0 0;
+    margin: 0 7px 0 0;
 
     @media (min-width: $width_tablet) {
-      margin: 0;
+      margin: 2px 0 0;
     }
   }
 }

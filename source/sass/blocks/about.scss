@@ -2,36 +2,14 @@
 @import "../base/vars.scss";
 
 .about {
-  padding: 30px 0;
-  position: relative;
+  padding: 34px 0;
 
   @media (min-width: $width_tablet) {
-    padding: 66px 0;
+    padding: 65px 0 50px;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 76px 0;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 100%;
-    height: 6px;
-    background: #ffffff url("../img/bg-zigzag-line.svg") repeat-x 0 0;
-    background-size: contain;
-
-    @media (min-width: $width_tablet) {
-      height: 15px;
-    }
-
-    @media (min-width: $width_desktop) {
-      height: 23px;
-    }
+    padding: 76px 0 40px;
   }
 }
 
@@ -40,24 +18,51 @@
 
   @media (min-width: $width_tablet) {
     @include fixed_inner;
+
+    position: relative;
   }
 
   @media (min-width: $width_desktop) {
     width: 1150px;
     padding: $padding_large;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -65px;
+    width: 100%;
+    height: 6px;
+    background: #ffffff url("../img/bg-zigzag-line.svg") repeat-x center 0;
+    background-size: contain;
+    transform: scale(1, -1);
+
+    @media (min-width: $width_tablet) {
+      height: 15px;
+      width: 768px;
+      left: 0;
+    }
+
+    @media (min-width: $width_desktop) {
+      height: 23px;
+      top: -70px;
+      left: auto;
+      width: 1060px;
+    }
+  }
 }
 
 .about__title {
+  @include heading_h2;
+
   margin: 0;
-  font-weight: $font_weight_bold;
 
   @media (min-width: $width_tablet) {
-    padding: 0 0 15px;
+    padding: 0 0 17px;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 0 0 15px 180px;
+    padding: 9px 0 14px 175px;
   }
 }
 
@@ -82,36 +87,140 @@
 
   &--first {
     @media (min-width: $width_tablet) {
-      padding: 0 120px 0 0;
+      padding: 0 100px 0 0;
     }
   }
 
   &--second {
     @media (min-width: $width_tablet) {
-      padding: 0 70px 0 0;
+      padding: 0 40px 0 0;
     }
   }
 
   @media (min-width: $width_desktop) {
-    flex-basis: 38%;
+    flex-basis: 40%;
   }
 }
 
 .about__item {
-  padding: 30px 0 0;
+  padding: 32px 0 0;
+
+  &--money {
+    @media (min-width: $width_tablet) {
+      padding: 57px 0 0;
+    }
+  }
+
+  &--heart {
+    padding: 34px 0 0;
+
+    @media (min-width: $width_tablet) {
+      padding: 63px 0 0;
+    }
+  }
+
+  &--rocket {
+    @media (min-width: $width_tablet) {
+      padding: 60px 0 0;
+    }
+  }
+
+  &--gift {
+    @media (min-width: $width_tablet) {
+      padding: 58px 0 0;
+    }
+  }
 }
 
 .about__caption {
+  @include indent_p;
+
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  font-weight: $font_weight_bold;
+  padding: 14px 0 0;
+  font-size: $font_size_h3_mobile;
+  line-height: $line_height_p_mobile_xxs;
 
   @media (min-width: $width_tablet) {
     padding: 20px 0 0;
+    font-size: $font_size_h3_tablet;
+    line-height: $line_height_p_tablet_s;
+  }
+
+  &--flower {
+    max-width: 190px;
+
+    @media (min-width: $width_tablet) {
+      padding: 16px 0 0;
+      max-width: 205px;
+    }
+  }
+
+  &--money {
+    max-width: 210px;
+    padding: 21px 0 0;
+
+    @media (min-width: $width_tablet) {
+      max-width: 240px;
+      padding: 24px 0 0;
+    }
+  }
+
+  &--heart {
+    padding: 18px 0 0;
+    max-width: 190px;
+
+    @media (min-width: $width_tablet) {
+      max-width: 220px;
+    }
+  }
+
+  &--ball {
+    max-width: 210px;
+
+    @media (min-width: $width_tablet) {
+      padding: 14px 0 0;
+      max-width: 250px;
+    }
+  }
+
+  &--rocket {
+    padding: 25px 0 0;
+  }
+
+  &--gift {
+    max-width: 210px;
+
+    @media (min-width: $width_tablet) {
+      padding: 17px 0 0;
+      max-width: 240px;
+    }
   }
 }
 
 .about__icon {
   fill: $color_seafoam_blue;
+
+  &--flower {
+    margin: 0 0 0 8px;
+  }
+
+  &--heart {
+    margin: 0 0 0 8px;
+  }
+
+  &--ball {
+    margin: 0 0 0 4px;
+
+    @media (min-width: $width_tablet) {
+      margin: 4px 0 0 4px;
+    }
+  }
+
+  &--rocket {
+    margin: 0 0 0 -5px;
+  }
+
+  &--gift {
+    margin: 0 0 0 4px;
+  }
 }

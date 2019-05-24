@@ -10,7 +10,11 @@
   }
 
   &:active {
-    box-shadow: 0 6px 10px 0 $color_black_10;
+    box-shadow: 0 3px 5px 0 $color_black_10;
+  }
+
+  @media (min-width: $width_tablet) {
+    margin: 0 0 63px;
   }
 
   @media (min-width: $width_desktop) {
@@ -28,34 +32,46 @@
   }
 
   @media (min-width: $width_desktop) {
-    max-height: 500px;
+    height: 455px;
     padding: 0;
     flex-wrap: wrap;
   }
 }
 
 .production__wrapper-title {
-  padding: 25px 0;
+  padding: 26px 0;
   display: flex;
 
   @media (min-width: $width_tablet) {
-    padding: 40px 0 30px;
+    padding: 32px 0 25px;
     align-items: center;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 47px 0 30px;
+    max-width: 370px;
+    padding: 47px 0 30px 80px;
     flex-direction: column;
     align-items: flex-start;
   }
 }
 
-.production__icon {
+.production__icon-title {
+  margin: 6px 0 0 2px;
   fill: $color_seafoam_blue;
+
+  @media (min-width: $width_tablet) {
+    margin: 2px 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    margin: 0;
+  }
 }
 
 .production__title {
-  margin: 0 0 0 25px;
+  @include heading_h3;
+
+  margin: 0 0 0 26px;
   max-width: 130px;
 
   @media (min-width: $width_tablet) {
@@ -64,25 +80,33 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 30px 0 0;
+    padding: 20px 0 0;
     max-width: 150px;
     margin: 0;
   }
 }
 
-
 .production__caption {
+  @include indent_p;
+
   margin: 0;
+  max-width: 190px;
+  padding: 26px 0;
+  font-size: $font_size_p_mobile_s;
+  line-height: $line_height_p_mobile_l;
   font-weight: $font_weight_normal;
-  padding: 30px 0;
 
   @media (min-width: $width_tablet) {
-    padding: 0 0 30px;
+    max-width: none;
+    padding: 0 0 37px;
+    font-size: $font_size_p_mobile;
+    line-height: $line_height_p_mobile_xl;
   }
 
   @media (min-width: $width_desktop) {
-    width: 30%;
-    padding: 0 0 45px;
+    width: auto;
+    padding: 0 0 48px 80px;
+    max-width: 370px;
   }
 }
 
@@ -94,21 +118,24 @@
     margin: 0 -42px;
     min-height: 455px;
     background: $color_gray_lightest url("../img/video-tablet@1x.jpg") no-repeat 50% 0;
+    background-size: contain;
     order: -1;
   }
 
   @media (min-width: $width_tablet) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
     background: $color_gray_lightest url("../img/video-tablet@2x.jpg") no-repeat 50% 0;
+    background-size: contain;
   }
 
   @media (min-width: $width_desktop) {
-    min-width: 682px;
-    margin: 0 80px 0 0;
+    width: 682px;
+    margin: 0;
     background: $color_gray_lightest url("../img/video-desktop@1x.jpg") no-repeat 0 0;
   }
 
   @media (min-width: $width_desktop) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
     background: $color_gray_lightest url("../img/video-desktop@2x.jpg") no-repeat 0 0;
+    background-size: cover;
   }
 }
 

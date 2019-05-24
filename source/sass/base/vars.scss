@@ -36,42 +36,74 @@ $color_leaf: #68b738;
 // Шрифты
 
 $font_size_base: 10px;
-
-$font_size_h1_mobile: 30px;
-$font_size_h2_mobile: 25px;
-$font_size_h3_mobile: 17px;
-$font_size_p_mobile: 16px;
-
-$font_size_h1_tablet: 45px;
-$font_size_h2_tablet: 43px;
-$font_size_h3_tablet: 20px;
-$font_size_p_tablet: 18px;
-
-$font_size_h1_desktop: 55px;
-$font_size_h2_desktop: 53px;
-$font_size_h3_desktop: 20px;
-$font_size_p_desktop: 18px;
-
-$line_height_h1_mobile: 1.3;
-$line_height_h2_mobile: 1.2;
-$line_height_h3_mobile: 1.23;
-$line_height_p_mobile: 1.7;
-
-$line_height_h1_tablet: 1.3;
-$line_height_h2_tablet: 1.2;
-$line_height_h3_tablet: 1.25;
-$line_height_p_tablet: 1.37;
-
-$line_height_h1_desktop: 1.3;
-$line_height_h2_desktop: 1.1;
-$line_height_h3_desktop: 1.25;
-$line_height_p_desktop: 1.37;
-
 $font_weight_normal: 400;
 $font_weight_bold: 700;
 $font_family_base: "Open Sans";
 $font_family_extra: "Tahoma", sans-serif;
 $line_height: 1.37;
+
+// mobile
+
+$font_size_h1_mobile: 30px;
+
+$font_size_h2_mobile_l: 27px;
+$font_size_h2_mobile: 25px;
+
+$font_size_h3_mobile_xl: 19px;
+$font_size_h3_mobile_l: 18px;
+$font_size_h3_mobile: 17px;
+
+$font_size_p_mobile: 15px;
+$font_size_p_mobile_xs: 14px;
+$font_size_p_mobile_s: 13px;
+
+//
+
+$line_height_h1_mobile: 1.3;
+
+$line_height_h2_mobile: 1.2;
+$line_height_h2_mobile_s: 1.11;
+
+$line_height_h3_mobile_l: 1.67;
+$line_height_h3_mobile: 1.41;
+$line_height_h3_mobile_s: 1.26;
+
+$line_height_p_mobile_xxl: 2.31;
+$line_height_p_mobile_xl: 2;
+$line_height_p_mobile_l: 1.85;
+$line_height_p_mobile: 1.6;
+$line_height_p_mobile_xxxs: 1.33;
+$line_height_p_mobile_xxs: 1.18;
+$line_height_p_mobile_xs: 1.14;
+$line_height_p_mobile_s: 0.95;
+
+// tablet
+
+$font_size_h1_tablet: 45px;
+$font_size_h2_tablet: 43px;
+$font_size_h3_tablet: 20px;
+$font_size_p_tablet: 17px;
+
+$line_height_h1_tablet: 1.3;
+$line_height_h2_tablet: 1.16;
+
+$line_height_h3_tablet_l: 1.5;
+$line_height_h3_tablet: 1.2;
+
+$line_height_p_tablet: 1.76;
+$line_height_p_tablet_s: 1.1;
+
+// desktop
+
+$font_size_h1_desktop: 55px;
+$font_size_h2_desktop: 53px;
+$font_size_h3_desktop: 20px;
+$font_size_p_desktop: 17px;
+
+$line_height_h1_desktop: 1.3;
+$line_height_h2_desktop: 1.08;
+$line_height_h3_desktop: 1.2;
+$line_height_p_desktop: 1.76;
 
 //  Отступы
 

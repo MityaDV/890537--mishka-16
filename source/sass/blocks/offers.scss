@@ -3,40 +3,27 @@
 
 .offers {
   @media (min-width: $width_tablet) {
-    position: relative;
-    padding: 40px 0 50px;
+    padding: 44px 0 50px;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 50px 0 70px;
+    padding: 53px 0 70px;
     display: flex;
     flex-direction: column;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 0;
-    width: 100%;
-    height: 24px;
-    background: url("../img/bg-zigzag-fill.svg") repeat-x 0 0;
-
-    @media (min-width: $width_desktop) {
-      height: 34px;
-    }
   }
 }
 
 .offers__wrapper {
-  padding: 0 30px 15px;
+  padding: 0 30px 24px;
 
   @media (min-width: $width_tablet) {
     @include fixed_inner;
 
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 0 50px 50px;
   }
 
@@ -49,9 +36,27 @@
     align-items: center;
     z-index: 1;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -56px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background: url("../img/bg-zigzag-fill.svg") repeat-x center 0;
+    background-size: contain;
+
+    @media (min-width: $width_desktop) {
+      top: -68px;
+      height: 34px;
+    }
+  }
 }
 
 .offers__title {
+  @include heading_h2;
+
   margin: 0;
   padding: 0 0 5px;
 
@@ -60,14 +65,14 @@
   }
 
   @media (min-width: $width_desktop) {
-    flex-basis: 82%;
+    flex-basis: 81%;
   }
 }
 
 .offers__inner {
   @include inner;
 
-  margin: 0 0 30px;
+  margin: 0 0 35px;
   display: flex;
   flex-direction: column;
 
@@ -81,40 +86,47 @@
   @media (min-width: $width_desktop) {
     width: 1150px;
     max-height: 650px;
+    height: 636px;
     margin: -110px auto 0;
     padding: 0 45px;
   }
 }
 
 .offers__text {
+  @include indent_p;
+
   margin: 0;
-  padding: 0 0 25px;
+  padding: 0 0 17px;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
-    padding: 0 30px 45px 0;
+    padding: 0 34px 39px 0;
     width: 50%;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 160px 40px 30px 180px;
+    padding: 160px 50px 30px 180px;
   }
 
   &--flag {
     padding: 0;
+    font-size: $font_size_h3_mobile;
+    line-height: $line_height_p_mobile_xxs;
     font-weight: $font_weight_bold;
     text-transform: uppercase;
     color: $color_seafoam_blue;
 
     @media (min-width: $width_tablet) {
-      padding: 0;
-      flex-basis: 20%;
+      max-width: 70px;
+      margin: 7px 28px 0 0;
+      line-height: $line_height_p_mobile_s;
       text-align: center;
     }
 
     @media (min-width: $width_desktop) {
       flex-basis: 13%;
+      margin: 7px 0 0 25px;
     }
   }
 }
@@ -124,37 +136,45 @@
 
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0 30px;
+  padding: 0 0 28px;
   font-size: $font_size_p_mobile;
-  line-height: $line_height_p_mobile;
+  line-height: $line_height_p_mobile_xxxs;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
-    padding: 0 30px 60px 0;
+    padding: 0 30px 56px 0;
     width: 50%;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 30px 40px 60px 180px;
+    padding: 20px 40px 60px 180px;
   }
 }
 
 .offers__item {
-  min-height: 35px;
+  min-height: 40px;
   border-bottom: 1px solid $color_gray_lighten;
+  display: flex;
+  align-items: center;
 
   @media (min-width: $width_desktop) {
     min-height: 40px;
   }
 
   &:nth-child(odd) {
-    flex-basis: 25%;
+    flex-basis: 30%;
+
+    @media (min-width: $width_tablet) {
+      flex-basis: auto;
+      width: 25%;
+    }
   }
 
   &:nth-child(even) {
-    flex-basis: 70%;
-    padding: 0 0 0 30px;
+    flex-basis: auto;
+    width: 70%;
+    padding: 0 0 0 19px;
   }
 }
 
@@ -162,7 +182,12 @@
   align-self: center;
 
   @media (min-width: $width_tablet) {
+    padding: 8px 0 0;
     order: 3;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 0;
   }
 }
 
@@ -179,19 +204,27 @@
 }
 
 .offers__price {
+  @include indent_p;
+
+  margin: 0;
+  padding: 21px 0 28px;
+  font-size: $font_size_h3_mobile;
+  line-height: $line_height_h3_mobile;
   text-align: center;
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
     width: 50%;
     margin: 0;
-    padding: 0 30px 35px 0;
+    padding: 0 47px 35px 0;
+    font-size: $font_size_h3_tablet;
+    line-height: $line_height_h3_tablet;
     order: 1;
   }
 
   @media (min-width: $width_desktop) {
     width: auto;
-    padding: 50px 40px 30px 150px;
+    padding: 50px 40px 32px 158px;
   }
 }
 

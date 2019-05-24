@@ -2,7 +2,17 @@
 @import "../base/vars.scss";
 
 .feedback {
-  margin: 0 0 40px;
+  margin: 0 0 42px;
+  padding: 22px 0 0;
+
+  @media (min-width: $width_tablet) {
+    margin: 0 0 72px;
+    padding: 32px 0 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 50px 0 0;
+  }
 }
 
 .feedback__inner {
@@ -36,64 +46,84 @@
 }
 
 .feedback__title {
+  @include heading_h2;
+
+  margin: 0;
+  padding: 0 0 24px;
+
   @media (min-width: $width_tablet) {
-    margin: 0;
-    padding: 80px 0 25px;
+    padding: 39px 0 0;
     order: 1;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 80px 0 25px 180px;
-    order: 1;
+    padding: 60px 0 18px 180px;
   }
 }
 
 .feedback__text {
+  @include indent_p;
+
+  margin: 0;
+  padding: 0 0 27px;
+  line-height: $line_height_p_mobile_xl;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
-    padding: 30px 0;
+    padding: 21px 0;
     order: 3;
-    margin: 0;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 30px 60px 20px 180px;
+    padding: 20px 80px 20px 180px;
   }
 }
 
 .feedback__autor {
-  margin: 0 0 30px;
-  padding: 40px 0 0;
+  @include indent_p;
+
+  margin: 0 0 37px;
+  font-size: $font_size_h3_mobile;
+  line-height: $line_height_h3_mobile;
   font-weight: $font_weight_normal;
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
     margin: 0;
-    padding: 30px 0 40px;
+    padding: 40px 0 50px;
     flex-basis: 50%;
+    font-size: $font_size_h3_mobile_l;
+    line-height: $line_height_p_mobile_xxxs;
     order: 4;
   }
 
   @media (min-width: $width_desktop) {
     padding: 20px 0 100px 180px;
+    font-size: $font_size_h3_mobile;
+    line-height: $line_height_h3_mobile;
   }
 }
 
 .feedback__name {
   font-weight: $font_weight_bold;
   color: $color_black;
+  line-height: $line_height_p_mobile;
 }
 
 .feedback__list {
   @include list;
-  padding: 0 0 38px 0;
+  padding: 0 0 39px 0;
   display: flex;
   justify-content: center;
 
   @media (min-width: $width_tablet) {
-    padding: 0;
+    padding: 0 4px 5px 0;
+    order: 5;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 0 9px 68px 0;
     order: 5;
   }
 }
