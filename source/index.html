@@ -262,25 +262,27 @@
           </li>
         </ul>
         <div class="contacts__wrapper">
-          <a class="contacts__link" href="#">
-            <picture>
-              <source type="image/webp" media="(max-width: 767px)"
-                srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1139px)"
-                srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 1140px)"
-                srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-              <source media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
-              <source media="(max-width: 1139px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-              <source media="(min-width: 1140px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-              <img class="contacts__map" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис магазина «Мишка» находится по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8,
-                офис 101" width="322" height="457">
-            </picture>
-          </a>
-          <svg class="contacts__icon contacts__icon--pin" width="66" height="100.801" aria-hidden="true"
-            role="presentation" focusable="false">
-            <use xlink:href="#icon-map-pin"></use>
-          </svg>
+          <div id="contacts-map" class="contacts__map">
+            <a class="contacts__link" href="#">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1139px)"
+                  srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1140px)"
+                  srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x">
+                <source media="(max-width: 1139px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                <source media="(min-width: 1140px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                <img class="contacts__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Офис магазина «Мишка» находится по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8,
+                  офис 101" width="322" height="457">
+              </picture>
+            </a>
+            <svg class="contacts__icon contacts__icon--pin" width="66" height="100.801" aria-hidden="true"
+              role="presentation" focusable="false">
+              <use xlink:href="#icon-map-pin"></use>
+            </svg>
+          </div>
         </div>
         <a class="contacts__button btn btn--сontact" href="writeus.html">Напишите нам</a>
       </div>
@@ -357,6 +359,9 @@
 
   <div class="overlay"></div>
 
+  <script type="text/javascript" charset="utf-8" async
+    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac996bb7dd2f244c5fb45090a5701add183c7572d007b050aa97e1ed7f9105f0b&amp;width=525&amp;height=457&amp;lang=ru_RU&amp;scroll=true">
+  </script>
   <script src="js/menu.js"></script>
   <script src="js/modal.js"></script>
 
