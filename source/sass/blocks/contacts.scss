@@ -28,7 +28,8 @@
   @media (min-width: $width_desktop) {
     width: 1150px;
     padding: $padding_large;
-    max-height: 500px;
+    max-height: 457px;
+    height: 457px;
     flex-direction: column;
     align-content: flex-end;
   }
@@ -41,6 +42,7 @@
     height: 6px;
     background: #ffffff url("../img/bg-zigzag-line.svg") repeat-x center 0;
     background-size: contain;
+    transform: scale(1, -1);
 
     @media (min-width: $width_tablet) {
       height: 15px;
@@ -52,7 +54,7 @@
       width: 1060px;
       height: 23px;
       top: -91px;
-      left: auto;
+      left: 45px;
     }
   }
 }
@@ -86,8 +88,9 @@
 
   @media (min-width: $width_desktop) {
     padding: 72px 40px 40px 100px;
-    flex-direction: row-reverse;
     position: relative;
+    flex-direction: row-reverse;
+    flex-basis: auto;
   }
 }
 
@@ -154,7 +157,8 @@
 
   @media (min-width: $width_desktop) {
     display: block;
-    padding: 0 0 57px 100px;
+    padding: 0 0 55px 100px;
+    flex-basis: auto;
   }
 }
 

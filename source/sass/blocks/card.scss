@@ -7,6 +7,10 @@
   @media (min-width: $width_tablet) {
     flex-basis: 50%;
   }
+
+  @media (min-width: $width_desktop) {
+    flex-basis: auto;
+  }
 }
 
 .card__img {
@@ -20,6 +24,11 @@
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
+  }
+
+  @media (min-width: $width_desktop) {
+    flex-basis: auto;
+    height: 50%;
   }
 }
 

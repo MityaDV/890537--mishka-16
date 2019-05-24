@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    max-height: 500px;
+    height: 455px;
     padding: 0;
     flex-wrap: wrap;
   }
@@ -105,7 +105,7 @@
 
   @media (min-width: $width_desktop) {
     width: auto;
-    padding: 0 0 49px 80px;
+    padding: 0 0 48px 80px;
     max-width: 370px;
   }
 }
@@ -128,10 +128,9 @@
   }
 
   @media (min-width: $width_desktop) {
-    min-width: 682px;
+    width: 682px;
     margin: 0;
     background: $color_gray_lightest url("../img/video-desktop@1x.jpg") no-repeat 0 0;
-    background-size: cover;
   }
 
   @media (min-width: $width_desktop) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {

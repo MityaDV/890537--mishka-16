@@ -42,6 +42,10 @@
   display: block;
   outline: none;
 
+  @media (min-width: $width_desktop) {
+    height: 35px;
+  }
+
   &:hover {
     fill: $color_greeny_blue;
   }

@@ -35,6 +35,7 @@
     height: 6px;
     background: #ffffff url("../img/bg-zigzag-line.svg") repeat-x center 0;
     background-size: contain;
+    transform: scale(1, -1);
 
     @media (min-width: $width_tablet) {
       height: 15px;
