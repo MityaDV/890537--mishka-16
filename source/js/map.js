@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
     var placemark = new ymaps.Placemark([59.764791, 30.4668216], {}, {
       iconLayout: "default#image",
-      iconImageHref: "img/sprite-svg-icons/icon-map-pin",
+      iconImageHref: "img/sprite-svg-icons/icon-map-pin.svg",
       iconImageSize: [67, 100]
     });
     map.geoObjects.add(placemark);
