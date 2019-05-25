@@ -5,8 +5,10 @@
   background: $color_bg_header url("../img/hero-mobile@1x.jpg") no-repeat center -18px;
 
   @media (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
-    background: $color_bg_header url("../img/hero-mobile@2x.jpg") no-repeat center 0;
-    background-size: cover;
+    background: #f9f9f9 url("../img/hero-mobile@2x.jpg");
+    background-size: 180%;
+    background-repeat: no-repeat;
+    background-position: center top -18px;
   }
 
   @media (min-width: $width_tablet) {
@@ -14,8 +16,17 @@
   }
 
   @media (min-width: $width_tablet) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
-    background: $color_bg_header url("../img/hero-tablet@2x.jpg") no-repeat center 88px;
-    background-size: cover;
+    background: #f9f9f9 url("../img/hero-tablet@2x.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: center top 88px;
+  }
+
+  @media (min-width: $width_desktop) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
+    background: #f9f9f9 url("../img/hero-desktop@2x.jpg");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center top 88px;
   }
 }
 

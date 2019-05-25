@@ -35,19 +35,13 @@
 
     @media (min-width: $width_desktop) {
       width: 230px;
-      margin: 0 0 60px 20px;
-      align-self: center;
+      margin: 0 0 0 80px;
     }
   }
 
   &--buy {
     @media (min-width: $width_tablet) {
       width: 292px;
-      margin: 0 43px 0 0;
-    }
-
-    @media (min-width: $width_desktop) {
-      margin: 0 0 0 120px;
     }
   }
 

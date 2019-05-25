@@ -77,6 +77,7 @@
   font-weight: $font_weight_normal;
   line-height: $line_height_p_mobile_xl;
   color: $color_greyish_brown;
+  text-align: center;
 
   @media (min-width: $width_tablet) {
     font-size: $font_size_h3_mobile;
