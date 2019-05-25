@@ -10,7 +10,10 @@
   <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff">
   <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff">
   <link rel="stylesheet" href="css/style.min.css">
-  <script>document.createElement("picture");</script>
+  <script>
+    document.createElement("picture");
+
+  </script>
   <script src="js/picturefill.js" async></script>
 </head>
 
@@ -86,7 +89,7 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="form__field field">
           <div class="field__inner">
-            <legend class="field__legend field__legend--radio">Тип</legend>
+            <p class="field__legend field__legend--radio">Тип</p>
             <ul class="field__list field__list--radio">
               <li class="field__item field__item--radio">
                 <input class="field__input field__input--radio visually-hidden" type="radio" name="filter-accessory"
@@ -104,7 +107,7 @@
         </fieldset>
         <fieldset class="form__field form__field--checkbox field field--bg">
           <div class="field__inner">
-            <legend class="field__legend field__legend--checkbox">Цвет</legend>
+            <p class="field__legend field__legend--checkbox">Цвет</p>
             <ul class="field__list field__list--checkbox">
               <li class="field__item field__item--checkbox">
                 <input class="field__input field__input--checkbox visually-hidden" type="checkbox" name="filter-color"
@@ -141,7 +144,7 @@
         </fieldset>
         <fieldset class="form__field form__field--user field">
           <div class="field__inner">
-            <legend class="field__legend field__legend--user">ФИО</legend>
+            <p class="field__legend field__legend--user">ФИО</p>
             <ul class="field__list field__list--user">
               <li class="field__item field__item--user">
                 <label class="field__label field__label--user" for="user-name">Имя:</label>
@@ -163,7 +166,7 @@
         </fieldset>
         <fieldset class="form__field field field--bg">
           <div class="field__inner">
-            <legend class="field__legend field__legend--phone">Tел</legend>
+            <p class="field__legend field__legend--phone">Tел</p>
             <ul class="field__list field__list--phone">
               <li class="field__item field__item--phone">
                 <input class="field__input" type="tel" name="userphone" id="user-phone"
@@ -179,7 +182,7 @@
         </fieldset>
         <fieldset class="form__field field field--bg">
           <div class="field__inner">
-            <legend class="field__legend field__legend--letter">E-mail</legend>
+            <p class="field__legend field__legend--letter">E-mail</p>
             <ul class="field__list field__list--letter">
               <li class="field__item field__item--letter">
                 <input class="field__input" type="email" name="useremail" id="user-email" placeholder="Ваш Email*"
@@ -195,7 +198,7 @@
         </fieldset>
         <fieldset class="form__field form__field--more field">
           <div class="field__inner">
-            <legend class="field__legend field__legend--more">Доп</legend>
+            <p class="field__legend field__legend--more">Доп</p>
             <ul class="field__list field__list--more">
               <li class="field__item">
                 <textarea class="field__textarea" name="userwishes"

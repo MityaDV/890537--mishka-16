@@ -10,7 +10,10 @@
   <link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff">
   <link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff">
   <link rel="stylesheet" href="css/style.min.css">
-  <script>document.createElement("picture");</script>
+  <script>
+    document.createElement("picture");
+
+  </script>
   <script src="js/picturefill.js" async></script>
 </head>
 
@@ -81,6 +84,7 @@
       <div class="catalog__inner">
         <div class="catalog__wrapper">
           <article class="catalog__item card">
+            <h3 class="visually-hidden">Зайчик-попрыгайчик</h3>
             <a class="card__link card__link--hare" href="catalog/bunny.html" aria-label="Зайчик-попрыгайчик.">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
@@ -113,6 +117,7 @@
             </div>
           </article>
           <article class="catalog__item card">
+            <h3 class="visually-hidden">Корзинка для белья</h3>
             <a class="card__link card__link--bowl" href="catalog/basket.html" aria-label="Корзинка для белья.">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
@@ -145,6 +150,7 @@
             </div>
           </article>
           <article class="catalog__item card">
+            <h3 class="visually-hidden">Большая корзинка для белья</h3>
             <a class="card__link card__link--toys" href="catalog/big-basket.html"
               aria-label="Большая корзинка для белья.">
               <picture>
@@ -190,7 +196,7 @@
               <h3 class="production__title">Процесс производства</h3>
             </div>
             <div class="production__wrapper production__wrapper--video">
-              <video class="production__video" poster="img/video-mobile@1x.jpg" autoplay="false"></video>
+              <video class="production__video" poster="img/video-mobile@1x.jpg"></video>
               <button class="production__play" aria-label="Воспроизвести видео">
                 <svg class="production__icon" width="101" height="77" aria-hidden="true" role="presentation"
                   focusable="false">
@@ -199,7 +205,8 @@
               </button>
             </div>
             <div class="production__wrapper production__wrapper--order">
-              <p class="production__caption">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+              <p class="production__caption">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о
+                том,
                 как появляются наши товары.</p>
               <a class="production__link btn btn--order" href="cart.html">Сделать заказ</a>
             </div>
@@ -257,7 +264,7 @@
     <div class="modal__inner">
       <h2 class="modal__title">Добавить в корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="get">
-        <legend class="modal__legend">Выберите размер:</legend>
+        <p class="modal__legend">Выберите размер:</p>
         <ul class="modal__list">
           <li class="modal__item">
             <input class="modal__input visually-hidden" type="radio" name="size" id="size-s" value="S">
