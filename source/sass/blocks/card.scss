@@ -36,6 +36,7 @@
   @include heading_h3;
 
   margin: 0;
+  color: $color_black;
 
   &--narrow {
     max-width: 170px;
@@ -51,6 +52,14 @@
 
   @media (min-width: $width_desktop) {
     padding: 0 0 5px;
+  }
+
+  &:hover {
+    color: $color_black_60;
+  }
+
+  &:active {
+    color: $color_black_30;
   }
 }
 
