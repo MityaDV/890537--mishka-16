@@ -181,14 +181,14 @@
         </div>
         <section class="production">
           <div class="production__inner">
-            <div class="production__wrapper-title">
+            <div class="production__wrapper production__wrapper--title">
               <svg class="production__icon-title" width="32" height="32" aria-hidden="true" role="presentation"
                 focusable="false">
                 <use xlink:href="#icon-video"></use>
               </svg>
               <h3 class="production__title">Процесс производства</h3>
             </div>
-            <div class="production__wrapper">
+            <div class="production__wrapper production__wrapper--video">
               <video class="production__video" poster="img/video-mobile@1x.jpg" autoplay="false"></video>
               <button class="production__play" aria-label="Воспроизвести видео">
                 <svg class="production__icon" width="101" height="77" aria-hidden="true" role="presentation"
@@ -197,9 +197,11 @@
                 </svg>
               </button>
             </div>
-            <p class="production__caption">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-              как появляются наши товары.</p>
-            <a class="production__link btn btn--order" href="cart.html">Сделать заказ</a>
+            <div class="production__wrapper production__wrapper--order">
+              <p class="production__caption">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+                как появляются наши товары.</p>
+              <a class="production__link btn btn--order" href="cart.html">Сделать заказ</a>
+            </div>
           </div>
         </section>
       </div>
