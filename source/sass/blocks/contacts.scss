@@ -76,7 +76,11 @@
 }
 
 .contacts__map {
-  min-height: 457px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500px;
+  width: 100%;
 }
 
 .contacts__wrapper-title {
@@ -161,7 +165,7 @@
 
   @media (min-width: $width_desktop) {
     display: block;
-    padding: 0 0 52px 100px;
+    padding: 0 0 50px 100px;
     flex-basis: auto;
   }
 }
@@ -240,6 +244,7 @@
 .contacts__img {
   border: none;
   width: 100%;
+  height: 100%;
 
   @media (min-width: $width_desktop) {
     width: auto;
