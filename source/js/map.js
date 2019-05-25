@@ -3,7 +3,7 @@
   function init() {
     var map = new ymaps.Map("contacts-map", {
       center: [59.93944115603922, 30.32302403991186],
-      zoom: 12,
+      zoom: 15,
       controls: []
     });
     var placemark = new ymaps.Placemark([59.938633647616214, 30.32304549758399], {}, {
