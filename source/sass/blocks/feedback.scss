@@ -87,7 +87,6 @@
   font-size: $font_size_h3_mobile;
   line-height: $line_height_h3_mobile;
   font-weight: $font_weight_normal;
-  color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
     margin: 0;
@@ -105,10 +104,14 @@
   }
 }
 
-.feedback__name {
-  font-weight: $font_weight_bold;
-  color: $color_black;
-  line-height: $line_height_p_mobile;
+.feedback__email {
+  font-weight: $font_weight_normal;
+  line-height: $line_height_p_tablet;
+  color: $color_greyish_brown;
+
+  @media (min-width: $width_tablet) {
+    font-size: $font_size_p_tablet;
+  }
 }
 
 .feedback__list {
