@@ -466,7 +466,7 @@
     border: 2px solid $color_greyish_brown;
   }
 
-  &--checkbox:not(:hover) + .field__label--checkbox::before {
+  &--checkbox:not(:checked):not(:hover) + .field__label--checkbox::before {
     content: "";
     border: 2px solid $color_greyish_brown;
   }
