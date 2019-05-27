@@ -18,7 +18,7 @@
 }
 
 .card__wrapper-feature {
-  padding: 25px 25px 25px 25px;
+  padding: 25px;
 
   @media (min-width: $width_tablet) {
     flex-basis: 50%;
@@ -27,6 +27,7 @@
   }
 
   @media (min-width: $width_desktop) {
+    padding: 22px 25px 25px;
     flex-basis: auto;
     height: 50%;
   }
@@ -40,6 +41,7 @@
 
   &--narrow {
     max-width: 170px;
+    display: block;
 
     @media (min-width: $width_tablet) {
       max-width: 200px;
@@ -47,7 +49,7 @@
   }
 
   @media (min-width: $width_tablet) {
-    padding: 0 0 8px;
+    padding: 0 0 7px;
   }
 
   @media (min-width: $width_desktop) {
@@ -86,6 +88,10 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+
+  @media (min-width: $width_desktop) {
+    padding: 33px 0 0;
+  }
 }
 
 .card__price {

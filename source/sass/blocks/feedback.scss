@@ -6,11 +6,12 @@
   padding: 22px 0 0;
 
   @media (min-width: $width_tablet) {
-    margin: 0 0 72px;
+    margin: 0 0 70px;
     padding: 32px 0 0;
   }
 
   @media (min-width: $width_desktop) {
+    margin: 0 0 62px;
     padding: 50px 0 0;
   }
 }
@@ -37,11 +38,11 @@
   @media (min-width: $width_desktop) {
     width: 1150px;
     padding: $padding_large;
-    background-position: 46px 0;
+    background-position: 49px 0;
   }
 
   @media (min-width: $width_desktop) and (min-resolution: $retina_dpi) and (min-resolution: $retina_dppx) {
-    background-position: 46px 0;
+    background-position: 49px 0;
   }
 }
 
@@ -71,26 +72,34 @@
   color: $color_greyish_brown;
 
   @media (min-width: $width_tablet) {
-    padding: 21px 0;
+    padding: 22px 0 21px;
     order: 3;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 20px 80px 20px 180px;
+    padding: 21px 80px 20px 180px;
+  }
+
+  & > br {
+    display: none;
+
+    @media (min-width: $width_desktop) {
+      display: block;
+    }
   }
 }
 
 .feedback__autor {
   @include indent_p;
 
-  margin: 0 0 37px;
+  margin: 0 0 31px;
   font-size: $font_size_h3_mobile;
   line-height: $line_height_h3_mobile;
   font-weight: $font_weight_normal;
 
   @media (min-width: $width_tablet) {
     margin: 0;
-    padding: 40px 0 50px;
+    padding: 40px 0 47px;
     flex-basis: 50%;
     font-size: $font_size_h3_mobile_l;
     line-height: $line_height_p_mobile_xxxs;
@@ -98,13 +107,15 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 20px 0 100px 180px;
+    padding: 20px 0 97px 180px;
     font-size: $font_size_h3_mobile;
     line-height: $line_height_h3_mobile;
   }
 }
 
 .feedback__email {
+  display: block;
+  padding: 4px 0 0;
   font-weight: $font_weight_normal;
   line-height: $line_height_p_tablet;
   color: $color_greyish_brown;
@@ -116,17 +127,17 @@
 
 .feedback__list {
   @include list;
-  padding: 0 0 39px 0;
+  padding: 0 0 38px;
   display: flex;
   justify-content: center;
 
   @media (min-width: $width_tablet) {
-    padding: 0 4px 5px 0;
+    padding: 0 3px 8px 0;
     order: 5;
   }
 
   @media (min-width: $width_desktop) {
-    padding: 0 9px 68px 0;
+    padding: 0 8px 78px 0;
     order: 5;
   }
 }

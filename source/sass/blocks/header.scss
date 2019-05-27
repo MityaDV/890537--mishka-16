@@ -42,7 +42,13 @@
 }
 
 .header__navigation--nojs {
-  & .header__list {
+  & .header__list--site {
+    @media (max-width: $width_mobile_only) {
+      display: block;
+    }
+  }
+
+  & .header__list--user {
     @media (max-width: $width_mobile_only) {
       display: block;
     }
@@ -144,7 +150,7 @@
 
   &--site {
     @media (min-width: $width_tablet) {
-      padding: 19px 0 0;
+      padding: 18px 0 0;
       flex-basis: 50%;
       font-size: $font_size_p_mobile;
       line-height: $line_height_p_mobile;
@@ -231,7 +237,7 @@
 
   &--indent {
     @media (min-width: $width_tablet) {
-      padding: 30px 0;
+      padding: 31px 0 30px;
       flex-basis: 76%;
       display: flex;
       justify-content: flex-end;

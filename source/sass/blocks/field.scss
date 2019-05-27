@@ -403,6 +403,11 @@
     border: 2px solid $color_seafoam_blue;
   }
 
+  &--radio:checked:not(:hover) + .field__label--radio::before {
+    content: "";
+    border: 2px solid $color_greyish_brown;
+  }
+
   &--radio:focus + .field__label--radio::before {
     content: "";
     border: 2px solid $color_seafoam_blue;
@@ -453,6 +458,17 @@
   &--checkbox:hover + .field__label--checkbox::before {
     content: "";
     border: 2px solid $color_seafoam_blue;
+  }
+
+
+  &--checkbox:checked:not(:hover) + .field__label--checkbox::before {
+    content: "";
+    border: 2px solid $color_greyish_brown;
+  }
+
+  &--checkbox:not(:hover) + .field__label--checkbox::before {
+    content: "";
+    border: 2px solid $color_greyish_brown;
   }
 
   &--checkbox:focus + .field__label--checkbox::before {
