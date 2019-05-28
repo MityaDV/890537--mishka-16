@@ -13,12 +13,7 @@
     color: $color_white_30;
   }
 
-  &:focus {
-    background: $color_greyish_brown;
-    color: $color_white;
-  }
-
-  &:focus:active {
+  &:active {
     background: $color_greyish_brown;
     color: $color_white_30;
   }
@@ -35,7 +30,7 @@
 
     @media (min-width: $width_desktop) {
       width: 230px;
-      margin: 0 0 0 80px;
+      margin: 0 0 0 78px;
     }
   }
 
@@ -73,7 +68,7 @@
     }
 
     @media (min-width: $width_desktop) {
-      margin: 0 0 0 108px;
+      margin: 0 0 0 104px;
     }
   }
 

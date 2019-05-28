@@ -50,7 +50,7 @@
 
     @media (min-width: $width_desktop) {
       max-width: 370px;
-      padding: 47px 0 300px 80px;
+      padding: 44px 0 300px 82px;
       flex-direction: column;
       align-items: flex-start;
     }
@@ -89,7 +89,7 @@
     @media (min-width: $width_desktop) {
       margin: -280px 0 0 auto;
       flex-basis: 35%;
-      padding: 0 0 60px;
+      padding: 4px 0 60px;
     }
   }
 }
@@ -119,7 +119,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 20px 0 0;
+    padding: 22px 0 0;
     max-width: 150px;
     margin: 0;
   }
@@ -144,7 +144,7 @@
 
   @media (min-width: $width_desktop) {
     width: auto;
-    padding: 0 0 48px 80px;
+    padding: 0 0 47px 80px;
     max-width: 370px;
   }
 }

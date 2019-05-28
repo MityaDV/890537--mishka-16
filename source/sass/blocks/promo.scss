@@ -122,11 +122,13 @@
   background-color: $color_seafoam_blue;
 
   @media (min-width: $width_tablet) {
-    padding: 30px 35px;
+    margin: 4px 0 0;
+    padding: 25px 35px 30px;
     position: relative;
   }
 
   @media (min-width: $width_desktop) {
+    margin: 6px 0 0 5px;
     position: relative;
   }
 
@@ -144,6 +146,10 @@
 
   &--shade {
     background-color: $color_greeny_blue;
+
+    @media (min-width: $width_desktop) {
+      margin: 6px 5px 0 0;
+    }
 
     &::after {
       @media (min-width: $width_desktop) {

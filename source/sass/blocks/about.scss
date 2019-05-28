@@ -98,7 +98,8 @@
   }
 
   @media (min-width: $width_desktop) {
-    flex-basis: 40%;
+    flex-basis: auto;
+    width: 40%;
   }
 }
 

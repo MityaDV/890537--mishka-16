@@ -68,7 +68,7 @@
 
     @media (min-width: $width_desktop) {
       width: 1150px;
-      padding: 70px 0 50px;
+      padding: 71px 0 49px;
       flex-direction: row-reverse;
       justify-content: space-around;
       z-index: 1;
@@ -128,7 +128,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    padding: 0 63px 51px 0;
+    padding: 0 63px 51px 10px;
   }
 
   &--flag {
@@ -166,6 +166,10 @@
 
   @media (min-width: $width_tablet) {
     padding: 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding: 0 0 0 10px;
   }
 }
 
@@ -205,7 +209,7 @@
 
   @media (min-width: $width_desktop) {
     padding: 0;
-    margin: -157px 0 0;
+    margin: -159px 0 0;
   }
 }
 
