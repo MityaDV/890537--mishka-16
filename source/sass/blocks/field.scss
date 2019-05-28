@@ -481,6 +481,15 @@
     border: 2px solid $color_greyish_brown_30;
   }
 
+  &--checkbox:disabled + .field__label--checkbox,
+  &--checkbox:disabled + .field__label--checkbox::after,
+  &--checkbox:disabled + .field__label--checkbox::before,
+  &--checkbox:checked:disabled + .field__label--checkbox::before {
+    content: "";
+    cursor: default;
+    opacity: 0.3;
+  }
+
   &[type="text"]::placeholder {
     color: $color_greyish_brown_30;
   }
