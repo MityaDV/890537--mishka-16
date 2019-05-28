@@ -418,6 +418,21 @@
     border: 2px solid $color_greyish_brown_30;
   }
 
+  &--radio:disabled + .field__label--radio,
+  &--radio:disabled + .field__label--radio::after,
+  &--radio:disabled + .field__label--radio::before,
+  &--radio:checked:disabled + .field__label--radio::before {
+    content: "";
+    cursor: default;
+    opacity: 0.3;
+  }
+
+  &--radio:hover:disabled + .field__label--radio::before,
+  &--radio:hover:disabled + .field__label--radio::after {
+    content: "";
+    border: 2px solid $color_greyish_brown;
+  }
+
   &--checkbox + .field__label--checkbox::before {
     content: "";
     display: inline-block;
@@ -488,6 +503,11 @@
     content: "";
     cursor: default;
     opacity: 0.3;
+  }
+
+  &--checkbox:hover:disabled + .field__label--checkbox::before {
+    content: "";
+    border: 2px solid $color_greyish_brown;
   }
 
   &[type="text"]::placeholder {
