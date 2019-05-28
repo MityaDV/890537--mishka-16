@@ -13,6 +13,11 @@
     color: $color_white_30;
   }
 
+  &:active {
+    background: $color_greyish_brown;
+    color: $color_white_30;
+  }
+
   &--order {
     width: 192px;
     margin: 0 auto 30px;
