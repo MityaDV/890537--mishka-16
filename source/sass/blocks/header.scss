@@ -41,14 +41,14 @@
   }
 }
 
-.header__navigation--nojs {
-  & .header__list--site {
+.header__navigation--nojs .header__list {
+  &--site {
     @media (max-width: $width_mobile_only) {
       display: block;
     }
   }
 
-  & .header__list--user {
+  &--user {
     @media (max-width: $width_mobile_only) {
       display: block;
     }

@@ -128,7 +128,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    margin: 5px 0 0 5px;
+    margin: 6px 0 0 5px;
     position: relative;
   }
 
@@ -148,7 +148,7 @@
     background-color: $color_greeny_blue;
 
     @media (min-width: $width_desktop) {
-      margin: 5px 5px 0 0;
+      margin: 6px 5px 0 0;
     }
 
     &::after {
